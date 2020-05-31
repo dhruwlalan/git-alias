@@ -1,0 +1,46 @@
+[user]
+	name = dhruw
+	email = dhruwlalan22@gmail.com
+
+[alias]
+	st = status
+	ad = add .
+	ct = commit -m
+
+	adct = commit -am
+	redoct = commit --amend
+
+	last = log -1 HEAD
+	graph = log --oneline --graph --all
+	alias = !git config --get-regexp ^alias\\. | sed -e s/^alias.// -e s/\\ /\\ $(printf \"\\043\")--\\>\\ / | column -t -s $(printf \"\\043\") | sort -k 1
+	
+	unstage = restore --staged 
+	unmodify = restore
+	untrack = rm --cached 
+	deleteUntrackedFiles = clean -d -f
+	rename = mv 
+	
+	branchAll = branch -a
+	deleteLb = branch -d 
+	pushLb = push -u origin 
+	deleteRb = push --delete origin 
+	pullRb = "!f() { git fetch && git checkout $1; }; f"
+	listDeletedRb = fetch -p
+	deleteLbRb = "!f() { git branch -d $1 && git push --delete origin $1; }; f"
+
+	remoteDetails = remote show origin
+	remoteUrl = remote -v
+	renameRemote = remote rename
+	addRemote = remote add origin
+	deleteRemote = remote remove
+
+	tagDetails = show
+	deleteLt = tag -d
+	deleteRt = push origin --delete
+	deleteLtRt = "!f() { git tag -d $1 && git push --delete origin $1; }; f"
+	pushLt = push origin
+	pushAllLt = push origin --tags
+	pullAllRt = fetch --all --tags
+
+[core]
+	safecrlf = false
