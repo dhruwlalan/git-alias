@@ -7,8 +7,8 @@
 	ad = add .
 	ct = commit -m
 
-	adct = commit -am
-	redoct = commit --amend
+	act = "!f() { git add . && git commit -m $1; }; f"
+	rct = commit --amend
 
 	last = log -1 HEAD
 	graph = log --oneline --graph --all
