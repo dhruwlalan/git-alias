@@ -9,42 +9,54 @@
 
 	dct = "!f() { git add . && git commit -m \"$1\"; }; f"
 	rct = commit --amend
-
-	last = log -1 HEAD
-	graph = log --oneline --graph --all
-	alias = !git config --get-regexp ^alias\\. | sed -e s/^alias.// -e s/\\ /\\ $(printf \"\\043\")--\\>\\ / | column -t -s $(printf \"\\043\") | sort -k 1
 	
+	rename = mv
 	unstage = restore --staged 
 	unmodify = restore
 	untrack = rm --cached 
 	deleteUntrackedFiles = clean -d -f
-	rename = mv 
 	
 	branchAll = branch -a
-	deleteLb = branch -d 
-	pushLb = push -u origin 
-	deleteRb = push --delete origin 
+	pushLb = push -u origin
+	pushLbTdr = push -u
+	deleteLb = branch -d  
 	pullRb = "!f() { git fetch && git checkout $1; }; f"
-	listDeletedRb = fetch -p
+	deleteRb = push --delete origin 
+	deleteRbTdr = push --delete 
 	deleteLbRb = "!f() { git branch -d $1 && git push --delete origin $1; }; f"
+	deleteLbRbTdr = "!f() { git branch -d $2 && git push --delete $1 $2; }; f"
+	listDeletedRb = fetch -p
+	track = push -u origin
+	trackTdr = push -u
 
 	remoteDetails = remote show origin
+	remoteDetailsTdr = remote show
 	remoteUrl = remote -v
-	renameRemote = remote rename
-	addRemote = remote add
-	deleteRemote = remote remove
-	editRemote = "!f() { git remote remove $1 && git remote add $1 $2; }; f"
+	addRemote = remote add origin
+	addRemoteTdr = remote add
+	deleteRemote = remote remove origin
+	deleteRemoteTdr = remote remove
+	renameRemote = remote rename origin
+	renameRemoteTdr = remote rename 
+	editRemoteUrl = "!f() { git remote remove origin && git remote add origin $1; }; f"
+	editRemoteUrlTdr = "!f() { git remote remove $1 && git remote add $1 $2; }; f"
 
 	tagDetails = show
 	release = "!f() { git tag -a $1 -m \"$2\"; }; f"
+	pushLt = push origin
+	pushLtTdr = push
 	deleteLt = tag -d
 	deleteRt = push origin --delete
+	deleteRtTdr = push --delete
 	deleteLtRt = "!f() { git tag -d $1 && git push --delete origin $1; }; f"
-	pushLt = push origin
+	deleteLtRtTdr = "!f() { git tag -d $2 && git push --delete $1 $2; }; f"
 	pushAllLt = push origin --tags
-	pullAllRt = fetch --all --tags
+	pushAllLtTdr = push --tags
+	pullAllRt = fetch --all --tags	
 
-	setUpStream = push -u
+	last = log -1 HEAD
+	graph = log --oneline --graph --all
+	alias = !git config --get-regexp ^alias\\. | sed -e s/^alias.// -e s/\\ /\\ $(printf \"\\043\")--\\>\\ / | column -t -s $(printf \"\\043\") | sort -k 1
 
 [core]
 	safecrlf = false
