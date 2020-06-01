@@ -43,5 +43,7 @@
 	pushAllLt = push origin --tags
 	pullAllRt = fetch --all --tags
 
+	setUpStream = push -u
+
 [core]
 	safecrlf = false
