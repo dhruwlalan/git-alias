@@ -7,7 +7,7 @@
 	ad = add .
 	ct = commit -m
 
-	act = "!f() { git add . && git commit -m \"$1\"; }; f"
+	dct = "!f() { git add . && git commit -m \"$1\"; }; f"
 	rct = commit --amend
 
 	last = log -1 HEAD
@@ -31,8 +31,9 @@
 	remoteDetails = remote show origin
 	remoteUrl = remote -v
 	renameRemote = remote rename
-	addRemote = remote add origin
+	addRemote = remote add
 	deleteRemote = remote remove
+	editRemote = "!f() { git remote remove $1 && git remote add $1 $2; }; f"
 
 	tagDetails = show
 	deleteLt = tag -d
