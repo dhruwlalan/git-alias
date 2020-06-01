@@ -36,6 +36,7 @@
 	editRemote = "!f() { git remote remove $1 && git remote add $1 $2; }; f"
 
 	tagDetails = show
+	release = "!f() { git tag -a $1 -m \"$2\"; }; f"
 	deleteLt = tag -d
 	deleteRt = push origin --delete
 	deleteLtRt = "!f() { git tag -d $1 && git push --delete origin $1; }; f"
