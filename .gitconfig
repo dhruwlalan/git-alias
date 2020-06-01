@@ -7,7 +7,7 @@
 	ad = add .
 	ct = commit -m
 
-	act = "!f() { git add . && git commit -m '$1'; }; f"
+	act = '!f() { git add . && git commit -m "$1"; }; f'
 	rct = commit --amend
 
 	last = log -1 HEAD
