@@ -17,6 +17,7 @@
 	deleteUntrackedFiles = clean -d -f
 	
 	branchAll = branch -a
+	co = checkout
 	pushLb = push -u origin
 	pushLbTdr = push -u
 	deleteLb = branch -d  
