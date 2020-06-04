@@ -44,6 +44,12 @@ body {
   font-size: 2.5rem;
   word-spacing: .5rem; }
 
+.main-section__content-block--title-gba {
+  color: #ff6e65; }
+
+.main-section__content-block--code-gba {
+  color: cyan; }
+
 .container {
   width: 60%;
   margin: 2rem auto;
