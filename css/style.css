@@ -1,3 +1,6 @@
+body {
+  background-color: #00adb5; }
+
 *,
 *::after,
 *::before {
@@ -10,3 +13,53 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.navbar__nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-decoration: none; }
+
+.footer__content {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #00d8e2; }
+
+.container {
+  width: 60%;
+  margin: 2rem auto; }
+
+.navbar {
+  text-align: center;
+  height: 10rem; }
+  .navbar__nav-link {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 3rem 1rem;
+    color: #00d8e2; }
+    .navbar__nav-link--left {
+      background-color: #222831;
+      color: #00d8e2; }
+    .navbar__nav-link--right {
+      background-color: #393e46;
+      color: #00d8e2; }
+    .navbar__nav-link:hover {
+      color: cyan; }
+
+.footer {
+  height: 10rem;
+  text-align: center; }
+  .footer--left {
+    background-color: #393e46; }
+  .footer--right {
+    background-color: #222831; }
+  .footer__content {
+    padding: 3.5rem; }
+
+.main {
+  background-color: #222831; }
+
+.main-gba {
+  background-color: #393e46; }

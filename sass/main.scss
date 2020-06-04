@@ -4,6 +4,7 @@
 @import "abstracts/variables";
 // @import "abstracts/<here>";
 
+
 @import "base/animations";
 @import "base/base";
 @import "base/reset";
@@ -11,9 +12,16 @@
 @import "base/utilities";
 // @import "base/<here>";
 
+
+@import "components/container";
 // @import "components/<here>";
 
+
+@import "layout/header";
+@import "layout/footer";
 // @import "layout/<here>";
 
+
 @import "pages/home";
+@import "pages/gba";
 // @import "pages/<here>";

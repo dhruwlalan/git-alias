@@ -1,0 +1,16 @@
+
+.footer {
+	height: 10rem;
+	text-align: center;
+
+	&--left {
+		background-color: $color-primary2;
+	}
+	&--right {
+		background-color: $color-primary1;
+	}
+
+	&__content {
+		padding: 3.5rem;
+	}
+}
