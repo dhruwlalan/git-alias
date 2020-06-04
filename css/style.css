@@ -1,0 +1,116 @@
+body {
+  background-color: #00d8e2; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.navbar__nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-decoration: none; }
+
+.footer__content {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #00d8e2; }
+
+.main-section__heading {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3rem; }
+
+.main-section__content-block--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #f97f77;
+  word-spacing: .6rem; }
+
+.main-section__content-block--code {
+  font-family: "Courier Prime", monospace;
+  color: cyan;
+  font-weight: 400;
+  font-size: 2.5rem;
+  word-spacing: .5rem; }
+
+.container {
+  width: 60%;
+  margin: 2rem auto;
+  box-shadow: 0 0 2rem 1rem #00716b;
+  border-radius: 5px; }
+
+.navbar {
+  text-align: center;
+  height: 10rem; }
+  .navbar__nav-link {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 3rem 1rem;
+    color: #00d8e2; }
+    .navbar__nav-link--left {
+      background-color: #222831;
+      color: #00d8e2;
+      border-top-left-radius: 5px; }
+    .navbar__nav-link--right {
+      background-color: #393e46;
+      color: #00d8e2;
+      border-top-right-radius: 5px; }
+    .navbar__nav-link:hover {
+      color: cyan; }
+
+.footer {
+  height: 10rem;
+  text-align: center;
+  border-radius: 0 0 5px 5px; }
+  .footer--left {
+    background-color: #393e46; }
+  .footer--right {
+    background-color: #222831; }
+  .footer__content {
+    padding: 3.5rem; }
+
+.main {
+  background-color: #222831;
+  padding: 2rem; }
+
+.main-section {
+  background-color: #222831;
+  border-radius: 5px; }
+  .main-section:not(:last-child) {
+    margin-bottom: 4rem; }
+  .main-section__heading {
+    background-color: cyan;
+    border-radius: 5px 5px 0 0;
+    padding: 0 1rem;
+    padding-left: 2rem; }
+  .main-section__content {
+    padding: 2rem;
+    border: 1px solid cyan;
+    border-radius: 0 0 5px 5px; }
+  .main-section__content-block {
+    margin: 3rem 1rem;
+    padding-left: 2rem; }
+    .main-section__content-block--title {
+      padding: .5rem; }
+    .main-section__content-block--code {
+      padding: .5rem;
+      padding-top: 0; }
+
+.main--gba {
+  background-color: #393e46;
+  padding: 2rem; }
+
+.main-section--gba {
+  background-color: #393e46; }

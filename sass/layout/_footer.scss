@@ -1,0 +1,17 @@
+
+.footer {
+	height: 10rem;
+	text-align: center;
+	border-radius: 0 0 5px 5px;
+
+	&--left {
+		background-color: $color-primary2;
+	}
+	&--right {
+		background-color: $color-primary1;
+	}
+
+	&__content {
+		padding: 3.5rem;
+	}
+}

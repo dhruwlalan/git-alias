@@ -1,0 +1,45 @@
+
+.main {
+	background-color: $color-primary1;
+	padding: 2rem;
+}
+
+.main-section {
+
+	background-color: $color-primary1;
+    border-radius: 5px;
+
+	&:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    &__heading {
+    	background-color: cyan;
+    	border-radius: 5px 5px 0 0;
+    	padding: 0 1rem;
+    	padding-left: 2rem;
+    }
+
+    &__content {
+    	padding: 2rem;
+    	border: 1px solid cyan;
+    	border-radius: 0 0 5px 5px;
+    }
+
+    &__content-block {
+
+    	margin: 3rem 1rem;
+
+    	padding-left: 2rem;
+
+    	&--title {
+    		padding: .5rem;
+    	}
+    	&--code {
+    		padding: .5rem;
+    		padding-top: 0;
+    	}
+
+    }
+
+}

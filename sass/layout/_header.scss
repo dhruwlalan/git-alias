@@ -1,0 +1,30 @@
+
+.navbar {
+
+	text-align: center;
+	height: 10rem;
+
+	&__nav-link {
+		float: left;
+		width: 50%;
+		height: 100%;
+		padding: 3rem 1rem;
+		color: $color-navlink;
+
+		&--left {
+			background-color: $color-primary1;
+			color: $color-navlink;
+			border-top-left-radius: 5px;
+		}
+
+		&--right {
+			background-color: $color-primary2;
+			color: $color-navlink;
+			border-top-right-radius: 5px;
+		}
+		&:hover {
+			color: $color-navlink-hover;
+		}
+
+	}
+}
