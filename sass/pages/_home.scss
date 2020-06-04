@@ -8,10 +8,12 @@
 
 	background-color: $color-primary1;
     border-radius: 5px;
+    margin-top: 4rem;
 
 	&:not(:last-child) {
         margin-bottom: 4rem;
     }
+
 
     &__heading {
     	background-color: cyan;
@@ -39,6 +41,40 @@
     		padding: .5rem;
     		padding-top: 0;
     	}
+
+    }
+
+}
+
+.main-navbar {
+
+    display: table;
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 50px;
+    height: 5rem;
+
+    &__nav-item {
+        background-color: cyan;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            border-right: 1px solid black;
+        }
+
+        &:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+
+        &:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+
+        &:hover {
+            background-color: $color-primary2;
+        }
 
     }
 

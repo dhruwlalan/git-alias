@@ -21,6 +21,7 @@
 
 	&__heading{ 
 		font-family: $ff-titillium;
+		color: $color-primary1;
 		font-size: 3rem;
 	}
 
@@ -42,6 +43,31 @@
 			word-spacing: .5rem;
 		}
 
+		&--title-gba {
+			color: #ff6e65;
+		}
+		&--code-gba {
+			color: cyan;
+		}
+
 	}
+
+}
+
+// main-navbar
+.main-navbar {
+
+	&__nav-item {
+		font-family: $ff-roboto;
+		font-weight: 500;
+		font-size: 1.8rem;
+        color: $color-primary1;
+        text-decoration: none;
+
+        &:hover {
+        	color: cyan;
+
+        }
+    }
 
 }

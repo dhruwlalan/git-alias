@@ -28,6 +28,7 @@ body {
 
 .main-section__heading {
   font-family: "Titillium Web", sans-serif;
+  color: #222831;
   font-size: 3rem; }
 
 .main-section__content-block--title {
@@ -43,6 +44,21 @@ body {
   font-weight: 400;
   font-size: 2.5rem;
   word-spacing: .5rem; }
+
+.main-section__content-block--title-gba {
+  color: #ff6e65; }
+
+.main-section__content-block--code-gba {
+  color: cyan; }
+
+.main-navbar__nav-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #222831;
+  text-decoration: none; }
+  .main-navbar__nav-item:hover {
+    color: cyan; }
 
 .container {
   width: 60%;
@@ -63,10 +79,14 @@ body {
       background-color: #222831;
       color: #00d8e2;
       border-top-left-radius: 5px; }
+      .navbar__nav-link--left-gba {
+        background-color: #393e46; }
     .navbar__nav-link--right {
       background-color: #393e46;
       color: #00d8e2;
       border-top-right-radius: 5px; }
+      .navbar__nav-link--right-gba {
+        background-color: #222831; }
     .navbar__nav-link:hover {
       color: cyan; }
 
@@ -87,7 +107,8 @@ body {
 
 .main-section {
   background-color: #222831;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-top: 4rem; }
   .main-section:not(:last-child) {
     margin-bottom: 4rem; }
   .main-section__heading {
@@ -107,6 +128,26 @@ body {
     .main-section__content-block--code {
       padding: .5rem;
       padding-top: 0; }
+
+.main-navbar {
+  display: table;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 50px;
+  height: 5rem; }
+  .main-navbar__nav-item {
+    background-color: cyan;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    .main-navbar__nav-item:not(:last-child) {
+      border-right: 1px solid black; }
+    .main-navbar__nav-item:first-child {
+      border-radius: 50px 0 0 50px; }
+    .main-navbar__nav-item:last-child {
+      border-radius: 0 50px 50px 0; }
+    .main-navbar__nav-item:hover {
+      background-color: #393e46; }
 
 .main--gba {
   background-color: #393e46;
