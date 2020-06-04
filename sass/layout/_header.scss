@@ -15,12 +15,22 @@
 			background-color: $color-primary1;
 			color: $color-navlink;
 			border-top-left-radius: 5px;
+
+			&-gba {
+				background-color: $color-primary2;
+			}
+
 		}
 
 		&--right {
 			background-color: $color-primary2;
 			color: $color-navlink;
 			border-top-right-radius: 5px;
+
+			&-gba {
+				background-color: $color-primary1;
+			}
+
 		}
 		&:hover {
 			color: $color-navlink-hover;

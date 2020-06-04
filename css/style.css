@@ -79,10 +79,14 @@ body {
       background-color: #222831;
       color: #00d8e2;
       border-top-left-radius: 5px; }
+      .navbar__nav-link--left-gba {
+        background-color: #393e46; }
     .navbar__nav-link--right {
       background-color: #393e46;
       color: #00d8e2;
       border-top-right-radius: 5px; }
+      .navbar__nav-link--right-gba {
+        background-color: #222831; }
     .navbar__nav-link:hover {
       color: cyan; }
 
