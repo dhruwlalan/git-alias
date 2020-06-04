@@ -8,7 +8,7 @@
       	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<title></title>
+		<title>My Git</title>
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	
@@ -16,7 +16,476 @@
 
 	<body>
 
+		<div class="main-container">
+
+			<header class="header">
+				<nav>
+					<ul>
+						<li><a href="#">Group by Catagory</a></li>
+						<li><a href="#">Group by actions</a></li>
+					</ul>
+				</nav>
+			</header>
 		
+			<main class="main">
+				
+				<section class="main-section">
+					<header class="main-section__heading">
+						<h1>BASIC</h1>
+					</header>
+					<div class="main-section__content">
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>git status</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git st</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>add everything</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git ad</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>commit with message</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git ct '&lt;message&gt;'</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-section">
+					<header class="main-section__heading">
+						<h1>COMMIT OPTIONS</h1>
+					</header>
+					<div class="main-section__content">
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>direct commit</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git dct '&lt;message&gt;'</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>redo last commit</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git rct</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-section">
+					<header class="main-section__heading">
+						<h1>FILE OPERATIONS</h1>
+					</header>
+					<div class="main-section__content">
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>renaming file</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git rename &lt;old-name&gt; &lt;new-name&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>unstage file</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git unstage <file></p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>unmodify file</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git unmodify &lt;file&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>untrack file</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git untrack &lt;file&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete untracked files</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteUntrackedFiles</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-section">
+					<header class="main-section__heading">
+						<h1>BRANCHING</h1>
+					</header>
+					<div class="main-section__content">
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>display all branches</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git branchAll</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>checking out a branch</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git co &lt;branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>push local branch to remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pushLb &lt;local-branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete local branch</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteLb &lt;local-branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>pull remote branch to local</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pullRb &lt;remote-branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete remote branch</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteRb &lt;remote-branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete local + remote branch</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteLbRb &lt;branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show the list of all deleted remote branches</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git listDeletedRb</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>set local branch to track remote branch</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git track &lt;remote-branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>push local branch to different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pushLbTdr &lt;remote&gt; &lt;local-branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete remote branch of different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteRbTdr &lt;remote&gt; &lt;remote-branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete local + remote branch of different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteLbRb &lt;remote&gt; &lt;branch&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>set local branch to track remote branch of different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git track &lt;remote&gt; &lt;remote-branch&gt;</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-section">
+					<header class="main-section__heading">
+						<h1>TAGS</h1>
+					</header>
+					<div class="main-section__content">
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show the details of a tag</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git tagDetails &lt;tag&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>create a release aka tag</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git release &lt;version&gt; '&lt;message&gt;'</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>push local tag to remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pushLt &lt;local-tag&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete local tag</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteLt &lt;local-tag&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete remote tag</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteRt &lt;remote-tag&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete local + remote tag</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteLtRt &lt;tag&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>push all local tags to remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pushAllLt</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>pull all remote tags to local</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pullAllRt</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>push local tag to different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pushLt &lt;remote&gt; &lt;local-tag&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete remote tag of different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteRt &lt;remote&gt; &lt;remote-tag&gt;></p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete local + remote tag of different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteLtRt &lt;remote&gt; &lt;tag&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>push all local tags to remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git pushAllLt &lt;remote&gt;</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-section">
+					<header class="main-section__heading">
+						<h1>REMOTE</h1>
+					</header>
+					<div class="main-section__content">
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show the details of a remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git remoteDetails</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show the remote & it’s corresponding url</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git remoteUrl</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>add a remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git addRemote &lt;url&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete a remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteRemote</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>rename a remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git renameRemote &lt;new-name&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>edit the url of a remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git editRemoteUrl &lt;url&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show the details of a different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git remoteDetailsTdr &lt;remote&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>add a different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git addRemoteTdr &lt;remote&gt; &lt;url&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>delete a different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git deleteRemoteTdr &lt;remote&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>rename a different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git renameRemoteTdr &lt;old-name&gt; &lt;new-name&gt;</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>edit the url of a different remote</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git editRemoteUrlTdr &lt;remote&gt; &lt;url&gt;</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-section">
+					<header class="main-section__heading">
+						<h1>SHOW</h1>
+					</header>
+					<div class="main-section__content">
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show the latest commit</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git last</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show the graph of commits</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git graph</p>
+							</div>
+						</div>
+						<div class="main-section__content-block">
+							<div class="main-section__content-block--title">
+								<h2>show all the alias</h2>
+							</div>
+							<div class="main-section__content-block--code">
+								<p>git alias</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__content">
+					-dhruw
+				</div>
+			</footer>
+
+		</div>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="script/script.js"></script>
