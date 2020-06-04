@@ -15,3 +15,33 @@
 	font-size: 2rem;
 	color: $color-navlink;
 }
+
+// main-section
+.main-section {
+
+	&__heading{ 
+		font-family: $ff-titillium;
+		font-size: 3rem;
+	}
+
+	&__content-block {
+
+		&--title {
+			font-family: $ff-roboto;
+			font-weight: 400;
+			font-size: 2.5rem;
+			color: $color-light-red;
+			word-spacing: .6rem;
+		}
+
+		&--code {
+			font-family: $ff-courierPrime;
+			color: cyan;
+			font-weight: 400;
+			font-size: 2.5rem;
+			word-spacing: .5rem;
+		}
+
+	}
+
+}
