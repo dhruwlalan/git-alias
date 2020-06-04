@@ -5,3 +5,5 @@
 "scripts": {
       "sass": "node-sass sass/main.scss css/style.css -w"
   },
+
+3. npm run sass
