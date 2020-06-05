@@ -41,16 +41,16 @@ body {
 
 .main-section__content-block--code {
   font-family: "Courier Prime", monospace;
-  color: cyan;
+  color: #00ffff;
   font-weight: 400;
   font-size: 2.5rem;
   word-spacing: .5rem; }
 
 .main-section__content-block--title-gba {
-  color: #ff6e65; }
+  color: #f97f77; }
 
 .main-section__content-block--code-gba {
-  color: cyan; }
+  color: #00ffff; }
 
 .main-navbar__nav-item {
   font-family: "Roboto Mono", monospace;
@@ -59,12 +59,12 @@ body {
   color: #222831;
   text-decoration: none; }
   .main-navbar__nav-item:hover {
-    color: cyan; }
+    color: #00ffff; }
 
 .strike-tdr__content {
   font-family: "Roboto Mono", monospace;
   font-style: italic;
-  color: cyan;
+  color: #00ffff;
   font-size: 1.5rem; }
 
 .container {
@@ -95,7 +95,7 @@ body {
       .navbar__nav-link--right-gba {
         background-color: #222831; }
     .navbar__nav-link:hover {
-      color: cyan; }
+      color: #00ffff; }
 
 .footer {
   height: 10rem;
@@ -109,7 +109,7 @@ body {
     float: right; }
     .footer__page-top--button {
       text-decoration: none;
-      background-color: cyan;
+      background-color: #00ffff;
       color: #222831;
       font-size: 2rem;
       font-weight: 900;
@@ -124,12 +124,12 @@ body {
   background-color: #222831;
   border-radius: 5px;
   margin-top: 4rem;
-  border: 1px solid cyan; }
+  border: 1px solid #00ffff; }
   .main-section:not(:last-child) {
     margin-bottom: 4rem; }
   .main-section__heading {
-    background-color: cyan;
-    border-radius: 5px 5px 0 0;
+    background-color: #00ffff;
+    border-radius: 3px 3px 0 0;
     padding: 0 1rem;
     padding-left: 2rem; }
   .main-section__content {
@@ -150,7 +150,7 @@ body {
   .strike-tdr__content:before, .strike-tdr__content:after {
     content: "";
     flex: 1 1;
-    border-bottom: 1px dashed cyan;
+    border-bottom: 1px dashed #00ffff;
     margin: auto; }
   .strike-tdr__content:before {
     margin-right: 10px; }
@@ -164,12 +164,12 @@ body {
   border-radius: 50px;
   height: 5rem; }
   .main-navbar__nav-item {
-    background-color: cyan;
+    background-color: #00ffff;
     text-align: center;
     display: table-cell;
     vertical-align: middle; }
     .main-navbar__nav-item:not(:last-child) {
-      border-right: 1px solid black; }
+      border-right: 1px solid #222831; }
     .main-navbar__nav-item:first-child {
       border-radius: 50px 0 0 50px; }
     .main-navbar__nav-item:last-child {

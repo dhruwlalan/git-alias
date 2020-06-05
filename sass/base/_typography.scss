@@ -21,7 +21,7 @@
 
 	&__heading{ 
 		font-family: $ff-titillium;
-		color: $color-primary1;
+		color: $color-primary;
 		font-size: 3rem;
 	}
 
@@ -31,23 +31,23 @@
 			font-family: $ff-roboto;
 			font-weight: 400;
 			font-size: 2.5rem;
-			color: $color-light-red;
+			color: $color-tomato;
 			word-spacing: .6rem;
 		}
 
 		&--code {
 			font-family: $ff-courierPrime;
-			color: cyan;
+			color: $color-cyan1;
 			font-weight: 400;
 			font-size: 2.5rem;
 			word-spacing: .5rem;
 		}
 
 		&--title-gba {
-			color: #ff6e65;
+			color: $color-tomato;
 		}
 		&--code-gba {
-			color: cyan;
+			color: $color-cyan1;
 		}
 
 	}
@@ -61,11 +61,11 @@
 		font-family: $ff-roboto;
 		font-weight: 500;
 		font-size: 1.8rem;
-        color: $color-primary1;
+        color: $color-primary;
         text-decoration: none;
 
         &:hover {
-        	color: cyan;
+        	color: $color-cyan1;
 
         }
     }
@@ -78,7 +78,7 @@
 	&__content {
 		font-family: $ff-roboto;
 		font-style: italic;
-		color: cyan;
+		color: $color-cyan1;
 		font-size: 1.5rem;
 	}
 
