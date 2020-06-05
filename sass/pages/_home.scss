@@ -9,6 +9,7 @@
 	background-color: $color-primary1;
     border-radius: 5px;
     margin-top: 4rem;
+    border: 1px solid cyan;
 
 	&:not(:last-child) {
         margin-bottom: 4rem;
@@ -24,7 +25,6 @@
 
     &__content {
     	padding: 2rem;
-    	border: 1px solid cyan;
     	border-radius: 0 0 5px 5px;
     }
 
@@ -44,6 +44,29 @@
 
     }
 
+}
+
+.strike-tdr {
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+
+        &:before, &:after{
+          content: "";
+          flex: 1 1;
+          border-bottom: 1px dashed cyan;
+          margin: auto;
+        }
+        &:before {
+          margin-right: 10px
+        }
+        &:after {
+          margin-left: 10px
+        }
+
+    }
+    
 }
 
 .main-navbar {

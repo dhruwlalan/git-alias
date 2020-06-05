@@ -71,3 +71,15 @@
     }
 
 }
+
+// strike-tdr 
+.strike-tdr {
+
+	&__content {
+		font-family: $ff-roboto;
+		font-style: italic;
+		color: cyan;
+		font-size: 1.5rem;
+	}
+
+}
