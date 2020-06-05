@@ -9,32 +9,24 @@
 		width: 50%;
 		height: 100%;
 		padding: 3rem 1rem;
-		color: $color-cyan2;
 
 		&--left {
 			background-color: $color-primary;
-			color: $color-cyan2;
 			border-top-left-radius: 5px;
 
 			&-gba {
 				background-color: $color-secondary;
 			}
-
 		}
 
 		&--right {
 			background-color: $color-secondary;
-			color: $color-cyan2;
 			border-top-right-radius: 5px;
 
 			&-gba {
 				background-color: $color-primary;
 			}
-
 		}
-		&:hover {
-			color: $color-cyan1;
-		}
-
+		
 	}
 }

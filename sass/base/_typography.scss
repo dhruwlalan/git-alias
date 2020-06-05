@@ -1,43 +1,56 @@
 
 // navbar links
-
 .navbar__nav-link {
+	color: $color-cyan2;
 	font-family: $ff-roboto;
 	font-weight: 500;
 	font-size: 3.5rem;
 	text-decoration: none;
+
+	&:hover {
+		color: $color-cyan1;
+	}
 }
 
-// footer
-.footer__content {
-	font-family: $ff-titillium;
-	font-weight: 300;
-	font-size: 2rem;
-	color: cyan;
+// main-navbar
+.main-navbar {
+
+	&__nav-item {
+        color: $color-primary;
+		font-family: $ff-roboto;
+		font-weight: 500;
+		font-size: 1.8rem;
+        text-decoration: none;
+
+        &:hover {
+        	color: $color-cyan1;
+        }
+    }
 }
 
 // main-section
 .main-section {
 
-	&__heading{ 
-		font-family: $ff-titillium;
+	&__heading h1{ 
 		color: $color-primary;
-		font-size: 3rem;
+		font-family: $ff-titillium;
+		font-weight: 700;
+		font-size: 4rem;
 	}
 
 	&__content-block {
 
 		&--title {
+			color: $color-tomato;
 			font-family: $ff-roboto;
 			font-weight: 400;
 			font-size: 2.5rem;
-			color: $color-tomato;
 			word-spacing: .6rem;
 		}
 
 		&--code {
-			font-family: $ff-courierPrime;
 			color: $color-cyan1;
+			font-family: $ff-courierPrime;
 			font-weight: 400;
 			font-size: 2.5rem;
 			word-spacing: .5rem;
@@ -46,40 +59,36 @@
 		&--title-gba {
 			color: $color-tomato;
 		}
+
 		&--code-gba {
 			color: $color-cyan1;
 		}
 
 	}
-
-}
-
-// main-navbar
-.main-navbar {
-
-	&__nav-item {
-		font-family: $ff-roboto;
-		font-weight: 500;
-		font-size: 1.8rem;
-        color: $color-primary;
-        text-decoration: none;
-
-        &:hover {
-        	color: $color-cyan1;
-
-        }
-    }
-
 }
 
 // strike-tdr 
-.strike-tdr {
+.strike-tdr__content {
+	color: $color-cyan1;
+	font-family: $ff-roboto;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+// footer
+.footer {
 
 	&__content {
-		font-family: $ff-roboto;
-		font-style: italic;
 		color: $color-cyan1;
-		font-size: 1.5rem;
+		font-family: $ff-titillium;
+		font-weight: 300;
+		font-size: 2rem;
 	}
 
+	&__page-top--button {
+		color: $color-primary;
+		font-weight: 900;
+		font-size: 2rem;
+		text-decoration: none;
+	}
 }

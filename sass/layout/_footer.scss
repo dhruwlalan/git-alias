@@ -14,15 +14,10 @@
 		float: right;
 
 		&--button {
-			text-decoration: none;
 			background-color: $color-cyan1;
-			color: $color-primary;
-			font-size: 2rem;
-			font-weight: 900;
 			border-radius: 100px;
 			padding: .5rem 1rem;
 		}
 
 	}
-
 }

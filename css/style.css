@@ -16,32 +16,39 @@ body {
   box-sizing: border-box; }
 
 .navbar__nav-link {
+  color: #00d8e2;
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 3.5rem;
   text-decoration: none; }
+  .navbar__nav-link:hover {
+    color: #00ffff; }
 
-.footer__content {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
-  color: cyan; }
-
-.main-section__heading {
-  font-family: "Titillium Web", sans-serif;
+.main-navbar__nav-item {
   color: #222831;
-  font-size: 3rem; }
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none; }
+  .main-navbar__nav-item:hover {
+    color: #00ffff; }
+
+.main-section__heading h1 {
+  color: #222831;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-size: 4rem; }
 
 .main-section__content-block--title {
+  color: #f97f77;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 2.5rem;
-  color: #f97f77;
   word-spacing: .6rem; }
 
 .main-section__content-block--code {
-  font-family: "Courier Prime", monospace;
   color: #00ffff;
+  font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-size: 2.5rem;
   word-spacing: .5rem; }
@@ -52,20 +59,23 @@ body {
 .main-section__content-block--code-gba {
   color: #00ffff; }
 
-.main-navbar__nav-item {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 500;
-  font-size: 1.8rem;
-  color: #222831;
-  text-decoration: none; }
-  .main-navbar__nav-item:hover {
-    color: #00ffff; }
-
 .strike-tdr__content {
-  font-family: "Roboto Mono", monospace;
-  font-style: italic;
   color: #00ffff;
-  font-size: 1.5rem; }
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-style: italic; }
+
+.footer__content {
+  color: #00ffff;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-size: 2rem; }
+
+.footer__page-top--button {
+  color: #222831;
+  font-weight: 900;
+  font-size: 2rem;
+  text-decoration: none; }
 
 .container {
   max-width: 1100px;
@@ -80,22 +90,17 @@ body {
     float: left;
     width: 50%;
     height: 100%;
-    padding: 3rem 1rem;
-    color: #00d8e2; }
+    padding: 3rem 1rem; }
     .navbar__nav-link--left {
       background-color: #222831;
-      color: #00d8e2;
       border-top-left-radius: 5px; }
       .navbar__nav-link--left-gba {
         background-color: #393e46; }
     .navbar__nav-link--right {
       background-color: #393e46;
-      color: #00d8e2;
       border-top-right-radius: 5px; }
       .navbar__nav-link--right-gba {
         background-color: #222831; }
-    .navbar__nav-link:hover {
-      color: #00ffff; }
 
 .footer {
   height: 10rem;
@@ -108,17 +113,33 @@ body {
     display: inline-block;
     float: right; }
     .footer__page-top--button {
-      text-decoration: none;
       background-color: #00ffff;
-      color: #222831;
-      font-size: 2rem;
-      font-weight: 900;
       border-radius: 100px;
       padding: .5rem 1rem; }
 
 .main {
   background-color: #222831;
   padding: 2rem; }
+
+.main-navbar {
+  display: table;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 50px;
+  height: 5rem; }
+  .main-navbar__nav-item {
+    background-color: #00ffff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    .main-navbar__nav-item:not(:last-child) {
+      border-right: 1px solid #222831; }
+    .main-navbar__nav-item:first-child {
+      border-radius: 50px 0 0 50px; }
+    .main-navbar__nav-item:last-child {
+      border-radius: 0 50px 50px 0; }
+    .main-navbar__nav-item:hover {
+      background-color: #393e46; }
 
 .main-section {
   background-color: #222831;
@@ -130,8 +151,7 @@ body {
   .main-section__heading {
     background-color: #00ffff;
     border-radius: 3px 3px 0 0;
-    padding: 0 1rem;
-    padding-left: 2rem; }
+    padding: 0 2rem; }
   .main-section__content {
     padding: 2rem;
     border-radius: 0 0 5px 5px; }
@@ -156,26 +176,6 @@ body {
     margin-right: 10px; }
   .strike-tdr__content:after {
     margin-left: 10px; }
-
-.main-navbar {
-  display: table;
-  width: 100%;
-  margin: 2rem 0;
-  border-radius: 50px;
-  height: 5rem; }
-  .main-navbar__nav-item {
-    background-color: #00ffff;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle; }
-    .main-navbar__nav-item:not(:last-child) {
-      border-right: 1px solid #222831; }
-    .main-navbar__nav-item:first-child {
-      border-radius: 50px 0 0 50px; }
-    .main-navbar__nav-item:last-child {
-      border-radius: 0 50px 50px 0; }
-    .main-navbar__nav-item:hover {
-      background-color: #393e46; }
 
 .main--gba {
   background-color: #393e46;

@@ -4,73 +4,7 @@
 	padding: 2rem;
 }
 
-.main-section {
-
-	background-color: $color-primary;
-    border-radius: 5px;
-    margin-top: 4rem;
-    border: 1px solid $color-cyan1;
-
-	&:not(:last-child) {
-        margin-bottom: 4rem;
-    }
-
-
-    &__heading {
-    	background-color: $color-cyan1;
-    	border-radius: 3px 3px 0 0;
-    	padding: 0 1rem;
-    	padding-left: 2rem;
-    }
-
-    &__content {
-    	padding: 2rem;
-    	border-radius: 0 0 5px 5px;
-    }
-
-    &__content-block {
-
-    	margin: 3rem 1rem;
-
-    	padding-left: 2rem;
-
-    	&--title {
-    		padding: .5rem;
-    	}
-    	&--code {
-    		padding: .5rem;
-    		padding-top: 0;
-    	}
-
-    }
-
-}
-
-.strike-tdr {
-
-    &__content {
-        display: flex;
-        flex-direction: row;
-
-        &:before, &:after{
-          content: "";
-          flex: 1 1;
-          border-bottom: 1px dashed $color-cyan1;
-          margin: auto;
-        }
-        &:before {
-          margin-right: 10px
-        }
-        &:after {
-          margin-left: 10px
-        }
-
-    }
-    
-}
-
 .main-navbar {
-
     display: table;
     width: 100%;
     margin: 2rem 0;
@@ -100,5 +34,61 @@
         }
 
     }
+}
 
+.main-section {
+	background-color: $color-primary;
+    border-radius: 5px;
+    margin-top: 4rem;
+    border: 1px solid $color-cyan1;
+
+	&:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    &__heading {
+    	background-color: $color-cyan1;
+    	border-radius: 3px 3px 0 0;
+    	padding: 0 2rem;
+    }
+
+    &__content {
+    	padding: 2rem;
+    	border-radius: 0 0 5px 5px;
+    }
+
+    &__content-block {
+    	margin: 3rem 1rem;
+    	padding-left: 2rem;
+
+    	&--title {
+    		padding: .5rem;
+    	}
+
+    	&--code {
+    		padding: .5rem;
+    		padding-top: 0;
+    	}
+
+    }
+}
+
+.strike-tdr__content {
+    display: flex;
+    flex-direction: row;
+
+    &:before, &:after{
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px dashed $color-cyan1;
+      margin: auto;
+    }
+
+    &:before {
+      margin-right: 10px
+    }
+
+    &:after {
+      margin-left: 10px
+    }
 }
