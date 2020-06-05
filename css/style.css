@@ -25,7 +25,7 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  color: #00d8e2; }
+  color: cyan; }
 
 .main-section__heading {
   font-family: "Titillium Web", sans-serif;
@@ -100,13 +100,21 @@ body {
 .footer {
   height: 10rem;
   text-align: center;
-  border-radius: 0 0 5px 5px; }
-  .footer--left {
-    background-color: #393e46; }
-  .footer--right {
-    background-color: #222831; }
+  border-radius: 0 0 5px 5px;
+  background-color: #393e46; }
   .footer__content {
     padding: 3.5rem; }
+  .footer__page-top {
+    display: inline-block;
+    float: right; }
+    .footer__page-top--button {
+      text-decoration: none;
+      background-color: cyan;
+      color: #222831;
+      font-size: 2rem;
+      font-weight: 900;
+      border-radius: 100px;
+      padding: .5rem 1rem; }
 
 .main {
   background-color: #222831;

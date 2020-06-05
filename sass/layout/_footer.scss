@@ -3,15 +3,26 @@
 	height: 10rem;
 	text-align: center;
 	border-radius: 0 0 5px 5px;
-
-	&--left {
-		background-color: $color-primary2;
-	}
-	&--right {
-		background-color: $color-primary1;
-	}
+	background-color: $color-primary2;
 
 	&__content {
 		padding: 3.5rem;
 	}
+
+	&__page-top {
+		display: inline-block;
+		float: right;
+
+		&--button {
+			text-decoration: none;
+			background-color: cyan;
+			color: $color-primary1;
+			font-size: 2rem;
+			font-weight: 900;
+			border-radius: 100px;
+			padding: .5rem 1rem;
+		}
+
+	}
+
 }
