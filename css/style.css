@@ -60,6 +60,12 @@ body {
   .main-navbar__nav-item:hover {
     color: cyan; }
 
+.strike-tdr__content {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: cyan;
+  font-size: 1.5rem; }
+
 .container {
   width: 60%;
   margin: 2rem auto;
@@ -108,7 +114,8 @@ body {
 .main-section {
   background-color: #222831;
   border-radius: 5px;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  border: 1px solid cyan; }
   .main-section:not(:last-child) {
     margin-bottom: 4rem; }
   .main-section__heading {
@@ -118,7 +125,6 @@ body {
     padding-left: 2rem; }
   .main-section__content {
     padding: 2rem;
-    border: 1px solid cyan;
     border-radius: 0 0 5px 5px; }
   .main-section__content-block {
     margin: 3rem 1rem;
@@ -128,6 +134,19 @@ body {
     .main-section__content-block--code {
       padding: .5rem;
       padding-top: 0; }
+
+.strike-tdr__content {
+  display: flex;
+  flex-direction: row; }
+  .strike-tdr__content:before, .strike-tdr__content:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px dashed cyan;
+    margin: auto; }
+  .strike-tdr__content:before {
+    margin-right: 10px; }
+  .strike-tdr__content:after {
+    margin-left: 10px; }
 
 .main-navbar {
   display: table;
