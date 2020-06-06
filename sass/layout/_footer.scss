@@ -8,16 +8,4 @@
 	&__content {
 		padding: 3.5rem;
 	}
-
-	&__page-top {
-		display: inline-block;
-		float: right;
-
-		&--button {
-			background-color: $color-cyan1;
-			border-radius: 100px;
-			padding: .5rem 1rem;
-		}
-
-	}
 }

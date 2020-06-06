@@ -77,11 +77,30 @@ body {
   font-size: 2rem;
   text-decoration: none; }
 
+.back-top i {
+  color: #00ffff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 3.2rem;
+  line-height: 3.5rem; }
+
 .container {
   max-width: 1100px;
   margin: 2rem auto;
   box-shadow: 0 0 2rem 1rem #00716b;
   border-radius: 5px; }
+
+.back-top {
+  display: none;
+  background-color: #222831;
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  height: 35px;
+  width: 35px;
+  z-index: 10000;
+  border-radius: 3px;
+  right: 20px;
+  transition: all 0.5s; }
 
 .navbar {
   text-align: center;
