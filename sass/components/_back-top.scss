@@ -1,0 +1,14 @@
+
+.back-top {
+    display: none;
+    background-color: $color-primary;
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    height: 35px;
+    width: 35px;
+    z-index: 10000;
+    border-radius: 3px;
+    right: 20px;
+    transition: all 0.5s;
+}

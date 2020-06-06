@@ -84,11 +84,15 @@
 		font-weight: 300;
 		font-size: 2rem;
 	}
+}
 
-	&__page-top--button {
-		color: $color-primary;
-		font-weight: 900;
-		font-size: 2rem;
-		text-decoration: none;
-	}
+// back-top
+.back-top {
+
+    i {
+        color: $color-cyan1;
+        font-family: $ff-roboto;
+        font-size: 3.2rem; 
+        line-height: 3.5rem;
+    }
 }
