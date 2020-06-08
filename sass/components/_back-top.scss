@@ -5,17 +5,26 @@
     box-shadow: 0 0 1rem .2rem #00716b;
     text-align: center;
     position: fixed;
+    right: 20px;
     bottom: 15px;
     height: 35px;
     width: 35px;
     z-index: 10000;
     border-radius: 3px;
-    right: 20px;
-    transition: all 0.5s;
+}
 
-    i:hover {
-        line-height: 3rem;
-        transition: all .2s ease-in;
+@media (max-width: 414px) {
+
+    .back-top {
+        border-radius: 50px;
+        right: 10px;
+        bottom: 15px;
+        background-color: $color-cyan1;
+        box-shadow: 0 0 2rem .2rem black;
+
+        i {
+            color: $color-primary;
+        }
+
     }
-
 }

@@ -5,3 +5,9 @@ body {
 	background-attachment: fixed;
 	margin: 1.5rem;
 }
+
+@media (max-width: 414px) {
+	body {
+		margin: 1rem 1rem;
+	}
+}
