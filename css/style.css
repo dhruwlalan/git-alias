@@ -88,6 +88,7 @@ body {
 .back-top {
   display: none;
   background-color: #222831;
+  box-shadow: 0 0 1rem .2rem #00716b;
   text-align: center;
   position: fixed;
   bottom: 15px;
@@ -97,6 +98,9 @@ body {
   border-radius: 3px;
   right: 20px;
   transition: all 0.5s; }
+  .back-top i:hover {
+    line-height: 3rem;
+    transition: all .2s ease-in; }
 
 .navbar {
   text-align: center;
@@ -147,7 +151,8 @@ body {
     .main-navbar__nav-item:last-child {
       border-radius: 0 50px 50px 0; }
     .main-navbar__nav-item:hover {
-      background-color: #393e46; }
+      background-color: #393e46;
+      transition: all .5s ease; }
 
 .main-section {
   background-color: #222831;

@@ -2,6 +2,7 @@
 .back-top {
     display: none;
     background-color: $color-primary;
+    box-shadow: 0 0 1rem .2rem #00716b;
     text-align: center;
     position: fixed;
     bottom: 15px;
@@ -11,4 +12,10 @@
     border-radius: 3px;
     right: 20px;
     transition: all 0.5s;
+
+    i:hover {
+        line-height: 3rem;
+        transition: all .2s ease-in;
+    }
+
 }
