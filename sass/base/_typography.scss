@@ -55,15 +55,6 @@
 			font-size: 2.5rem;
 			word-spacing: .5rem;
 		}
-
-		&--title-gba {
-			color: $color-tomato;
-		}
-
-		&--code-gba {
-			color: $color-cyan1;
-		}
-
 	}
 }
 
@@ -95,4 +86,29 @@
         font-size: 3.2rem; 
         line-height: 3.5rem;
     }
+}
+
+@media (max-width: 414px) {
+
+	.main-section {
+
+		&__heading h1{ 
+			font-size: 3rem;
+		}
+
+		&__content-block {
+
+			&--title {
+				font-weight: 400;
+				font-size: 1.5rem;
+				word-spacing: 0;
+			}
+
+			&--code {
+				font-weight: 400;
+				font-size: 1rem;
+				word-spacing: 0;
+			}
+		}
+	}
 }
