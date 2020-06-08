@@ -1,13 +1,12 @@
 
 body {
-	background-image: url('../images/background.jpg');
-	background-size: 100%;
+	background: linear-gradient($color-cyan1, $color-primeblue);
 	background-attachment: fixed;
 	margin: 1.5rem;
 	-webkit-tap-highlight-color: transparent;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 700px) {
 	body {
 		margin: 1rem 1rem;
 	}
