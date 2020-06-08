@@ -86,7 +86,7 @@ body {
     word-spacing: 0; }
   .main-section__content-block--code {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     word-spacing: 0; } }
 
 .container {
@@ -144,9 +144,9 @@ body {
 
 @media (max-width: 414px) {
   .navbar__nav-link {
-    padding: 2.2rem .5rem;
-    font-weight: 500;
-    font-size: 2.2rem; } }
+    padding: 2.2rem 1rem;
+    font-weight: 900;
+    font-size: 2rem; } }
 
 .footer {
   height: 10rem;
