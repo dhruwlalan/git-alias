@@ -384,6 +384,13 @@ body {
         padding: .5rem;
         padding-top: 0; } }
 
+@media (max-width: 386px) {
+  .main-navbar__nav-item {
+    font-weight: 500;
+    font-size: 1rem; }
+  .main-navbar__nav-item[href="#BASIC"] {
+    padding: 0 .5rem; } }
+
 .main--gba {
   background-color: #393e46;
   padding: 2rem; }

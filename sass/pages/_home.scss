@@ -287,3 +287,14 @@
         }
     }
 }
+
+@media (max-width: 386px) {
+
+    .main-navbar__nav-item {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .main-navbar__nav-item[href="#BASIC"] {
+        padding: 0 .5rem;
+    }
+}
