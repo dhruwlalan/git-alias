@@ -30,3 +30,11 @@
 		
 	}
 }
+
+@media (max-width: 414px) {
+	.navbar__nav-link {
+		padding: 2.2rem .5rem;
+		font-weight: 500;
+		font-size: 2.2rem;
+	}
+}

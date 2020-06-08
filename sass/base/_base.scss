@@ -1,5 +1,13 @@
 
 body {
-	background-color: $color-cyan2;
+	background-image: url('../images/background.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
 	margin: 1.5rem;
+}
+
+@media (max-width: 414px) {
+	body {
+		margin: 1rem 1rem;
+	}
 }
