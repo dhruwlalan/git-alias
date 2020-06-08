@@ -8,25 +8,45 @@
     display: table;
     width: 100%;
     margin: 2rem 0;
-    border-radius: 50px;
     height: 5rem;
+
+    &__table-row {
+        display: table-cell;
+    }
+
+    &__inner-table {
+
+        &--1 {
+            display: table;
+            width: 100%;
+
+            .main-navbar__nav-item:first-child {
+                border-radius: 50px 0 0 50px;
+            }
+            .main-navbar__nav-item:last-child {
+                border-right: 1px solid $color-primary;
+            }
+        }
+
+        &--2 {
+            display: table;
+            width: 100%;
+
+            .main-navbar__nav-item:last-child {
+                border-radius: 0 50px 50px 0;
+            }
+        }
+    }
 
     &__nav-item {
         background-color: $color-cyan1;
         text-align: center;
         display: table-cell;
         vertical-align: middle;
+        height: 5rem;
 
         &:not(:last-child) {
             border-right: 1px solid $color-primary;
-        }
-
-        &:first-child {
-            border-radius: 50px 0 0 50px;
-        }
-
-        &:last-child {
-            border-radius: 0 50px 50px 0;
         }
 
         &:hover {
@@ -99,52 +119,43 @@
         padding: 1rem;
     }
     .main-navbar {
-        margin: 3rem 0;
-    }
-    .main-navbar__table-row--1 {
-        display: table;
-        width: 100%;
-        height: 5rem;
-        border-bottom: 1px solid $color-primary;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
 
-        .main-navbar__nav-item {
+        &__table-row {
+            display: block;
+            margin-top: 2rem;
+        }
+
+        &__inner-table {
+
+            &--1 {
+                display: table;
+
+                .main-navbar__nav-item:last-child {
+                    border-radius: 0 50px 50px 0;
+                }
+
+            }
+            &--2 {
+                display: table;
+
+                .main-navbar__nav-item:first-child {
+                    border-radius: 50px 0 0 50px;
+                }
+            }
+
+        }
+        &__nav-item {
             font-weight: 500;
-            font-size: 1rem;   
+            font-size: 1.4rem;
 
-             &:first-child {
-                border-radius: 50px 0 0 50px;
-            }
-
-            &:last-child {
-                border-radius: 0 50px 50px 0;
-            }
             &[href="#BASIC"] {
                 padding: 0 1rem;
             } 
         }
+
     }
-
-    .main-navbar__table-row--2 {
-        display: table;
-        width: 100%;
-        height: 5rem;
-        border-top: 1px solid $color-primary;
-
-        .main-navbar__nav-item {
-            font-weight: 500;
-            font-size: 1rem;   
-
-             &:first-child {
-                border-radius: 50px 0 0 50px;
-            }
-
-            &:last-child {
-                border-radius: 0 50px 50px 0;
-            } 
-        }
-    }
-
+    
     .main-section {
         margin-top: 4rem;
         border: 1px solid $color-cyan1;
