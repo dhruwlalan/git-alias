@@ -1,5 +1,7 @@
 body {
-  background-color: #00d8e2;
+  background-image: url("../images/background.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
   margin: 1.5rem; }
 
 *,
@@ -71,12 +73,6 @@ body {
   font-weight: 300;
   font-size: 2rem; }
 
-.footer__page-top--button {
-  color: #222831;
-  font-weight: 900;
-  font-size: 2rem;
-  text-decoration: none; }
-
 .back-top i {
   color: #00ffff;
   font-family: "Roboto Mono", monospace;
@@ -128,13 +124,6 @@ body {
   background-color: #393e46; }
   .footer__content {
     padding: 3.5rem; }
-  .footer__page-top {
-    display: inline-block;
-    float: right; }
-    .footer__page-top--button {
-      background-color: #00ffff;
-      border-radius: 100px;
-      padding: .5rem 1rem; }
 
 .main {
   background-color: #222831;
