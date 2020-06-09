@@ -148,12 +148,8 @@
             }
         }
 
-        &__nav-item {
-            font-size: 2rem;
-
-            &[href="#BASIC"] {
-                padding: 0 1rem;
-            } 
+        &__nav-item[href="#BASIC"] {
+            padding: 0 1rem;
         }
     }
 }
@@ -175,10 +171,6 @@
 
 @media (max-width: 540px) {
 
-    .main-navbar__nav-item {
-        font-size: 1.6rem;
-    }
-
     .main-section {
 
         &__content {
@@ -195,16 +187,10 @@
     .main-navbar {
         margin-top: 1rem;
     }
-    .main-navbar__nav-item {
-        font-size: 1.5rem;
-    }
 }
 
 @media (max-width: 386px) {
 
-    .main-navbar__nav-item {
-        font-size: 1.2rem;
-    }
     .main-navbar__nav-item[href="#BASIC"] {
         padding: 0 .5rem;
     }
