@@ -1,9 +1,8 @@
 
 .navbar {
-
 	text-align: center;
-	height: 12rem;
 	width: 100%;
+	height: 12rem;
 	display: table;
 
 	&__nav-link {
@@ -38,11 +37,9 @@
 			}
 
 			p {
-				width: 85.9%;
+				width: 85.6%;
 			}
-
 		}
-		
 	}
 }
 
@@ -68,6 +65,10 @@
 }
 
 @media (max-width: 540px) {
+
+	.navbar {
+		height: 10rem;
+	}
 
 	.navbar__nav-link {
 		font-size: 2rem;
