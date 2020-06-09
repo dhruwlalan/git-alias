@@ -17,30 +17,17 @@
 
     .back-top {
         border-radius: 50px;
-        right: 30px;
-        bottom: 35px;
         background-color: $color-cyan1;
         box-shadow: 0 0 2rem .2rem black;
-
-        i {
-            color: $color-primary;
-        }
-
+        right: 30px;
+        bottom: 35px;
     }
 }
 
 @media (max-width: 700px) {
 
     .back-top {
-        border-radius: 50px;
         right: 20px;
         bottom: 20px;
-        background-color: $color-cyan1;
-        box-shadow: 0 0 2rem .2rem black;
-
-        i {
-            color: $color-primary;
-        }
-
     }
 }

@@ -1,14 +1,23 @@
 
 .navbar {
-
 	text-align: center;
-	height: 10rem;
+	width: 100%;
+	height: 12rem;
+	display: table;
 
 	&__nav-link {
-		float: left;
+		display: table-cell;
 		width: 50%;
 		height: 100%;
-		padding: 3rem 1rem;
+		position: relative;	
+
+		p {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%); 
+			width: 90%;   
+		}
 
 		&--left {
 			background-color: $color-primary;
@@ -26,49 +35,17 @@
 			&-gba {
 				background-color: $color-primary;
 			}
-		}
-		
-	}
-}
 
-@media (max-width: 958px) {
-    
-	.navbar {
-
-		&__nav-link {
-			padding: 3rem 1rem;
-			font-size: 2.5rem;
-		}
-	}
-}
-
-@media (max-width: 700px) {
-
-	.navbar {
-
-		&__nav-link {
-			padding: 2rem 2rem;
-			font-size: 2.5rem;
-		}
-	}
-}
-
-@media (max-width: 660px) {
-
-	.navbar {
-
-		&__nav-link {
-			padding: 1.8rem 1rem;
-			font-size: 2.5rem;
+			p {
+				width: 85.6%;
+			}
 		}
 	}
 }
 
 @media (max-width: 540px) {
 
-	.navbar__nav-link {
-		padding: 2.2rem 1rem;
-		font-weight: 900;
-		font-size: 2rem;
+	.navbar {
+		height: 10rem;
 	}
 }
