@@ -8,6 +8,7 @@
 	ct = commit -m
 
 	dct = "!f() { git add . && git commit -m \"$1\"; }; f"
+	dctp = "!f() { git add . && git commit -m \"$1\" && git push; }; f"
 	rct = commit --amend
 	
 	rename = mv
@@ -17,18 +18,23 @@
 	deleteUntrackedFiles = clean -d -f
 	
 	branchAll = branch -a
+	sync = "!f() { git fetch --all && git pull; }; f"
 	co = checkout
+	br = checkout -b
 	pushLb = push -u origin
 	pushLbTdr = push -u
 	deleteLb = branch -d  
 	pullRb = "!f() { git fetch && git checkout $1; }; f"
-	deleteRb = push --delete origin 
+	deleteRb = push --delete origin
+	deleteRbRefs = fetch -p 
 	deleteRbTdr = push --delete 
 	deleteLbRb = "!f() { git branch -d $1 && git push --delete origin $1; }; f"
 	deleteLbRbTdr = "!f() { git branch -d $2 && git push --delete $1 $2; }; f"
 	listDeletedRb = fetch -p
 	track = push -u origin
 	trackTdr = push -u
+	test = checkout -b test
+
 
 	remoteDetails = remote show origin
 	remoteDetailsTdr = remote show
