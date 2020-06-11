@@ -240,12 +240,12 @@ body {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    height: 5rem; }
+    height: 5rem;
+    transition: all .5s ease; }
     .main-navbar__nav-item:not(:last-child) {
       border-right: 1px solid #222831; }
     .main-navbar__nav-item:hover {
-      background-color: #393e46;
-      transition: all .5s ease; }
+      background-color: #393e46; }
 
 .main-section {
   background-color: #222831;
