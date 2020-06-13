@@ -44,6 +44,7 @@
         display: table-cell;
         vertical-align: middle;
         height: 5rem;
+        transition: all .5s ease;
 
         &:not(:last-child) {
             border-right: 1px solid $color-primary;
@@ -51,8 +52,8 @@
 
         &:hover {
             background-color: $color-secondary;
-            transition: all .5s ease;
         }
+
     }
 }
 
