@@ -196,12 +196,14 @@ body {
     height: 10rem; } }
 
 .footer {
+  display: flex;
+  justify-content: center;
   height: 10rem;
-  text-align: center;
   border-radius: 0 0 5px 5px;
   background-color: #393e46; }
   .footer__content {
-    padding: 3.5rem; }
+    display: flex;
+    align-items: center; }
 
 .main {
   background-color: #222831;
