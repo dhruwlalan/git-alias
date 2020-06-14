@@ -217,31 +217,30 @@ body {
   padding: 2rem; }
 
 .main-navbar {
-  display: table;
-  width: 100%;
+  display: flex;
   margin: 2rem 0;
   height: 5rem; }
   .main-navbar__table-row {
-    display: table-cell; }
+    flex: 1 1 auto; }
   .main-navbar__inner-table--1 {
-    display: table;
-    width: 100%; }
+    display: flex; }
     .main-navbar__inner-table--1 .main-navbar__nav-item:first-child {
       border-radius: 50px 0 0 50px; }
     .main-navbar__inner-table--1 .main-navbar__nav-item:last-child {
       border-right: 1px solid #222831; }
   .main-navbar__inner-table--2 {
-    display: table;
-    width: 100%; }
+    display: flex; }
     .main-navbar__inner-table--2 .main-navbar__nav-item:last-child {
       border-radius: 0 50px 50px 0; }
   .main-navbar__nav-item {
     background-color: #00ffff;
+    display: flex;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
     height: 5rem;
-    transition: all .5s ease; }
+    transition: all .5s ease;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center; }
     .main-navbar__nav-item:not(:last-child) {
       border-right: 1px solid #222831; }
     .main-navbar__nav-item:hover {
@@ -289,14 +288,20 @@ body {
 
 @media (max-width: 800px) {
   .main-navbar {
-    margin-top: 0rem; }
+    margin-top: 0rem;
+    flex-direction: column;
+    height: 15rem; }
     .main-navbar__table-row {
-      display: block;
+      display: flex;
       margin-top: 2rem; }
-    .main-navbar__inner-table--1 .main-navbar__nav-item:last-child {
-      border-radius: 0 50px 50px 0; }
-    .main-navbar__inner-table--2 .main-navbar__nav-item:first-child {
-      border-radius: 50px 0 0 50px; }
+    .main-navbar__inner-table--1 {
+      flex: 1 1 auto; }
+      .main-navbar__inner-table--1 .main-navbar__nav-item:last-child {
+        border-radius: 0 50px 50px 0; }
+    .main-navbar__inner-table--2 {
+      flex: 1 1 auto; }
+      .main-navbar__inner-table--2 .main-navbar__nav-item:first-child {
+        border-radius: 50px 0 0 50px; }
     .main-navbar__nav-item[href="#BASIC"] {
       padding: 0 1rem; } }
 
