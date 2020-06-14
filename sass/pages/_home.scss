@@ -5,20 +5,19 @@
 }
 
 .main-navbar {
-    display: table;
-    width: 100%;
+    display: flex;
     margin: 2rem 0;
     height: 5rem;
 
     &__table-row {
-        display: table-cell;
+        flex: 1 1 auto;
     }
 
     &__inner-table {
 
         &--1 {
-            display: table;
-            width: 100%;
+            display: flex;
+
 
             .main-navbar__nav-item:first-child {
                 border-radius: 50px 0 0 50px;
@@ -29,8 +28,7 @@
         }
 
         &--2 {
-            display: table;
-            width: 100%;
+            display: flex;
 
             .main-navbar__nav-item:last-child {
                 border-radius: 0 50px 50px 0;
@@ -40,11 +38,13 @@
 
     &__nav-item {
         background-color: $color-cyan1;
+        display: flex;
         text-align: center;
-        display: table-cell;
-        vertical-align: middle;
         height: 5rem;
         transition: all .5s ease;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
 
         &:not(:last-child) {
             border-right: 1px solid $color-primary;
@@ -126,15 +126,18 @@
 
     .main-navbar {
         margin-top: 0rem;
+        flex-direction: column;
+        height: 15rem;
 
         &__table-row {
-            display: block;
+            display: flex;
             margin-top: 2rem;
         }
 
         &__inner-table {
 
             &--1 {
+                flex: 1 1 auto;
 
                 .main-navbar__nav-item:last-child {
                     border-radius: 0 50px 50px 0;
@@ -142,6 +145,7 @@
             }
 
             &--2 {
+                flex: 1 1 auto;
 
                 .main-navbar__nav-item:first-child {
                     border-radius: 50px 0 0 50px;
