@@ -1,3 +1,9 @@
+@keyframes bounce {
+  50% {
+    line-height: 2rem; }
+  100% {
+    line-height: 3.5rem; } }
+
 body {
   background: linear-gradient(#00ffff, #228fec);
   background-attachment: fixed;
@@ -158,6 +164,9 @@ body {
   z-index: 10000;
   border-radius: 3px; }
 
+.back-top:hover i {
+  animation: bounce 0.5s cubic-bezier(0.33, 1, 0.68, 1); }
+
 @media (max-width: 1275px) {
   .back-top {
     border-radius: 50px;
@@ -170,6 +179,12 @@ body {
   .back-top {
     right: 20px;
     bottom: 20px; } }
+
+@media (max-width: 540px) {
+  .back-top:hover i {
+    animation: none; }
+  .back-top:focus i {
+    animation: bounce 0.5s cubic-bezier(0.33, 1, 0.68, 1); } }
 
 .navbar {
   display: flex;
