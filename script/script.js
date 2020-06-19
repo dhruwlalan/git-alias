@@ -1,5 +1,5 @@
 
-$(".main-navbar a , footer__page-top a").on("click", function(e) {
+$(".main-navbar a").on("click", function(e) {
     var a = $(this);
     $("html, body").stop().animate({
         scrollTop: $(a.attr("href")).offset().top - 0
