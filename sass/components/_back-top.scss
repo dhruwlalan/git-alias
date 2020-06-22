@@ -11,7 +11,14 @@
     width: 35px;
     z-index: 10000;
     border-radius: 3px;
+
+    i {
+        @include typo( $color-cyan1 , $ff-roboto , 700 , 3.2rem );
+        line-height: 3.5rem;
+    }
+
 }
+
 .back-top:hover i {
     animation: bounce .5s cubic-bezier(0.33, 1, 0.68, 1);
 }
@@ -25,6 +32,10 @@
         box-shadow: 0 0 2rem .2rem black;
         right: 30px;
         bottom: 35px;
+        
+        i {
+            color: $color-primary;
+        }
     }
 }
 

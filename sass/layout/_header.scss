@@ -4,6 +4,8 @@
 	height: 12rem;
 
 	&__nav-link {
+		@include typo( $color-cyan2 , $ff-roboto , 500 , 3.5rem );
+		text-decoration: none;
 		display: flex;
 		flex: 1 1 auto;
         align-items: center;
@@ -27,6 +29,32 @@
 				background-color: $color-primary;
 			}
 		}
+		
+		&:hover {
+			color: $color-cyan1;
+		}
+	}
+}
+
+
+@media (max-width: 958px) {
+
+	.navbar__nav-link {
+		font-size: 2.6rem;
+	}
+}
+
+@media (max-width: 700px) {
+
+	.navbar__nav-link {
+		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 660px) {
+
+	.navbar__nav-link {
+		font-size: 2.2rem;
 	}
 }
 
@@ -34,5 +62,9 @@
 
 	.navbar {
 		height: 10rem;
+
+		&__nav-link {
+			font-size: 2rem;
+		}
 	}
 }
