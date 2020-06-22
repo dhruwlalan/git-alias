@@ -1,7 +1,9 @@
 
 body {
-	background: linear-gradient($color-cyan1, $color-primeblue);
-	background-attachment: fixed;
+	background {
+		image: linear-gradient($color-cyan1, $color-primeblue);
+		attachment: fixed;
+	}
 	margin: 1.5rem;
 	-webkit-tap-highlight-color: transparent;
 }
