@@ -12,46 +12,28 @@
     z-index: 10000;
     border-radius: 3px;
 
+    &:focus i {
+        animation: bounce .5s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+
     i {
         @include typo( $color-cyan1 , $ff-roboto , 700 , 3.2rem );
         line-height: 3.5rem;
+
+        @media (max-width: 1275px) {
+            color: $color-primary;
+        }
     }
 
-}
-
-.back-top:hover i {
-    animation: bounce .5s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-
-@media (max-width: 1275px) {
-
-    .back-top {
+    @media (max-width: 1275px) {
         border-radius: 50px;
         background-color: $color-cyan1;
         box-shadow: 0 0 2rem .2rem black;
         right: 30px;
         bottom: 35px;
-        
-        i {
-            color: $color-primary;
-        }
     }
-}
-
-@media (max-width: 700px) {
-
-    .back-top {
+    @media (max-width: 700px) {
         right: 20px;
         bottom: 20px;
-    }
-}
-
-@media (max-width: 540px) {
-    .back-top:hover i {
-        animation: none;
-    }
-    .back-top:focus i {
-        animation: bounce .5s cubic-bezier(0.33, 1, 0.68, 1);
     }
 }
