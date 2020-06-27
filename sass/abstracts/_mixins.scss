@@ -5,3 +5,31 @@
 	font-weight: $font-weight;
 	font-size: $font-size;
 }
+
+@mixin boxm( $height , $width , $padding , $margin ) {
+	height: $height;
+	width: $width;
+	padding: $padding;
+	margin: $margin;
+}
+
+@mixin pos-relative {
+	position: relative;
+}
+
+
+@mixin pos-fixed( $top , $bottom , $left , $right ) {
+	position: fixed;
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
+}
+
+@mixin pos-absolute( $top , $bottom , $left , $right ) {
+	position: absolute;
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
+}

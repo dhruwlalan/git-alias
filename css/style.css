@@ -3,7 +3,6 @@
     line-height: 2rem; }
   100% {
     line-height: 3.5rem; } }
-
 body {
   background-image: linear-gradient(#00ffff, #228fec);
   background-attachment: fixed;
@@ -319,3 +318,5 @@ body {
 
 .main-section--gba {
   background-color: #393e46; }
+
+/*# sourceMappingURL=style.css.map */
