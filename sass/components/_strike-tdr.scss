@@ -2,8 +2,7 @@
 .strike-tdr__content {
     @include typo( $color-cyan1 , $ff-roboto , 400 , 1.5rem );
     font-style: italic;
-    display: flex;
-    flex-direction: row;
+    @include flex( /*fd*/ row , /*jc*/ null , /*ai*/ null );
 
     &:before, &:after{
       content: "";

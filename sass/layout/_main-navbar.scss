@@ -1,8 +1,7 @@
 
 .main-navbar {
     display: flex;
-    @include size( /*h*/ 5rem , /*w*/ null );
-    @include pbm( /*p*/ null , /*b*/ null , /*m*/ 2rem 0 );
+    @include box( /*h*/ 5rem , /*w*/ null , /*p*/ null , /*b*/ null , /*m*/ 2rem 0 );
 
     @media (max-width: 800px) {
         @include size( /*h*/ 14rem , /*w*/ null );
@@ -70,11 +69,9 @@
             align: center;
         }
         background-color: $color-cyan1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 auto;
         @include size( /*h*/ 5rem , /*w*/ null );
+        @include flex( /*fd*/ null , /*jc*/ center , /*ai*/ center );
+        flex: 1 1 auto;
         transition: all .5s ease;
 
         &:not(:last-child) {

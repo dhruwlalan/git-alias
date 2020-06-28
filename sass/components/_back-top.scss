@@ -3,9 +3,8 @@
     display: none;
     background-color: $color-primary;
     box-shadow: 0 0 1rem #000000;
-    @include pos-fixed( /*t*/ null , /*b*/ 15px , /*l*/ null , /*r*/ 20px );
+    @include pos-fixed( /*t*/ null , /*b*/ 15px , /*l*/ null , /*r*/ 20px , /*z*/ 10000 );
     @include size( /*h*/ 3.5rem , /*w*/ 3.5rem );
-    z-index: 10000;
     text-align: center;
     border-radius: 3px;
 
@@ -17,10 +16,10 @@
         border-radius: 50px;
         background-color: $color-cyan1;
         box-shadow: 0 0 2rem .2rem black;
-        @include pos-fixed( /*t*/ null , /*b*/ 35px , /*l*/ null , /*r*/ 30px );
+        @include pos-fixed( /*t*/ null , /*b*/ 35px , /*l*/ null , /*r*/ 30px , /*z*/ null );
     }
     @media (max-width: 700px) {
-        @include pos-fixed( /*t*/ null , /*b*/ 20px , /*l*/ null , /*r*/ 20px );
+        @include pos-fixed( /*t*/ null , /*b*/ 20px , /*l*/ null , /*r*/ 20px , /*z*/ null );
     }
 
     i {

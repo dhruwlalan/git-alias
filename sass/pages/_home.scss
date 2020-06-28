@@ -54,10 +54,10 @@
     }
 
     &__content-block {
-        @include pbm( /*p*/ null , /*b*/ null , /*m*/ 3rem 0 );
+        margin: 3rem 0;
 
         @media (max-width: 660px) {
-            @include pbm( /*p*/ null , /*b*/ null , /*m*/ 2rem 0 );
+            margin: 2rem 0;
         }
 
     	&--title {

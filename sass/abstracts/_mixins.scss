@@ -41,7 +41,25 @@
 	}
 }
 
-@mixin pbm($padding , $border , $margin ) {
+@mixin pbm( $padding , $border , $margin ) {
+	@if $padding != null {
+		padding: $padding;
+	}
+	@if $border != null {
+		border: $border;
+	}
+	@if $margin != null {
+		margin: $margin;
+	}
+}
+
+@mixin box( $height , $width , $padding , $border , $margin ) {
+	@if $height != null {
+		height: $height;
+	}
+	@if $width != null {
+		width: $width;
+	}
 	@if $padding != null {
 		padding: $padding;
 	}
@@ -57,7 +75,7 @@
 	position: relative;
 }
 
-@mixin pos-fixed( $top , $bottom , $left , $right ) {
+@mixin pos-fixed( $top , $bottom , $left , $right , $zindex ) {
 	position: fixed;
 	@if $top != null {
 		top: $top;
@@ -71,9 +89,12 @@
 	@if $right != null {
 		right: $right;
 	}
+	@if $zindex != null {
+		z-index: $zindex;
+	}
 }
 
-@mixin pos-absolute( $top , $bottom , $left , $right ) {
+@mixin pos-absolute( $top , $bottom , $left , $right , $zindex ) {
 	position: absolute;
 	@if $top != null {
 		top: $top;
@@ -86,5 +107,21 @@
 	}
 	@if $right != null {
 		right: $right;
+	}
+	@if $zindex != null {
+		z-index: $zindex;
+	}
+}
+
+@mixin flex( $flexdirection , $justifycontent , $alignitems ) {
+	display: flex;
+	@if $flexdirection != null {
+		flex-direction: $flexdirection;
+	}
+	@if $justifycontent != null {
+		justify-content: $justifycontent;
+	}
+	@if $alignitems != null {
+		align-items: $alignitems;
 	}
 }

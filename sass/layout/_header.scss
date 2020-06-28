@@ -11,9 +11,7 @@
 		@include typo( $color-cyan2 , $ff-roboto , 500 , 3.5rem );
 		text-decoration: none;
         text-align: center;
-		display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex( /*fd*/ null , /*jc*/ center , /*ai*/ center );
 		flex: 1 1 auto;
 
         &:hover {
