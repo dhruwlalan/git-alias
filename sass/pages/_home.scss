@@ -3,8 +3,11 @@
 	background-color: $color-primary;
 	padding: 2rem;
 
-    @media (max-width: 414px) {
+    @media (max-width: 540px) {
         padding: 1rem;
+    }
+    @media (max-width: 414px) {
+        padding: .7rem;
     }
 }
 
@@ -14,8 +17,8 @@
     margin-top: 4rem;
     border: 1px solid $color-cyan1;
 
-	&:not(:last-child) {
-        margin-bottom: 4rem;
+	@media (max-width: 540px) {
+       margin-top: 3rem;
     }
 
     &__heading {
@@ -33,95 +36,60 @@
     }
 
     &__content {
-    	padding: 2rem;
+    	padding-left: 4rem;
     	border-radius: 0 0 5px 5px;
 
         @media (max-width: 958px) {
-            padding: 0;
+            padding-left: 3rem;
         }
         @media (max-width: 660px) {
-            padding: 1rem;
+            padding-left: 2rem;
+        }
+        @media (max-width: 540px) {
+            padding-left: 1rem;
+        }
+        @media (max-width: 414px) {
+            padding-left: .5rem;
         }
     }
 
     &__content-block {
-    	margin: 3rem 1rem;
-    	padding-left: 2rem;
+        @include pbm( /*p*/ null , /*b*/ null , /*m*/ 3rem 0 );
 
         @media (max-width: 660px) {
-            margin: 2rem .5rem;
-            padding-left: 0;
-        }
-        @media (max-width: 540px) {
-            padding: 0rem;
+            @include pbm( /*p*/ null , /*b*/ null , /*m*/ 2rem 0 );
         }
 
     	&--title {
             @include typo( $color-tomato , $ff-roboto , 400 , 2.5rem );
-            word-spacing: .6rem;
-    		padding: .5rem;
-
-            @media (max-width: 958px) {
-                font-size: 2rem;
-                word-spacing: .2rem;
-            }
-            @media (max-width: 660px) {
-                font-size: 1.8rem;
-                word-spacing: .1rem;
-            }
-            @media (max-width: 540px) {
-                font-size: 1.7rem;
-                word-spacing: 0rem;
-            }
-            @media (max-width: 414px) {
-                font-size: 1.5rem;
-            }
+            @extend %content-block-typo;
     	}
 
     	&--code {
             @include typo( $color-cyan1 , $ff-courierPrime , 400 , 2.5rem );
-            word-spacing: .5rem;
-    		padding: .5rem;
-    		padding-top: 0;
-
-            @media (max-width: 958px) {
-                font-size: 2rem;
-                word-spacing: .2rem;
-            }
-            @media (max-width: 660px) {
-                font-size: 1.8rem;
-                word-spacing: .1rem;
-            }
-            @media (max-width: 540px) {
-                font-size: 1.7rem;
-                word-spacing: 0rem;
-            }
-            @media (max-width: 414px) {
-                font-size: 1.5rem;
-            }
+            @extend %content-block-typo;
     	}
     }
 }
 
 
-.strike-tdr__content {
-    @include typo( $color-cyan1 , $ff-roboto , 400 , 1.5rem );
-    font-style: italic;
-    display: flex;
-    flex-direction: row;
+%content-block-typo {
+    word-spacing: .5rem;
+    padding: .5rem;
 
-    &:before, &:after{
-      content: "";
-      flex: 1 1;
-      border-bottom: 1px dashed $color-cyan1;
-      margin: auto;
+    @media (max-width: 958px) {
+        font-size: 2rem;
+        word-spacing: .2rem;
     }
-
-    &:before {
-      margin-right: 10px
+    @media (max-width: 660px) {
+        font-size: 1.8rem;
+        word-spacing: .1rem;
     }
-
-    &:after {
-      margin-left: 10px
+    @media (max-width: 540px) {
+        font-size: 1.7rem;
+        word-spacing: 0rem;
     }
-}
+    @media (max-width: 414px) {
+        font-size: 1.5rem;
+    }
+} 

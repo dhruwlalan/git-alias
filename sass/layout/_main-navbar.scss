@@ -5,12 +5,12 @@
     @include pbm( /*p*/ null , /*b*/ null , /*m*/ 2rem 0 );
 
     @media (max-width: 800px) {
-        @include size( /*h*/ 15rem , /*w*/ null );
+        @include size( /*h*/ 14rem , /*w*/ null );
         flex-direction: column;
         margin-top: 0rem;
     }
     @media (max-width: 414px) {
-        margin-top: 1rem;
+        margin-top: .3rem;
     }
 
     &__nav {
@@ -61,7 +61,6 @@
                 border-radius: 0 50px 50px 0;
             }
         }
-
     }
 
     &__nav-item {
