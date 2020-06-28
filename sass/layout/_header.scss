@@ -1,20 +1,20 @@
 
-.navbar {
+.header-navbar {
 	display: flex;
-	height: 12rem;
+	@include size( /*h*/ 12rem , /*w*/ null );
 
 	@media (max-width: 540px) {
-		height: 10rem;
+		@include size( /*h*/ 10rem , /*w*/ null );
 	}
 
 	&__nav-link {
 		@include typo( $color-cyan2 , $ff-roboto , 500 , 3.5rem );
 		text-decoration: none;
-		display: flex;
-		flex: 1 1 auto;
-        align-items: center;
-        justify-content: center;
         text-align: center;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+		flex: 1 1 auto;
 
         &:hover {
 			color: $color-cyan1;

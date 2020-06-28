@@ -1,0 +1,112 @@
+
+.main-navbar {
+    display: flex;
+    @include size( /*h*/ 5rem , /*w*/ null );
+    @include pbm( /*p*/ null , /*b*/ null , /*m*/ 2rem 0 );
+
+    @media (max-width: 800px) {
+        @include size( /*h*/ 15rem , /*w*/ null );
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+    @media (max-width: 414px) {
+        margin-top: 1rem;
+    }
+
+    &__nav {
+        flex: 1 1 auto;
+
+        @media (max-width: 800px) {
+            display: flex;
+            margin-top: 2rem;
+        }
+    }
+
+    &__inner-nav {
+
+        &--1 {
+            display: flex;
+
+            @media (max-width: 800px) {
+                flex: 1 1 auto;
+            }
+
+            .main-navbar__nav-item:first-child {
+                border-radius: 50px 0 0 50px;
+            }
+            
+            .main-navbar__nav-item:last-child {
+                border-right: 1px solid $color-primary;
+
+                @media (max-width: 800px) {
+                    border-radius: 0 50px 50px 0;
+                }
+            }
+        }
+
+        &--2 {
+            display: flex;
+
+            @media (max-width: 800px) {
+                flex: 1 1 auto;
+            }
+
+            .main-navbar__nav-item:first-child {
+                @media (max-width: 800px) {
+                    border-radius: 50px 0 0 50px;
+                }
+            }
+
+            .main-navbar__nav-item:last-child {
+                border-radius: 0 50px 50px 0;
+            }
+        }
+
+    }
+
+    &__nav-item {
+        @include typo( $color-primary , $ff-roboto , 500 , 1.8rem );
+        text: {
+            decoration: none;
+            align: center;
+        }
+        background-color: $color-cyan1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+        @include size( /*h*/ 5rem , /*w*/ null );
+        transition: all .5s ease;
+
+        &:not(:last-child) {
+            border-right: 1px solid $color-primary;
+        }
+
+        &:hover {
+            background-color: $color-secondary;
+            color: $color-cyan1;
+        }
+
+        &[href="#BASIC"] {
+            @media (max-width: 800px) {
+                padding: 0 1rem;
+            }
+            @media (max-width: 386px) {
+                padding: 0 .5rem;
+            }
+        }
+
+        @media (max-width: 800px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 540px) {
+            font-size: 1.6rem;
+        }
+        @media (max-width: 414px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 386px) {
+            font-size: 1.2rem;
+        }
+    }
+}

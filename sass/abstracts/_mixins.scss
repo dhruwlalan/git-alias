@@ -14,15 +14,39 @@
 	}
 }
 
-@mixin box( $height , $width , $padding , $margin ) {
+@mixin size( $height , $width ) {
 	@if $height != null {
 		height: $height;
 	}
 	@if $width != null {
 		width: $width;
 	}
+}
+
+@mixin max-size( $height , $width ) {
+	@if $height != null {
+		max-height: $height;
+	}
+	@if $width != null {
+		max-width: $width;
+	}
+}
+
+@mixin min-size( $height , $width ) {
+	@if $height != null {
+		min-height: $height;
+	}
+	@if $width != null {
+		min-width: $width;
+	}
+}
+
+@mixin pbm($padding , $border , $margin ) {
 	@if $padding != null {
 		padding: $padding;
+	}
+	@if $border != null {
+		border: $border;
 	}
 	@if $margin != null {
 		margin: $margin;

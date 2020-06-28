@@ -2,9 +2,9 @@
 .footer {
 	display: flex;
 	justify-content: center;
-	height: 10rem;
-	border-radius: 0 0 5px 5px;
 	background-color: $color-secondary;
+	@include size( /*h*/ 10rem , /*w*/ null );
+	border-radius: 0 0 5px 5px;
 
 	&__content {
 		@include typo( $color-cyan1 , $ff-titillium , 300 , 2rem );
