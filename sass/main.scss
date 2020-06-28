@@ -1,4 +1,5 @@
  
+ 
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -13,16 +14,17 @@
 // @import "base/<here>";
 
 
-@import "components/container";
 @import "components/back-top";
+@import "components/strike-tdr";
 // @import "components/<here>";
 
 
+@import "layout/container";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/main-navbar";
 // @import "layout/<here>";
 
 
 @import "pages/home";
-@import "pages/gba";
 // @import "pages/<here>";

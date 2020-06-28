@@ -1,0 +1,22 @@
+
+.strike-tdr__content {
+    @include typo( $color-cyan1 , $ff-roboto , 400 , 1.5rem );
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+
+    &:before, &:after{
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px dashed $color-cyan1;
+      margin: auto;
+    }
+
+    &:before {
+      margin-right: 10px
+    }
+
+    &:after {
+      margin-left: 10px
+    }
+}

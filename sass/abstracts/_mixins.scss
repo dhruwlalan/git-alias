@@ -1,7 +1,90 @@
 
 @mixin typo( $color , $font-family , $font-weight , $font-size ) {
-	color: $color;
-	font-family: $font-family;
-	font-weight: $font-weight;
-	font-size: $font-size;
+	@if $color != null {
+		color: $color;
+	}
+	@if $font-family != null {
+		font-family: $font-family;
+	}
+	@if $font-weight != null {
+		font-weight: $font-weight;
+	}
+	@if $font-size != null {
+		font-size: $font-size;
+	}
+}
+
+@mixin size( $height , $width ) {
+	@if $height != null {
+		height: $height;
+	}
+	@if $width != null {
+		width: $width;
+	}
+}
+
+@mixin max-size( $height , $width ) {
+	@if $height != null {
+		max-height: $height;
+	}
+	@if $width != null {
+		max-width: $width;
+	}
+}
+
+@mixin min-size( $height , $width ) {
+	@if $height != null {
+		min-height: $height;
+	}
+	@if $width != null {
+		min-width: $width;
+	}
+}
+
+@mixin pbm($padding , $border , $margin ) {
+	@if $padding != null {
+		padding: $padding;
+	}
+	@if $border != null {
+		border: $border;
+	}
+	@if $margin != null {
+		margin: $margin;
+	}
+}
+
+@mixin pos-relative {
+	position: relative;
+}
+
+@mixin pos-fixed( $top , $bottom , $left , $right ) {
+	position: fixed;
+	@if $top != null {
+		top: $top;
+	}
+	@if $bottom != null {
+		bottom: $bottom;
+	}
+	@if $left != null {
+		left: $left;
+	}
+	@if $right != null {
+		right: $right;
+	}
+}
+
+@mixin pos-absolute( $top , $bottom , $left , $right ) {
+	position: absolute;
+	@if $top != null {
+		top: $top;
+	}
+	@if $bottom != null {
+		bottom: $bottom;
+	}
+	@if $left != null {
+		left: $left;
+	}
+	@if $right != null {
+		right: $right;
+	}
 }
