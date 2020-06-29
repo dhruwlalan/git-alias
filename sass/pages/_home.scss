@@ -1,6 +1,6 @@
 
 .main {
-	background-color: $color-primary;
+	background-color: $primary;
 	padding: 2rem;
 
     @media (max-width: 540px) {
@@ -12,22 +12,21 @@
 }
 
 .main-section {
-	background-color: $color-primary;
+	background-color: $primary;
+    @include box( $mt: 4rem , $b: 1px solid $cyan1 );
     border-radius: 5px;
-    margin-top: 4rem;
-    border: 1px solid $color-cyan1;
 
 	@media (max-width: 540px) {
        margin-top: 3rem;
     }
 
     &__heading {
-    	background-color: $color-cyan1;
+    	background-color: $cyan1;
     	border-radius: 3px 3px 0 0;
     	padding: 0 2rem;
 
         h1 { 
-            @include typo( $color-primary , $ff-titillium , 700 , 4rem );
+            @include typo( $c: $primary , $ff: $titillium , $fw: 700 , $fs: 4rem );
 
             @media (max-width: 660px) {
                 font-size: 3rem;
@@ -54,19 +53,19 @@
     }
 
     &__content-block {
-        @include pbm( /*p*/ null , /*b*/ null , /*m*/ 3rem 0 );
+        margin: 3rem 0;
 
         @media (max-width: 660px) {
-            @include pbm( /*p*/ null , /*b*/ null , /*m*/ 2rem 0 );
+            margin: 2rem 0;
         }
 
     	&--title {
-            @include typo( $color-tomato , $ff-roboto , 400 , 2.5rem );
+            @include typo( $c: $tomato , $ff: $roboto , $fw: 400 , $fs: 2.5rem );
             @extend %content-block-typo;
     	}
 
     	&--code {
-            @include typo( $color-cyan1 , $ff-courierPrime , 400 , 2.5rem );
+            @include typo( $c: $cyan1 , $ff: $courierPrime , $fw: 400 , $fs: 2.5rem );
             @extend %content-block-typo;
     	}
     }
@@ -78,18 +77,15 @@
     padding: .5rem;
 
     @media (max-width: 958px) {
-        font-size: 2rem;
-        word-spacing: .2rem;
+        @include typo( $fs: 2rem , $ws: .2rem );
     }
     @media (max-width: 660px) {
-        font-size: 1.8rem;
-        word-spacing: .1rem;
+        @include typo( $fs: 1.8rem , $ws: .1rem );
     }
     @media (max-width: 540px) {
-        font-size: 1.7rem;
-        word-spacing: 0rem;
+        @include typo( $fs: 1.7rem , $ws: 0 );
     }
     @media (max-width: 414px) {
-        font-size: 1.5rem;
+        @include typo( $fs: 1.5rem );
     }
 } 

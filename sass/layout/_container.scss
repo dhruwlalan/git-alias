@@ -1,7 +1,6 @@
 
 .container {
-	@include max-size( /*h*/ null , /*w*/ 1100px );
-	@include pbm( /*p*/ null , /*b*/ null , /*m*/ 2rem auto );
+	@include box( $maxw: 1100px , $m: 2rem auto );
 	box-shadow: 0 0 2rem 1rem #00716b;
 	border-radius: 5px;
 

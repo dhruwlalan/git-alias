@@ -1,15 +1,13 @@
 
 .strike-tdr__content {
-    @include typo( $color-cyan1 , $ff-roboto , 400 , 1.5rem );
+    @include typo( $c: $cyan1 , $ff: $roboto , $fw: 400 , $fs: 1.5rem );
     font-style: italic;
     display: flex;
-    flex-direction: row;
 
     &:before, &:after{
       content: "";
       flex: 1 1;
-      border-bottom: 1px dashed $color-cyan1;
-      margin: auto;
+      @include box( $bb: 1px dashed $cyan1 , $m: auto );
     }
 
     &:before {
