@@ -1,10 +1,10 @@
 
 .back-top {
     display: none;
-    background-color: $color-primary;
+    background-color: $primary;
+    @include pos-fixed( $b: 15px , $r: 20px , $z: 10000 );
+    @include box( $h: 3.5rem , $w: 3.5rem );
     box-shadow: 0 0 1rem #000000;
-    @include pos-fixed( /*t*/ null , /*b*/ 15px , /*l*/ null , /*r*/ 20px , /*z*/ 10000 );
-    @include size( /*h*/ 3.5rem , /*w*/ 3.5rem );
     text-align: center;
     border-radius: 3px;
 
@@ -13,21 +13,20 @@
     }
 
     @media (max-width: 1275px) {
+        @include pos-fixed( $b: 35px , $r: 30px );
         border-radius: 50px;
-        background-color: $color-cyan1;
+        background-color: $cyan1;
         box-shadow: 0 0 2rem .2rem black;
-        @include pos-fixed( /*t*/ null , /*b*/ 35px , /*l*/ null , /*r*/ 30px , /*z*/ null );
     }
     @media (max-width: 700px) {
-        @include pos-fixed( /*t*/ null , /*b*/ 20px , /*l*/ null , /*r*/ 20px , /*z*/ null );
+        @include pos-fixed( $b: 20px , $r: 20px );
     }
 
     i {
-        @include typo( $color-cyan1 , $ff-roboto , 700 , 3.2rem );
-        line-height: 3.5rem;
+        @include typo( $c: $cyan1 , $ff: $roboto , $fw: 700 , $fs: 3.2rem , $lh: 3.5rem );
 
         @media (max-width: 1275px) {
-            color: $color-primary;
+            color: $primary;
         }
     }
 }

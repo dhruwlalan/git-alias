@@ -31,25 +31,25 @@ body {
 .back-top {
   display: none;
   background-color: #222831;
-  box-shadow: 0 0 1rem #000000;
   position: fixed;
   bottom: 15px;
   right: 20px;
   z-index: 10000;
   height: 3.5rem;
   width: 3.5rem;
+  box-shadow: 0 0 1rem #000000;
   text-align: center;
   border-radius: 3px; }
   .back-top:focus i {
     animation: bounce 0.5s cubic-bezier(0.33, 1, 0.68, 1); }
   @media (max-width: 1275px) {
     .back-top {
-      border-radius: 50px;
-      background-color: #00ffff;
-      box-shadow: 0 0 2rem .2rem black;
       position: fixed;
       bottom: 35px;
-      right: 30px; } }
+      right: 30px;
+      border-radius: 50px;
+      background-color: #00ffff;
+      box-shadow: 0 0 2rem .2rem black; } }
   @media (max-width: 700px) {
     .back-top {
       position: fixed;
@@ -71,8 +71,7 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   font-style: italic;
-  display: flex;
-  flex-direction: row; }
+  display: flex; }
   .strike-tdr__content:before, .strike-tdr__content:after {
     content: "";
     flex: 1 1;
@@ -158,8 +157,8 @@ body {
   @media (max-width: 800px) {
     .main-navbar {
       height: 14rem;
-      flex-direction: column;
-      margin-top: 0rem; } }
+      margin-top: 0;
+      flex-direction: column; } }
   @media (max-width: 414px) {
     .main-navbar {
       margin-top: .3rem; } }
@@ -241,9 +240,9 @@ body {
 
 .main-section {
   background-color: #222831;
-  border-radius: 5px;
+  border: 1px solid #00ffff;
   margin-top: 4rem;
-  border: 1px solid #00ffff; }
+  border-radius: 5px; }
   @media (max-width: 540px) {
     .main-section {
       margin-top: 3rem; } }
@@ -296,15 +295,15 @@ body {
   @media (max-width: 958px) {
     .main-section__content-block--title, .main-section__content-block--code {
       font-size: 2rem;
-      word-spacing: .2rem; } }
+      word-spacing: 0.2rem; } }
   @media (max-width: 660px) {
     .main-section__content-block--title, .main-section__content-block--code {
       font-size: 1.8rem;
-      word-spacing: .1rem; } }
+      word-spacing: 0.1rem; } }
   @media (max-width: 540px) {
     .main-section__content-block--title, .main-section__content-block--code {
       font-size: 1.7rem;
-      word-spacing: 0rem; } }
+      word-spacing: 0; } }
   @media (max-width: 414px) {
     .main-section__content-block--title, .main-section__content-block--code {
       font-size: 1.5rem; } }

@@ -1,73 +1,94 @@
 
-@mixin typo( $color , $font-family , $font-weight , $font-size ) {
-	@if $color != null {
-		color: $color;
+@mixin typo( $c: null , $ff: null , $fw: null , $fs: null , $lh: null , $td: null , $ws: null , $ls: null) {
+	@if $c != null {
+		color: $c;
 	}
-	@if $font-family != null {
-		font-family: $font-family;
+	@if $ff != null {
+		font-family: $ff;
 	}
-	@if $font-weight != null {
-		font-weight: $font-weight;
+	@if $fw != null {
+		font-weight: $fw;
 	}
-	@if $font-size != null {
-		font-size: $font-size;
+	@if $fs != null {
+		font-size: $fs;
 	}
-}
-
-@mixin size( $height , $width ) {
-	@if $height != null {
-		height: $height;
+	@if $lh != null {
+		line-height: $lh;
 	}
-	@if $width != null {
-		width: $width;
+	@if $td != null {
+		text-decoration: $td;
 	}
-}
-
-@mixin max-size( $height , $width ) {
-	@if $height != null {
-		max-height: $height;
+	@if $ws != null {
+		word-spacing: $ws;
 	}
-	@if $width != null {
-		max-width: $width;
+	@if $ls != null {
+		letter-spacing: $ls;
 	}
 }
 
-@mixin min-size( $height , $width ) {
-	@if $height != null {
-		min-height: $height;
+@mixin box( $h: null , $w: null , $maxh: null , $maxw: null , $minh: null , $minw: null , $p: null , $pt: null, $pr: null, $pb: null, $pl: null , $b: null , $bt: null , $br: null , $bb: null , $bl: null , $m: null , $mt: null , $mr: null , $mb: null , $ml: null ) {
+	@if $h != null {
+		height: $h;
 	}
-	@if $width != null {
-		min-width: $width;
+	@if $w != null {
+		width: $w;
 	}
-}
-
-@mixin pbm( $padding , $border , $margin ) {
-	@if $padding != null {
-		padding: $padding;
+	@if $maxh != null {
+		max-height: $maxh;
 	}
-	@if $border != null {
-		border: $border;
+	@if $maxw != null {
+		max-width: $maxw;
 	}
-	@if $margin != null {
-		margin: $margin;
+	@if $minh != null {
+		min-height: $minh;
 	}
-}
-
-@mixin box( $height , $width , $padding , $border , $margin ) {
-	@if $height != null {
-		height: $height;
+	@if $minw != null {
+		min-width: $minw;
 	}
-	@if $width != null {
-		width: $width;
+	@if $p != null {
+		padding: $p;
 	}
-	@if $padding != null {
-		padding: $padding;
+	@if $pt != null {
+		padding-top: $pt;
 	}
-	@if $border != null {
-		border: $border;
+	@if $pr != null {
+		padding-right: $pr;
 	}
-	@if $margin != null {
-		margin: $margin;
+	@if $pb != null {
+		padding-bottom: $pb;
+	}
+	@if $pl != null {
+		padding-left: $pl;
+	}
+	@if $b != null {
+		border: $b;
+	}
+	@if $bt != null {
+		border-top: $bt;
+	}
+	@if $br != null {
+		border-right: $br;
+	}
+	@if $bb != null {
+		border-bottom: $bb;
+	}
+	@if $bl != null {
+		border-left: $bl;
+	}
+	@if $m != null {
+		margin: $m;
+	}
+	@if $mt != null {
+		margin-top: $mt;
+	}
+	@if $mr != null {
+		margin-right: $mr;
+	}
+	@if $mb != null {
+		margin-bottom: $mb;
+	}
+	@if $ml != null {
+		margin-left: $ml;
 	}
 }
 
@@ -75,53 +96,59 @@
 	position: relative;
 }
 
-@mixin pos-fixed( $top , $bottom , $left , $right , $zindex ) {
+@mixin pos-fixed( $t: null , $b: null , $l: null , $r: null , $z: null ) {
 	position: fixed;
-	@if $top != null {
-		top: $top;
+	@if $t != null {
+		top: $t;
 	}
-	@if $bottom != null {
-		bottom: $bottom;
+	@if $b != null {
+		bottom: $b;
 	}
-	@if $left != null {
-		left: $left;
+	@if $l != null {
+		left: $l;
 	}
-	@if $right != null {
-		right: $right;
+	@if $r != null {
+		right: $r;
 	}
-	@if $zindex != null {
-		z-index: $zindex;
+	@if $z != null {
+		z-index: $z;
 	}
 }
 
-@mixin pos-absolute( $top , $bottom , $left , $right , $zindex ) {
+@mixin pos-absolute( $t: null , $b: null , $l: null , $r: null , $z: null ) {
 	position: absolute;
-	@if $top != null {
-		top: $top;
+	@if $t != null {
+		top: $t;
 	}
-	@if $bottom != null {
-		bottom: $bottom;
+	@if $b != null {
+		bottom: $b;
 	}
-	@if $left != null {
-		left: $left;
+	@if $l != null {
+		left: $l;
 	}
-	@if $right != null {
-		right: $right;
+	@if $r != null {
+		right: $r;
 	}
-	@if $zindex != null {
-		z-index: $zindex;
+	@if $z != null {
+		z-index: $z;
 	}
 }
 
-@mixin flex( $flexdirection , $justifycontent , $alignitems ) {
+@mixin flex( $fd: null , $jc: null , $ai: null , $ac: null , $fw: null ) {
 	display: flex;
-	@if $flexdirection != null {
-		flex-direction: $flexdirection;
+	@if $fd != null {
+		flex-direction: $fd;
 	}
-	@if $justifycontent != null {
-		justify-content: $justifycontent;
+	@if $jc != null {
+		justify-content: $jc;
 	}
-	@if $alignitems != null {
-		align-items: $alignitems;
+	@if $ai != null {
+		align-items: $ai;
+	}
+	@if $ac != null {
+		align-content: $ac;
+	}
+	@if $fw != null {
+		flex-wrap: $fw;
 	}
 }

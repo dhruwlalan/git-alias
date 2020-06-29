@@ -1,12 +1,12 @@
 
 .footer {
-	@include flex( /*fd*/ null , /*jc*/ center , /*ai*/ null );
-	@include size( /*h*/ 10rem , /*w*/ null );
-	background-color: $color-secondary;
+	@include flex( $jc: center );
+	@include box( $h: 10rem );
+	background-color: $secondary;
 	border-radius: 0 0 5px 5px;
 
 	&__content {
-		@include typo( $color-cyan1 , $ff-titillium , 300 , 2rem );
-		@include flex( /*fd*/ null , /*jc*/ null , /*ai*/ center );
+		@include typo( $c: $cyan1 , $ff: $titillium , $fw: 300 , $fs: 2rem );
+		@include flex( $ai: center );
 	}
 }
