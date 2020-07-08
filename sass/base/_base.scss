@@ -1,4 +1,14 @@
 
+:root {
+	--primary: 		#222831;
+	--secondary: 	#393e46;
+	--cyan1: 		#00ffff;
+	--cyan2: 		#00d8e2;
+	--tomato: 		#f97f77;
+	--primeblue: 	#228fec;
+}
+
+
 body {
 	background: {
 		image: linear-gradient($cyan1, $primeblue);
