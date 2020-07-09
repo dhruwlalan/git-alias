@@ -152,3 +152,64 @@
 		flex-wrap: $fw;
 	}
 }
+
+@mixin grid( $rows: null , $cols: null , $areas: null , $arows: null , $acols: null , $aflow: null , $gap: null , $rgap: null , $cgap: null , $ji: null , $ai: null , $jc: null , $ac: null ) {
+	display: grid;
+	@if $rows != null {
+		grid-template-rows: $rows;
+	}
+	@if $cols != null {
+		grid-template-columns: $cols;
+	}
+	@if $areas != null {
+		grid-template-areas: $areas;
+	}
+	@if $arows != null {
+		grid-auto-rows: $arows;
+	}
+	@if $acols != null {
+		grid-auto-columns: $acols;
+	}
+	@if $aflow != null {
+		grid-auto-flow: $aflow;
+	}
+	@if $gap != null {
+		gap: $gap;
+	}
+	@if $rgap != null {
+		row-gap: $rgap;
+	}
+	@if $cgap != null {
+		column-gap: $cgap;
+	}
+	@if $ji != null {
+		justify-items: $ji;
+	}
+	@if $ai != null {
+		align-items: $ai;
+	}
+	@if $jc != null {
+		justify-content: $jc;
+	}
+	@if $ac != null {
+		align-contentp: $ac;
+	}
+}
+
+@mixin grid-item( $row: null , $col: null , $js: null , $as: null , $order: null ) {
+	@if $row != null {
+		grid-row: $row;
+	}
+	@if $col != null {
+		grid-column: $col;
+	}
+	@if $js != null {
+		justify-self: $js;
+	}
+	@if $as != null {
+		align-self: $as;
+	}
+	@if $order != null {
+		order: $order;
+	}
+}
