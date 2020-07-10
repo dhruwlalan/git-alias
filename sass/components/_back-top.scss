@@ -1,9 +1,9 @@
 
 .back-top {
-    display: none;
-    background-color: $primary;
     @include pos-fixed( $b: 15px , $r: 20px , $z: 10000 );
     @include box( $h: 3.5rem , $w: 3.5rem );
+    display: none;
+    background-color: $primary;
     box-shadow: 0 0 1rem #000000;
     text-align: center;
     border-radius: 3px;
@@ -14,8 +14,8 @@
 
     @media (max-width: 1275px) {
         @include pos-fixed( $b: 35px , $r: 30px );
-        border-radius: 50px;
         background-color: $cyan1;
+        border-radius: 50px;
         box-shadow: 0 0 2rem .2rem black;
     }
     @media (max-width: 700px) {

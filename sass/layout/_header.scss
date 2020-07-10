@@ -1,6 +1,6 @@
 
 .header-navbar {
-	display: flex;
+	@include flex();
 	@include box( $h: 12rem );
 
 	@media (max-width: 540px) {
@@ -9,9 +9,9 @@
 
 	&__nav-link {
 		@include typo( $c: $cyan2 , $ff: $roboto , $fw: 500 , $fs: 3.5rem , $td: none );
-        text-align: center;
         @include flex( $jc: center , $ai: center );
-		flex: 1 1 auto;
+        @include flex-item( $grow: 1 , $shrink: 1 , $basis: auto );
+        text-align: center;
 
         &:hover {
 			color: $cyan1;

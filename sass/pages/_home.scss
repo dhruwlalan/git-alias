@@ -12,8 +12,8 @@
 }
 
 .main-section {
-	background-color: $primary;
     @include box( $mt: 4rem , $b: 1px solid $cyan1 );
+	background-color: $primary;
     border-radius: 5px;
 
 	@media (max-width: 540px) {
