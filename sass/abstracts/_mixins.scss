@@ -153,6 +153,27 @@
 	}
 }
 
+@mixin flex-item( $flex: null , $grow: null , $shrink: null , $basis: null , $order: null , $as: null ) {
+	@if $flex != null {
+		flex: $flex;
+	}
+	@if $grow != null {
+		flex-grow: $grow;
+	}
+	@if $shrink != null {
+		flex-shrink: $shrink;
+	}
+	@if $basis != null {
+		flex-basis: $basis;
+	}
+	@if $order != null {
+		order: $order;
+	}
+	@if $as != null {
+		align-self: $as;
+	}
+}
+
 @mixin grid( $rows: null , $cols: null , $areas: null , $arows: null , $acols: null , $aflow: null , $gap: null , $rgap: null , $cgap: null , $ji: null , $ai: null , $jc: null , $ac: null ) {
 	display: grid;
 	@if $rows != null {
