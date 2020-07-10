@@ -1,21 +1,21 @@
 
 .main-navbar {
-    display: flex;
+    @include flex();
     @include box( $h: 5rem , $m: 2rem 0 );
 
     @media (max-width: 800px) {
+        @include flex( $fd: column );
         @include box( $h: 14rem , $mt: 0 );
-        flex-direction: column;
     }
     @media (max-width: 414px) {
         margin-top: .3rem;
     }
 
     &__nav {
-        flex: 1 1 auto;
+        @include flex-item( $grow: 1 , $shrink: 1 , $basis: auto );
 
         @media (max-width: 800px) {
-            display: flex;
+            @include flex();
             margin-top: 2rem;
         }
     }
@@ -23,10 +23,10 @@
     &__inner-nav {
 
         &--1 {
-            display: flex;
+            @include flex();
 
             @media (max-width: 800px) {
-                flex: 1 1 auto;
+                @include flex-item( $grow: 1 , $shrink: 1 , $basis: auto );
             }
 
             .main-navbar__nav-item:first-child {
@@ -43,10 +43,10 @@
         }
 
         &--2 {
-            display: flex;
+            @include flex();
 
             @media (max-width: 800px) {
-                flex: 1 1 auto;
+                @include flex-item( $grow: 1 , $shrink: 1 , $basis: auto );
             }
 
             .main-navbar__nav-item:first-child {
@@ -63,11 +63,11 @@
 
     &__nav-item {
         @include typo( $c: $primary , $ff: $roboto , $fw: 500 , $fs: 1.8rem , $td: none );
-        text-align: center;
-        background-color: $cyan1;
-        @include box( $h: 5rem );
         @include flex( $jc: center , $ai: center );
-        flex: 1 1 auto;
+        @include flex-item( $grow: 1 , $shrink: 1 , $basis: auto );
+        @include box( $h: 5rem );
+        background-color: $cyan1;
+        text-align: center;
         transition: all .5s ease;
 
         &:not(:last-child) {

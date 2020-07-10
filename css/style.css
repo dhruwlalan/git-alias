@@ -3,13 +3,14 @@
     line-height: 2rem; }
   100% {
     line-height: 3.5rem; } }
+
 :root {
-  --primary: #222831;
-  --secondary: #393e46;
-  --cyan1: #00ffff;
-  --cyan2: #00d8e2;
-  --tomato: #f97f77;
-  --primeblue: #228fec; }
+  --primary: 		#222831;
+  --secondary: 	#393e46;
+  --cyan1: 		#00ffff;
+  --cyan2: 		#00d8e2;
+  --tomato: 		#f97f77;
+  --primeblue: 	#228fec; }
 
 body {
   background-image: linear-gradient(var(--cyan1), var(--primeblue));
@@ -37,14 +38,14 @@ body {
   box-sizing: border-box; }
 
 .back-top {
-  display: none;
-  background-color: var(--primary);
   position: fixed;
   bottom: 15px;
   right: 20px;
   z-index: 10000;
   height: 3.5rem;
   width: 3.5rem;
+  display: none;
+  background-color: var(--primary);
   box-shadow: 0 0 1rem #000000;
   text-align: center;
   border-radius: 3px; }
@@ -55,8 +56,8 @@ body {
       position: fixed;
       bottom: 35px;
       right: 30px;
-      border-radius: 50px;
       background-color: var(--cyan1);
+      border-radius: 50px;
       box-shadow: 0 0 2rem .2rem black; } }
   @media (max-width: 700px) {
     .back-top {
@@ -78,13 +79,14 @@ body {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 1.5rem;
-  font-style: italic;
-  display: flex; }
+  display: flex;
+  font-style: italic; }
   .strike-tdr__content:before, .strike-tdr__content:after {
     content: "";
-    flex: 1 1;
     border-bottom: 1px dashed var(--cyan1);
-    margin: auto; }
+    margin: auto;
+    flex-grow: 1;
+    flex-shrink: 1; }
   .strike-tdr__content:before {
     margin-right: 10px; }
   .strike-tdr__content:after {
@@ -93,8 +95,8 @@ body {
 .container {
   max-width: 1100px;
   margin: 2rem auto;
-  box-shadow: 0 0 2rem 1rem #00716b;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0 0 2rem 1rem #00716b; }
   @media (max-width: 700px) {
     .container {
       margin: 1rem auto; } }
@@ -114,11 +116,13 @@ body {
     font-weight: 500;
     font-size: 3.5rem;
     text-decoration: none;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 auto; }
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center; }
     .header-navbar__nav-link:hover {
       color: var(--cyan1); }
     @media (max-width: 958px) {
@@ -164,14 +168,17 @@ body {
   margin: 2rem 0; }
   @media (max-width: 800px) {
     .main-navbar {
+      display: flex;
+      flex-direction: column;
       height: 14rem;
-      margin-top: 0;
-      flex-direction: column; } }
+      margin-top: 0; } }
   @media (max-width: 414px) {
     .main-navbar {
       margin-top: .3rem; } }
   .main-navbar__nav {
-    flex: 1 1 auto; }
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; }
     @media (max-width: 800px) {
       .main-navbar__nav {
         display: flex;
@@ -180,7 +187,9 @@ body {
     display: flex; }
     @media (max-width: 800px) {
       .main-navbar__inner-nav--1 {
-        flex: 1 1 auto; } }
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto; } }
     .main-navbar__inner-nav--1 .main-navbar__nav-item:first-child {
       border-radius: 50px 0 0 50px; }
     .main-navbar__inner-nav--1 .main-navbar__nav-item:last-child {
@@ -192,7 +201,9 @@ body {
     display: flex; }
     @media (max-width: 800px) {
       .main-navbar__inner-nav--2 {
-        flex: 1 1 auto; } }
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto; } }
     @media (max-width: 800px) {
       .main-navbar__inner-nav--2 .main-navbar__nav-item:first-child {
         border-radius: 50px 0 0 50px; } }
@@ -204,13 +215,15 @@ body {
     font-weight: 500;
     font-size: 1.8rem;
     text-decoration: none;
-    text-align: center;
-    background-color: var(--cyan1);
-    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    height: 5rem;
+    background-color: var(--cyan1);
+    text-align: center;
     transition: all .5s ease; }
     .main-navbar__nav-item:not(:last-child) {
       border-right: 1px solid var(--primary); }
@@ -315,5 +328,3 @@ body {
   @media (max-width: 414px) {
     .main-section__content-block--title, .main-section__content-block--code {
       font-size: 1.5rem; } }
-
-/*# sourceMappingURL=style.css.map */

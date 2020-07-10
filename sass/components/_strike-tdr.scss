@@ -1,13 +1,13 @@
 
 .strike-tdr__content {
     @include typo( $c: $cyan1 , $ff: $roboto , $fw: 400 , $fs: 1.5rem );
+    @include flex();
     font-style: italic;
-    display: flex;
 
     &:before, &:after{
       content: "";
-      flex: 1 1;
       @include box( $bb: 1px dashed $cyan1 , $m: auto );
+      @include flex-item( $grow: 1 , $shrink: 1 );
     }
 
     &:before {
