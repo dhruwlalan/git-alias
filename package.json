@@ -1,5 +1,5 @@
 {
-   "name": "webpack-vue-template",
+   "name": "git-alias",
    "author": "dhruw",
    "scripts": {
       "start": "webpack-dev-server --config configs/webpack.start.js",
@@ -10,7 +10,8 @@
       "wba": "webpack-bundle-analyzer dist/stats.json"
    },
    "dependencies": {
-      "vue": "^3.0.4"
+      "vue": "^3.0.4",
+      "vuex": "^4.0.0-rc.2"
    },
    "devDependencies": {
       "@babel/core": "^7.12.10",
