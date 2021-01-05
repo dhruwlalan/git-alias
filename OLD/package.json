@@ -1,0 +1,25 @@
+{
+  "name": "mygit",
+  "version": "1.0.0",
+  "description": "My Git Configs & Docs",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruwlalan/MyGit.git"
+  },
+  "author": "dhruw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruwlalan/MyGit/issues"
+  },
+  "homepage": "https://github.com/dhruwlalan/MyGit#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
