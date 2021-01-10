@@ -1,11 +1,16 @@
 import { createStore } from 'vuex';
+import aliases from '../alias';
 
 const Store = createStore({
    state() {
       return {};
    },
    mutations: {},
-   getters: {},
+   getters: {
+      aliases() {
+         return aliases;
+      },
+   },
    actions: {},
 });
 

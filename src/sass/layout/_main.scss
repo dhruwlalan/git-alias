@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.main {
+   @include bg($c: $secondary);
+   @include pbm($p: 2rem, $rad: 25px);
+   height: calc(100vh - 11rem);
+   overflow: hidden;
+
+   &__container {
+      height: 100%;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+         display: none;
+      }
+   }
+
+   &__cat {
+      // background-color: rgb(17, 17, 17);
+   }
+}
