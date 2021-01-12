@@ -10,9 +10,8 @@
       "wba": "webpack-bundle-analyzer dist/stats.json"
    },
    "dependencies": {
-      "jump.js": "^1.0.2",
       "vue": "^3.0.4",
-      "vuex": "^4.0.0-rc.2"
+      "vue-router": "^4.0.3"
    },
    "devDependencies": {
       "@babel/core": "^7.12.10",

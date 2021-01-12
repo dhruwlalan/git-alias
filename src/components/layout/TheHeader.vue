@@ -2,68 +2,42 @@
    <nav class="navbar">
       <div class="navbar__nav">
          <span class="navbar__nav--indicator" ref="indicator" />
-         <a
+         <router-link
+            :to="{ name: 'basic' }"
             class="navbar__nav--item"
-            href="#basic"
             ref="BASIC"
             @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >BASIC</a
+            >BASIC</router-link
          >
-         <a
+         <router-link
+            :to="{ name: 'commit' }"
             class="navbar__nav--item"
-            href="#commit"
             ref="COMMIT"
             @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >COMMIT</a
+            >COMMIT</router-link
          >
-         <a
+         <router-link :to="{ name: 'file' }" class="navbar__nav--item" ref="FILE" @click="setActive"
+            >FILE</router-link
+         >
+         <router-link
+            :to="{ name: 'branch' }"
             class="navbar__nav--item"
-            href="#file"
-            ref="FILE"
+            ref="BRANCH"
             @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >FILE</a
+            >BRANCH</router-link
          >
-         <a
+         <router-link
+            :to="{ name: 'remote' }"
             class="navbar__nav--item"
-            href="#branch"
-            ref="BRANCHING"
-            @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >BRANCHING</a
-         >
-         <a
-            class="navbar__nav--item"
-            href="#remote"
             ref="REMOTE"
             @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >REMOTE</a
+            >REMOTE</router-link
          >
-         <a
-            class="navbar__nav--item"
-            href="#tag"
-            ref="TAG"
-            @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >TAG</a
+         <router-link :to="{ name: 'tag' }" class="navbar__nav--item" ref="TAG" @click="setActive"
+            >TAG</router-link
          >
-         <a
-            class="navbar__nav--item"
-            href="#log"
-            ref="LOG"
-            @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >LOG</a
+         <router-link :to="{ name: 'log' }" class="navbar__nav--item" ref="LOG" @click="setActive"
+            >LOG</router-link
          >
       </div>
    </nav>
@@ -83,14 +57,6 @@ export default {
          this.$refs.indicator.style.width = `${e.target.offsetWidth}px`;
          e.target.style.color = '#00ffff';
          this.active = e.target.innerText;
-      },
-      hoverin(e) {
-         this.$refs.hoverIndicator.style.left = `${e.target.offsetLeft}px`;
-         this.$refs.hoverIndicator.style.width = `${e.target.offsetWidth}px`;
-      },
-      hoverout(e) {
-         this.$refs.hoverIndicator.style.left = `${this.$refs[this.active].offsetLeft}px`;
-         this.$refs.hoverIndicator.style.width = `${this.$refs[this.active].offsetWidth}px`;
       },
    },
    mounted() {

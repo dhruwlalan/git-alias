@@ -1,65 +1,60 @@
-export default [
-   ///BASIC///
+///BASIC///
+export const basic = [
    /* st */ {
-      cat: 'basic',
-      alias: 'st',
+      name: 'st',
       syntax: 'git st',
       commands: ['git status'],
       title: 'status of repo',
       desc: '',
    },
    /* ad */ {
-      cat: 'basic',
-      alias: 'ad',
+      name: 'ad',
       syntax: 'git ad',
       commands: ['git add <file_name>'],
       title: 'add files to be staged',
       desc: '',
    },
    /* ct */ {
-      cat: 'basic',
-      alias: 'ct',
+      name: 'ct',
       syntax: "git ct '<message>'",
       commands: ["git commit -m '<message>'"],
       title: 'commit with message',
       desc: '',
    },
-   ///COMMIT OPTIONS///
+];
+
+///COMMIT///
+export const commit = [
    /* dct */ {
-      cat: 'commit',
-      alias: 'dct',
+      name: 'dct',
       syntax: "git dct '<message>'",
       commands: ['git add .', "git commit -m '<message>'"],
       title: 'add + commit',
       desc: '',
    },
    /* ctp */ {
-      cat: 'commit',
-      alias: 'ctp',
+      name: 'ctp',
       syntax: "git ctp '<message>'",
       commands: ["git commit -m '<message>'", 'git push'],
       title: 'commit + push',
       desc: '',
    },
    /* dctp */ {
-      cat: 'commit',
-      alias: 'dctp',
+      name: 'dctp',
       syntax: "git dctp '<message>'",
       commands: ['git add .', "git commit -m '<message>'", 'git push'],
       title: 'add + commit + push',
       desc: '',
    },
    /* rct */ {
-      cat: 'commit',
-      alias: 'rct',
+      name: 'rct',
       syntax: "git rct '<message>'",
       commands: ['git add .', "git commit --amend --allow-empty -m '<message>'"],
       title: 'add + redo last commit',
       desc: '',
    },
    /* rctp */ {
-      cat: 'commit',
-      alias: 'rctp',
+      name: 'rctp',
       syntax: "git rctp '<message>'",
       commands: [
          'git add .',
@@ -70,24 +65,21 @@ export default [
       desc: '',
    },
    /* rcm */ {
-      cat: 'commit',
-      alias: 'rcm',
+      name: 'rcm',
       syntax: "git rcm '<message>'",
       commands: ["git commit --amend --allow-empty -m '<message>'"],
       title: 'redo last commit message',
       desc: '',
    },
    /* rcmp */ {
-      cat: 'commit',
-      alias: 'rcmp',
+      name: 'rcmp',
       syntax: "git rcmp '<message>'",
       commands: ["git commit --amend --allow-empty -m '<message>'", 'git push --force'],
       title: 'redo last commit message + push',
       desc: '',
    },
    /* push-dist */ {
-      cat: 'commit',
-      alias: 'push-dist',
+      name: 'push-dist',
       syntax: 'git push-dist',
       commands: ['subtree push --prefix dist origin gh-pages'],
       tdrSyntax: 'git push-dist <remote>',
@@ -96,8 +88,7 @@ export default [
       desc: '',
    },
    /* push-gh-pages */ {
-      cat: 'commit',
-      alias: 'push-gh-pages',
+      name: 'push-gh-pages',
       syntax: 'git push-gh-pages <folder>',
       commands: ['git subtree push origin --prefix <folder> gh-pages'],
       tdrSyntax: 'git push-gh-pages <remote> <folder>',
@@ -105,83 +96,79 @@ export default [
       title: 'push any subfolder to gh-pages',
       desc: '',
    },
-   ///FILE OPERATIONS///
+];
+
+///FILE///
+export const file = [
    /* rename */ {
-      cat: 'file',
-      alias: 'rename',
+      name: 'rename',
       syntax: 'git rename <old-name> <new-name>',
       commands: ['git mv <old-name> <new-name>'],
       title: 'rename file',
       desc: '',
    },
    /* unstage */ {
-      cat: 'file',
-      alias: 'unstage',
+      name: 'unstage',
       syntax: 'git unstage <file>',
       commands: ['git restore --staged <file>'],
       title: 'unstage file',
       desc: '',
    },
    /* unmodify */ {
-      cat: 'file',
-      alias: 'unmodify',
+      name: 'unmodify',
       syntax: 'git unmodify <file>',
       commands: ['git restore <file>'],
       title: 'unmodify file',
       desc: '',
    },
    /* untrack */ {
-      cat: 'file',
-      alias: 'untrack',
+      name: 'untrack',
       syntax: 'git untrack <file>',
       commands: ['git rm --cached -r <file>'],
       title: 'untrack file',
       desc: '',
    },
    /* delete-untracked */ {
-      cat: 'file',
-      alias: 'delete-untracked',
+      name: 'delete-untracked',
       syntax: 'git delete-untracked',
       commands: ['git clean -d -f'],
       title: 'delete untracked files',
       desc: '',
    },
-   ///BRANCH///
+];
+
+///BRANCH///
+export const branch = [
    /* branches */ {
-      cat: 'branch',
-      alias: 'branches',
+      name: 'branches',
       syntax: 'git branches',
       commands: ['git branch -a'],
       title: 'display all branches',
       desc: '',
    },
    /* sync */ {
-      cat: 'branch',
-      alias: 'sync',
+      name: 'sync',
       syntax: 'git sync',
       commands: ['git fetch -p --all', 'git pull'],
       title: 'sync local branch with remote',
       desc: '',
    },
    /* br */ {
-      cat: 'branch',
-      alias: 'br',
+      name: 'br',
       syntax: 'git br <branch>',
       commands: ['git checkout -b <branch>'],
       title: 'create a branch & checkout',
       desc: '',
    },
    /* co */ {
-      cat: 'branch',
-      alias: 'co',
+      name: 'co',
       syntax: 'git co <branch>',
       commands: ['git checkout <branch>'],
       title: 'checking out a branch',
       desc: '',
    },
    /* track */ {
-      cat: 'branch',
-      alias: 'track',
+      name: 'track',
       syntax: 'git track <remote-branch>',
       commands: ['git push -u origin <remote-branch>'],
       tdrSyntax: 'git track <remote> <remote-branch>',
@@ -190,8 +177,7 @@ export default [
       desc: '',
    },
    /* push-lb */ {
-      cat: 'branch',
-      alias: 'push-lb',
+      name: 'push-lb',
       syntax: 'git push-lb <local-branch>',
       commands: ['git push -u origin <local-branch>'],
       tdrSyntax: 'git push-lb <remote> <local-branch>',
@@ -200,24 +186,21 @@ export default [
       desc: '',
    },
    /* delete-lb */ {
-      cat: 'branch',
-      alias: 'delete-lb',
+      name: 'delete-lb',
       syntax: 'git delete-lb <local-branch>',
       commands: ['git branch -d <local-branch>'],
       title: 'delete local branch',
       desc: '',
    },
    /* pull-rb */ {
-      cat: 'branch',
-      alias: 'pull-rb',
+      name: 'pull-rb',
       syntax: 'git pull-rb <remote-branch>',
       commands: ['git fetch', 'git checkout <remote-branch>'],
       title: 'pull remote branch to local',
       desc: '',
    },
    /* delete-rb */ {
-      cat: 'branch',
-      alias: 'delete-rb',
+      name: 'delete-rb',
       syntax: 'git delete-rb <remote-branch>',
       commands: ['git push --delete origin <remote-branch>'],
       tdrSyntax: 'git delete-rb <remote> <remote-branch>',
@@ -226,8 +209,7 @@ export default [
       desc: '',
    },
    /* delete-lb-rb */ {
-      cat: 'branch',
-      alias: 'delete-lb-rb',
+      name: 'delete-lb-rb',
       syntax: 'git delete-lb-rb <branch>',
       commands: ['git branch -d <branch>', 'git push --delete origin <branch>'],
       tdrSyntax: 'git delete-lb-rb <remote> <branch>',
@@ -236,17 +218,18 @@ export default [
       desc: '',
    },
    /* delete-rb-refs */ {
-      cat: 'branch',
-      alias: 'delete-rb-refs',
+      name: 'delete-rb-refs',
       syntax: 'git delete-rb-refs',
       commands: ['git fetch -p'],
       title: 'delete remote branch refs',
       desc: '',
    },
-   ///REMOTE///
+];
+
+///REMOTE///
+export const remote = [
    /* remote-details */ {
-      cat: 'remote',
-      alias: 'remote-details',
+      name: 'remote-details',
       syntax: 'git remote-details',
       commands: ['git remote show origin'],
       tdrSyntax: 'git remote-details <remote>',
@@ -255,16 +238,14 @@ export default [
       desc: '',
    },
    /* remote-url */ {
-      cat: 'remote',
-      alias: 'remote-url',
+      name: 'remote-url',
       syntax: 'git remote-url',
       commands: ['git remote -v'],
       title: '',
       desc: '',
    },
    /* add-remote */ {
-      cat: 'remote',
-      alias: 'add-remote',
+      name: 'add-remote',
       syntax: 'git add-remote <url>',
       commands: ['git remote add origin <url>'],
       tdrSyntax: 'git add-remote <remote> <url>',
@@ -273,8 +254,7 @@ export default [
       desc: '',
    },
    /* delete-remote */ {
-      cat: 'remote',
-      alias: 'delete-remote',
+      name: 'delete-remote',
       syntax: 'git delete-remote',
       commands: ['git remote remove origin'],
       tdrSyntax: 'git delete-remote <remote>',
@@ -283,8 +263,7 @@ export default [
       desc: '',
    },
    /* rename-remote */ {
-      cat: 'remote',
-      alias: 'rename-remote',
+      name: 'rename-remote',
       syntax: 'git rename-remote <new-name>',
       commands: ['git remote rename origin <new-name>'],
       tdrSyntax: 'git rename-remote <remote> <new-name>',
@@ -293,8 +272,7 @@ export default [
       desc: '',
    },
    /* edit-remote-url */ {
-      cat: 'remote',
-      alias: 'edit-remote-url',
+      name: 'edit-remote-url',
       syntax: 'git edit-remote-url <url>',
       commands: ['git remote remove origin', 'git remote add origin <url>'],
       tdrSyntax: 'git edit-remote-url <remote> <url>',
@@ -302,42 +280,40 @@ export default [
       title: 'edit the url of a remote',
       desc: '',
    },
-   ///TAG///
+];
+
+///TAG///
+export const tag = [
    /* tags */ {
-      cat: 'tag',
-      alias: 'tags',
+      name: 'tags',
       syntax: 'git tags',
       commands: ['git tag --list --sort=-v:refname'],
       title: 'show all tags',
       desc: '',
    },
    /* last-tag */ {
-      cat: 'tag',
-      alias: 'last-tag',
+      name: 'last-tag',
       syntax: 'git last-tag',
       commands: ['git describe --tags --abbrev=0'],
       title: 'show the last tag',
       desc: '',
    },
    /* tag-details */ {
-      cat: 'tag',
-      alias: 'tag-details',
+      name: 'tag-details',
       syntax: 'git tag-details <tag>',
       commands: ['git show -s <tag>^{commit}'],
       title: 'show the details of a tag',
       desc: '',
    },
    /* release */ {
-      cat: 'tag',
-      alias: 'release',
+      name: 'release',
       syntax: "git release <version> '<message>'",
       commands: ["git tag -a <version> -m '<message>'"],
       title: 'create a release aka annotated tag',
       desc: '',
    },
    /* push-lt */ {
-      cat: 'tag',
-      alias: 'push-lt',
+      name: 'push-lt',
       syntax: 'git push-lt <local-tag>',
       commands: ['git push origin <local-tag>'],
       tdrSyntax: 'git push-lt <remote> <local-tag>',
@@ -346,16 +322,14 @@ export default [
       desc: '',
    },
    /* delete-lt */ {
-      cat: 'tag',
-      alias: 'delete-lt',
+      name: 'delete-lt',
       syntax: 'git delete-lt <local-tag>',
       commands: ['git tag -d <local-tag>'],
       title: 'delete local tag',
       desc: '',
    },
    /* delete-rt */ {
-      cat: 'tag',
-      alias: 'delete-rt',
+      name: 'delete-rt',
       syntax: 'git delete-rt <remote-tag>',
       commands: ['git push origin --delete <remote-tag>'],
       tdrSyntax: 'git delete-rt <remote> <remote-tag>',
@@ -364,8 +338,7 @@ export default [
       desc: '',
    },
    /* delete-lt-rt */ {
-      cat: 'tag',
-      alias: 'delete-lt-rt',
+      name: 'delete-lt-rt',
       syntax: 'git delete-lt-rt <tag>',
       commands: ['git tag -d <tag>', 'git push origin --delete <tag>'],
       tdrSyntax: 'git delete-lt-rt <remote> <tag>',
@@ -374,8 +347,7 @@ export default [
       desc: '',
    },
    /* sync-tags */ {
-      cat: 'tag',
-      alias: 'sync-tags',
+      name: 'sync-tags',
       syntax: 'git sync-tags',
       commands: ['git fetch --tags', 'git push origin --tags'],
       tdrSyntax: 'git sync-tags <remote>',
@@ -384,8 +356,7 @@ export default [
       desc: '',
    },
    /* push-all-lt */ {
-      cat: 'tag',
-      alias: 'push-all-lt',
+      name: 'push-all-lt',
       syntax: 'git push-all-lt',
       commands: ['git push origin --tags'],
       tdrSyntax: 'git push-all-lt <remote>',
@@ -394,33 +365,32 @@ export default [
       desc: '',
    },
    /* pull-all-rt */ {
-      cat: 'tag',
-      alias: 'pull-all-rt',
+      name: 'pull-all-rt',
       syntax: 'git pull-all-rt',
       commands: ['git fetch --all --tags'],
       title: 'pull all remote tags to local',
       desc: '',
    },
-   ///LOGS///
+];
+
+///LOG///
+export const log = [
    /* l */ {
-      cat: 'log',
-      alias: 'l',
+      name: 'l',
       syntax: 'git l',
       commands: ['git log --decorate'],
       title: 'show log of commits',
       desc: '',
    },
    /* last */ {
-      cat: 'log',
-      alias: 'last',
+      name: 'last',
       syntax: 'git last',
       commands: ['git log -1 HEAD --decorate'],
       title: 'show the last commit',
       desc: '',
    },
    /* graph */ {
-      cat: 'log',
-      alias: 'graph',
+      name: 'graph',
       syntax: 'git graph',
       commands: ['git log --oneline --graph --all'],
       title: 'show graph of commits',

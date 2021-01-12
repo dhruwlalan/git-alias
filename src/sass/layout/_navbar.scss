@@ -20,6 +20,7 @@
          @include flex($jc: center, $ai: center);
          @include flex-item($grow: 1, $shrink: 1, $basis: auto);
          z-index: 10;
+         cursor: pointer;
          transition: color 0.5s ease-in, background-color 0.5s;
 
          &:not(:last-child) {
