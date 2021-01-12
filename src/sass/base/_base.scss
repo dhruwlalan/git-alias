@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+:root {
+   //#fonts:#//
+   --roboto: "Roboto Mono", monospace;
+   --titillium: "Titillium Web", sans-serif;
+   --courierPrime: "Courier Prime", monospace;
+
+   //#colors:#//
+   --white: White;
+   --primary: #222831;
+   --secondary: #393e46;
+   --cyan1: #00ffff;
+   --cyan2: #00d8e2;
+   --tomato: #f97f77;
+   --primeblue: #228fec;
+}
+
+body {
+   -webkit-tap-highlight-color: transparent;
+   tap-highlight-color: transparent;
+   background-color: $primary;
+   color: $white;
+}

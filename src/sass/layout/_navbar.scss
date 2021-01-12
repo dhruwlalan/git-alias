@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.navbar {
+   @include size($h: 5rem, $w: 100%);
+   @include bg($c: $cyan1);
+   @include pbm($p: 3px, $rad: 50px, $m: 2rem 0);
+   @include flex($jc: center, $ai: center);
+   @include disable-selection;
+   overflow: hidden;
+
+   &__nav {
+      @include size($h: 100%, $w: 100%);
+      @include flex($jc: center, $ai: center);
+      @include pos-relative;
+
+      &--item {
+         @include size($h: 100%);
+         @include typo($c: $primary, $ff: $roboto, $fw: 400, $fs: 1.8rem, $td: none, $ta: center);
+         @include pbm($rad: 50px);
+         @include flex($jc: center, $ai: center);
+         @include flex-item($grow: 1, $shrink: 1, $basis: auto);
+         z-index: 100;
+         transition: all 0.5s ease-in;
+      }
+
+      &--active-indicator {
+         @include size($h: 100%);
+         @include bg($c: $primary);
+         @include pbm($rad: 50px);
+         @include pos-absolute($t: 0, $l: 0, $z: 10);
+         transition: all 0.5s ease-in-out;
+      }
+
+      &--hover-indicator {
+         @include size($h: 100%);
+         @include bg($c: rgb(0 0 0 / 10%));
+         @include pbm($rad: 50px);
+         @include pos-absolute($t: 0, $l: 0);
+         transition: all 0.4s ease-out;
+      }
+   }
+}

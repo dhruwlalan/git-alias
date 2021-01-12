@@ -1,0 +1,85 @@
+[user]
+	name = dhruw
+	email = dhruwlalan22@gmail.com
+
+[alias]
+	# BASIC
+	st = status
+	ad = add
+	ct = commit -m
+
+	# COMMIT OPTIONS
+	ctp = "!f() { git commit -m \"$1\" && git push; }; f"
+	dct = "!f() { git add . && git commit -m \"$1\"; }; f"
+	dctp = "!f() { git add . && git commit -m \"$1\" && git push; }; f"
+	rct = "!f() { git add . && git commit --amend --allow-empty -m \"$1\"; }; f"
+	rctp = "!f() { git add . && git commit --amend --allow-empty -m \"$1\" && git push --force; }; f"
+	rcm = "!f() { git commit --amend --allow-empty -m \"$1\"; }; f"
+	rcmp = "!f() { git commit --amend --allow-empty -m \"$1\" && git push --force; }; f"
+	push-dist = subtree push --prefix dist origin gh-pages
+	push-gh-pages = "!f() { git subtree push --prefix $1 origin gh-pages; }; f"
+
+	# FILE OPERATIONS
+	rename = mv
+	unstage = restore --staged
+	unmodify = restore
+	untrack = rm --cached -r
+	delete-untracked = clean -d -f
+
+	# BRANCH
+	branches = branch -a
+	sync = "!f() { git fetch -p --all && git pull; }; f"
+	br = checkout -b
+	co = checkout
+	track = push -u origin
+	push-lb = push -u origin
+	delete-lb = branch -d
+	pull-rb = "!f() { git fetch && git checkout $1; }; f"
+	delete-rb = push --delete origin
+	delete-lb-rb = "!f() { git branch -d $1 && git push --delete origin $1; }; f"
+	delete-rb-refs = fetch -p
+	# tdr
+	push-lb-tdr = push -u
+	delete-rb-tdr = push --delete
+	delete-lb-rb-tdr = "!f() { git branch -d $2 && git push --delete $1 $2; }; f"
+	track-tdr = push -u
+
+	# REMOTE
+	remote-details = remote show origin
+	remote-url = remote -v
+	add-remote = remote add origin
+	delete-remote = remote remove origin
+	rename-remote = remote rename origin
+	edit-remote-url = "!f() { git remote remove origin && git remote add origin $1; }; f"
+	# tdr
+	remote-details-tdr = remote show
+	add-remote-tdr = remote add
+	delete-remote-tdr = remote remove
+	rename-remote-tdr = remote rename
+	edit-remote-url-tdr = "!f() { git remote remove $1 && git remote add $1 $2; }; f"
+
+	# TAG
+	tags = tag --list --sort=-v:refname --format '%(color:bold green)%(refname:short) %(color:white)-> %(color:bold cyan)%(contents:subject)'
+	last-tag = describe --tags --abbrev=0
+	tag-details = "!f() { git show -s $1^{commit} --pretty=tformat:'%C(bold white)~%d%n%C(bold yellow)commit %C(white)\t-> %C(cyan)%s %n%C(bold yellow)hash %C(white)\t-> %C(dim red)%H %n%C(bold yellow)author %C(white)\t-> %C(green)%an <%ae> %n%C(bold yellow)date %C(white)\t-> %C(magenta)%cD'; }; f"
+	release = "!f() { git tag -a $1 -m \"$2\"; }; f"
+	push-lt = push origin
+	delete-lt = tag -d
+	delete-rt = push origin --delete
+	delete-lt-rt = "!f() { git tag -d $1 && git push --delete origin $1; }; f"
+	sync-tags = "!f() { git fetch --tags && git push origin --tags; }; f"
+	push-all-lt = push origin --tags
+	pull-all-rt = fetch --all --tags
+	# tdr
+	push-lt-tdr = push
+	delete-rt-tdr = push --delete
+	delete-lt-rt-tdr = "!f() { git tag -d $2 && git push --delete $1 $2; }; f"
+	push-all-lt-tdr = push --tags
+
+	# LOGS
+	l = log --decorate --pretty=tformat:'%C(bold white)* %C(yellow)%h %C(cyan)%s%C(red)%d'
+	last = log -1 HEAD --decorate --pretty=tformat:'%C(bold white)* %C(yellow)%h %C(cyan)%s%C(red)%d'
+	graph = log --oneline --graph --all
+
+[core]
+	safecrlf = false
