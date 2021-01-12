@@ -15,28 +15,28 @@
 
       &--item {
          @include size($h: 100%);
-         @include typo($c: $primary, $ff: $roboto, $fw: 500, $fs: 1.8rem, $td: none, $ta: center);
+         @include typo($c: $primary, $ff: $rubik, $fw: 400, $fs: 2rem, $td: none);
          @include pbm($rad: 50px);
          @include flex($jc: center, $ai: center);
          @include flex-item($grow: 1, $shrink: 1, $basis: auto);
-         z-index: 100;
-         transition: all 0.5s ease-in;
+         z-index: 10;
+         transition: color 0.5s ease-in, background-color 0.5s;
+
+         &:not(:last-child) {
+            margin-right: 1rem;
+         }
+
+         &:hover {
+            background-color: rgb(0 0 0 / 10%);
+         }
       }
 
-      &--active-indicator {
+      &--indicator {
          @include size($h: 100%);
          @include bg($c: $primary);
          @include pbm($rad: 50px);
-         @include pos-absolute($t: 0, $l: 0, $z: 10);
-         transition: all 0.5s ease-in-out;
-      }
-
-      &--hover-indicator {
-         @include size($h: 100%);
-         @include bg($c: rgb(0 0 0 / 10%));
-         @include pbm($rad: 50px);
          @include pos-absolute($t: 0, $l: 0);
-         transition: all 0.4s ease-out;
+         transition: all 0.5s ease-in-out;
       }
    }
 }

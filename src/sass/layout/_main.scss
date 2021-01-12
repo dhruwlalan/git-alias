@@ -1,41 +1,21 @@
 @use '../abstracts' as *;
 
 .main {
-   height: calc(100vh - 11rem);
+   @include size($h: calc(100vh - 11rem));
+   @include bg($c: $cyan1);
+   @include pbm($p: 2px, $rad: 20px);
+   @include flex($fd: column);
    overflow: hidden;
 
-   &__container {
-      height: 100%;
-      overflow-y: scroll;
-      border-radius: 20px;
-      scroll-behavior: smooth;
-
-      &::-webkit-scrollbar {
-         display: none;
-      }
+   &__header {
+      @include typo($c: $primary, $ff: $rubik, $fw: 500, $fs: 2.5rem);
+      @include bg($c: $cyan1);
+      @include pbm($p: 5px 2rem, $rad: 20px);
    }
 
-   &__cat {
-      background-color: $cyan1;
-      border-radius: 20px;
-
-      &:not(:last-child) {
-         margin-bottom: 2rem;
-      }
-
-      &--header {
-         @include typo($c: $primary, $ff: $roboto, $fw: 500, $fs: 2.5rem);
-         background-color: $cyan1;
-         padding: 0.5rem 2rem;
-         border-radius: 20px;
-         position: sticky;
-         top: 0;
-      }
-      &--body {
-         background-color: $primary;
-         padding: 2rem;
-         border-radius: 20px;
-         border: 3px solid $cyan1;
-      }
+   &__body {
+      @include bg($c: $primary);
+      @include pbm($p: 2rem, $rad: 20px);
+      @include flex-item($grow: 1);
    }
 }

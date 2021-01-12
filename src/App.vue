@@ -1,15 +1,11 @@
 <template>
    <div class="container">
       <the-header />
-      <div class="main">
-         <div class="main__container">
-            <div v-for="cat in cats" :key="cat" class="main__cat" :id="cat">
-               <div class="main__cat--header">{{ cat.toUpperCase() }}</div>
-               <div class="main__cat--body">
-                  <div v-for="alias in aliases" :key="alias.alias">
-                     <div v-if="alias.cat === cat">{{ alias.alias }} - {{ alias.syntax }}</div>
-                  </div>
-               </div>
+      <div v-for="cat in cats" :key="cat" class="main" :id="cat">
+         <div class="main__header">{{ cat.toUpperCase() }}</div>
+         <div class="main__body">
+            <div v-for="alias in aliases" :key="alias.alias">
+               <div v-if="alias.cat === cat">{{ alias.alias }} - {{ alias.syntax }}</div>
             </div>
          </div>
       </div>
@@ -25,7 +21,7 @@ export default {
    },
    data() {
       return {
-         cats: ['commit'],
+         cats: ['basic'],
          allCats: ['basic', 'commit', 'file', 'branch', 'remote', 'tag', 'log'],
       };
    },

@@ -1,7 +1,6 @@
 ///fonts///
-$roboto: "Roboto Mono", monospace;
-$titillium: "Titillium Web", sans-serif;
-$courierPrime: "Courier Prime", monospace;
+$courierPrime: var(--courierPrime);
+$rubik: var(--rubik);
 
 ///colors - base///
 $white: var(--white);

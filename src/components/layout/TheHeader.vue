@@ -1,8 +1,7 @@
 <template>
    <nav class="navbar">
       <div class="navbar__nav">
-         <span class="navbar__nav--active-indicator" ref="activeIndicator" />
-         <span class="navbar__nav--hover-indicator" ref="hoverIndicator" />
+         <span class="navbar__nav--indicator" ref="indicator" />
          <a
             class="navbar__nav--item"
             href="#basic"
@@ -80,8 +79,8 @@ export default {
    methods: {
       setActive(e) {
          this.$refs[this.active].style.color = '#222831';
-         this.$refs.activeIndicator.style.left = `${e.target.offsetLeft}px`;
-         this.$refs.activeIndicator.style.width = `${e.target.offsetWidth}px`;
+         this.$refs.indicator.style.left = `${e.target.offsetLeft}px`;
+         this.$refs.indicator.style.width = `${e.target.offsetWidth}px`;
          e.target.style.color = '#00ffff';
          this.active = e.target.innerText;
       },
@@ -95,8 +94,8 @@ export default {
       },
    },
    mounted() {
-      this.$refs.activeIndicator.style.left = `${this.$refs[this.active].offsetLeft}px`;
-      this.$refs.activeIndicator.style.width = `${this.$refs[this.active].offsetWidth}px`;
+      this.$refs.indicator.style.left = `${this.$refs[this.active].offsetLeft}px`;
+      this.$refs.indicator.style.width = `${this.$refs[this.active].offsetWidth}px`;
       this.$refs[this.active].style.color = '#00ffff';
    },
 };
