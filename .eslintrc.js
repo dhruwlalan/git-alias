@@ -19,6 +19,7 @@ module.exports = {
       'no-restricted-syntax': 0,
       'no-plusplus': 0,
       'no-alert': 0,
+      'no-new': 0,
       'no-unused-vars': 0,
       'spaced-comment': 0,
       'consistent-return': 0,

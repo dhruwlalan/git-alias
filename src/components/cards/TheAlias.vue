@@ -11,6 +11,7 @@
          <span>{{ alias.rest }}</span>
          <copy-svg
             class="main__body__alias--syntax--copy-svg"
+            :data-clipboard-text="alias.syntax"
             v-if="hover && !copy"
             @click="copyCode"
          />
@@ -20,6 +21,7 @@
 </template>
 
 <script>
+import Clipboard from 'clipboard';
 import CopySvg from '../utils/CopySvg.vue';
 import CopiedSvg from '../utils/CopiedSvg.vue';
 
@@ -42,6 +44,9 @@ export default {
             this.copy = false;
          }, 1000);
       },
+   },
+   mounted() {
+      new Clipboard('.main__body__alias--syntax--copy-svg');
    },
 };
 </script>

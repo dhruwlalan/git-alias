@@ -33,7 +33,7 @@
          }
 
          &--title {
-            @include typo($c: $tomato, $ff: $rubik, $fs: 2.5rem, $fw: 300);
+            @include typo($c: $tomato, $ff: $rubik, $fs: 2.5rem, $fw: 300, $ws: 2px);
             @include pbm($pl: 1rem);
             @include disable-selection;
          }
@@ -46,12 +46,26 @@
                font-weight: 900;
             }
             &--copy-svg {
-               @include pos-absolute($r: 1rem);
+               @include size($h: 3.5rem, $w: 3.5rem);
+               @include pos-absolute($r: 8px, $b: 8px);
                cursor: pointer;
+               border-radius: 5px;
+               padding: 5px;
+
+               &:hover {
+                  background-color: rgb(34 40 49 / 50%);
+               }
             }
             &--copied-svg {
-               @include pos-absolute($r: 1.1rem);
+               @include size($h: 3.5rem, $w: 3.5rem);
+               @include pos-absolute($r: 8px, $b: 8px);
                cursor: pointer;
+               border-radius: 5px;
+               padding: 5px;
+
+               &:hover {
+                  background-color: rgb(34 40 49 / 100%);
+               }
             }
          }
       }
