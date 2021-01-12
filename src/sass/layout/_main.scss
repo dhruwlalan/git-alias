@@ -11,11 +11,40 @@
       @include typo($c: $primary, $ff: $rubik, $fw: 500, $fs: 2.5rem);
       @include bg($c: $cyan1);
       @include pbm($p: 5px 2rem, $rad: 20px);
+      @include disable-selection;
    }
 
    &__body {
       @include bg($c: $primary);
       @include pbm($p: 2rem, $rad: 20px);
       @include flex-item($grow: 1);
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+
+      &__alias {
+         @include pbm($pt: 1rem, $mb: 2rem);
+         transition: all 0.3s;
+
+         &:hover {
+            @include bg($c: $secondary);
+            @include pbm($rad: 1rem);
+         }
+
+         &--title {
+            @include typo($c: $tomato, $ff: $rubik, $fs: 2.5rem, $fw: 300);
+            @include pbm($pl: 1rem);
+            @include disable-selection;
+         }
+         &--syntax {
+            @include typo($c: $cyan1, $ff: $courierPrime, $fs: 2.5rem, $fw: 400);
+            @include pbm($p: 1rem);
+
+            &--name {
+               font-weight: 900;
+            }
+         }
+      }
    }
 }

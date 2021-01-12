@@ -3,6 +3,7 @@ export const basic = [
    /* st */ {
       name: 'st',
       syntax: 'git st',
+      rest: '',
       commands: ['git status'],
       title: 'status of repo',
       desc: '',
@@ -10,6 +11,7 @@ export const basic = [
    /* ad */ {
       name: 'ad',
       syntax: 'git ad',
+      rest: '',
       commands: ['git add <file_name>'],
       title: 'add files to be staged',
       desc: '',
@@ -17,6 +19,7 @@ export const basic = [
    /* ct */ {
       name: 'ct',
       syntax: "git ct '<message>'",
+      rest: "'<message>'",
       commands: ["git commit -m '<message>'"],
       title: 'commit with message',
       desc: '',
