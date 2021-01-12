@@ -16,7 +16,7 @@
 
    &__body {
       @include bg($c: $primary);
-      @include pbm($p: 2rem, $rad: 20px);
+      @include pbm($p: 2.2rem 2rem, $rad: 20px);
       @include flex-item($grow: 1);
       overflow-y: scroll;
       &::-webkit-scrollbar {
@@ -40,9 +40,18 @@
          &--syntax {
             @include typo($c: $cyan1, $ff: $courierPrime, $fs: 2.5rem, $fw: 400);
             @include pbm($p: 1rem);
+            @include pos-relative;
 
             &--name {
                font-weight: 900;
+            }
+            &--copy-svg {
+               @include pos-absolute($r: 1rem);
+               cursor: pointer;
+            }
+            &--copied-svg {
+               @include pos-absolute($r: 1.1rem);
+               cursor: pointer;
             }
          }
       }
