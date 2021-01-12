@@ -15,7 +15,7 @@
 
       &--item {
          @include size($h: 100%);
-         @include typo($c: $primary, $ff: $roboto, $fw: 400, $fs: 1.8rem, $td: none, $ta: center);
+         @include typo($c: $primary, $ff: $roboto, $fw: 500, $fs: 1.8rem, $td: none, $ta: center);
          @include pbm($rad: 50px);
          @include flex($jc: center, $ai: center);
          @include flex-item($grow: 1, $shrink: 1, $basis: auto);

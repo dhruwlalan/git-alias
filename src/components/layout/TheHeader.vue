@@ -5,7 +5,7 @@
          <span class="navbar__nav--hover-indicator" ref="hoverIndicator" />
          <a
             class="navbar__nav--item"
-            href="#BASIC"
+            href="#basic"
             ref="BASIC"
             @click="setActive"
             @mouseenter="hoverin"
@@ -14,25 +14,25 @@
          >
          <a
             class="navbar__nav--item"
-            href="#COMMIT-OPTIONS"
-            ref="COMMIT-OPTIONS"
+            href="#commit"
+            ref="COMMIT"
             @click="setActive"
             @mouseenter="hoverin"
             @mouseleave="hoverout"
-            >COMMIT-OPTIONS</a
+            >COMMIT</a
          >
          <a
             class="navbar__nav--item"
-            href="#FILE-OPERATIONS"
-            ref="FILE-OPERATIONS"
+            href="#file"
+            ref="FILE"
             @click="setActive"
             @mouseenter="hoverin"
             @mouseleave="hoverout"
-            >FILE-OPERATIONS</a
+            >FILE</a
          >
          <a
             class="navbar__nav--item"
-            href="#BRANCHING"
+            href="#branch"
             ref="BRANCHING"
             @click="setActive"
             @mouseenter="hoverin"
@@ -41,16 +41,7 @@
          >
          <a
             class="navbar__nav--item"
-            href="#TAGS"
-            ref="TAGS"
-            @click="setActive"
-            @mouseenter="hoverin"
-            @mouseleave="hoverout"
-            >TAGS</a
-         >
-         <a
-            class="navbar__nav--item"
-            href="#REMOTE"
+            href="#remote"
             ref="REMOTE"
             @click="setActive"
             @mouseenter="hoverin"
@@ -59,12 +50,21 @@
          >
          <a
             class="navbar__nav--item"
-            href="#SHOW"
-            ref="SHOW"
+            href="#tag"
+            ref="TAG"
             @click="setActive"
             @mouseenter="hoverin"
             @mouseleave="hoverout"
-            >SHOW</a
+            >TAG</a
+         >
+         <a
+            class="navbar__nav--item"
+            href="#log"
+            ref="LOG"
+            @click="setActive"
+            @mouseenter="hoverin"
+            @mouseleave="hoverout"
+            >LOG</a
          >
       </div>
    </nav>

@@ -3,10 +3,12 @@
       <the-header />
       <div class="main">
          <div class="main__container">
-            <div v-for="cat in cats" :key="cat" class="main__cat">
-               <div>{{ cat.toUpperCase() }}</div>
-               <div v-for="alias in aliases" :key="alias.alias">
-                  <div v-if="alias.cat === cat">{{ alias.alias }} - {{ alias.syntax }}</div>
+            <div v-for="cat in cats" :key="cat" class="main__cat" :id="cat">
+               <div class="main__cat--header">{{ cat.toUpperCase() }}</div>
+               <div class="main__cat--body">
+                  <div v-for="alias in aliases" :key="alias.alias">
+                     <div v-if="alias.cat === cat">{{ alias.alias }} - {{ alias.syntax }}</div>
+                  </div>
                </div>
             </div>
          </div>
@@ -23,7 +25,8 @@ export default {
    },
    data() {
       return {
-         cats: ['basic', 'commit', 'file', 'branch', 'remote', 'tag', 'log'],
+         cats: ['commit'],
+         allCats: ['basic', 'commit', 'file', 'branch', 'remote', 'tag', 'log'],
       };
    },
    computed: {
