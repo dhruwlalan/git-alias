@@ -60,7 +60,9 @@ const Router = createRouter({
          component: LogCard,
       },
       {
-         path: '/:notFound(.*)',
+         name: 'notFound',
+         path: '/:catchAll(.*)*',
+         props: false,
          redirect: '/',
       },
    ],
