@@ -55,6 +55,8 @@
             @include pos-relative;
 
             &--dolor {
+               display: inline-block;
+               transform: translateY(1px);
                @include disable-selection;
             }
             &--name {
