@@ -3,11 +3,9 @@
       <div class="main__body__alias--title">{{ alias.title }}</div>
       <div class="main__body__alias--syntax">
          <span class="main__body__alias--syntax--dolor">$&nbsp;</span>
-         <span>git</span>
-         <span>&nbsp;</span>
+         <span>git&nbsp;</span>
          <span class="main__body__alias--syntax--name">{{ alias.name }}</span>
-         <span>&nbsp;</span>
-         <span>{{ alias.rest }}</span>
+         <span v-if="alias.rest">&nbsp;{{ alias.rest }}</span>
          <copy-svg
             class="main__body__alias--syntax--copy-svg"
             :data-clipboard-text="alias.syntax"

@@ -3,7 +3,6 @@ export const basic = [
    /* st */ {
       name: 'st',
       syntax: 'git st',
-      rest: '',
       commands: ['git status'],
       title: 'status of repo',
       desc: '',
@@ -11,7 +10,6 @@ export const basic = [
    /* ad */ {
       name: 'ad',
       syntax: 'git ad',
-      rest: '',
       commands: ['git add <file_name>'],
       title: 'add files to be staged',
       desc: '',
@@ -31,6 +29,7 @@ export const commit = [
    /* dct */ {
       name: 'dct',
       syntax: "git dct '<message>'",
+      rest: "'<message>'",
       commands: ['git add .', "git commit -m '<message>'"],
       title: 'add + commit',
       desc: '',
@@ -38,6 +37,7 @@ export const commit = [
    /* ctp */ {
       name: 'ctp',
       syntax: "git ctp '<message>'",
+      rest: "'<message>'",
       commands: ["git commit -m '<message>'", 'git push'],
       title: 'commit + push',
       desc: '',
@@ -45,6 +45,7 @@ export const commit = [
    /* dctp */ {
       name: 'dctp',
       syntax: "git dctp '<message>'",
+      rest: "'<message>'",
       commands: ['git add .', "git commit -m '<message>'", 'git push'],
       title: 'add + commit + push',
       desc: '',
@@ -52,6 +53,7 @@ export const commit = [
    /* rct */ {
       name: 'rct',
       syntax: "git rct '<message>'",
+      rest: "'<message>'",
       commands: ['git add .', "git commit --amend --allow-empty -m '<message>'"],
       title: 'add + redo last commit',
       desc: '',
@@ -59,6 +61,7 @@ export const commit = [
    /* rctp */ {
       name: 'rctp',
       syntax: "git rctp '<message>'",
+      rest: "'<message>'",
       commands: [
          'git add .',
          "git commit --amend --allow-empty -m '<message>'",
@@ -70,6 +73,7 @@ export const commit = [
    /* rcm */ {
       name: 'rcm',
       syntax: "git rcm '<message>'",
+      rest: "'<message>'",
       commands: ["git commit --amend --allow-empty -m '<message>'"],
       title: 'redo last commit message',
       desc: '',
@@ -77,6 +81,7 @@ export const commit = [
    /* rcmp */ {
       name: 'rcmp',
       syntax: "git rcmp '<message>'",
+      rest: "'<message>'",
       commands: ["git commit --amend --allow-empty -m '<message>'", 'git push --force'],
       title: 'redo last commit message + push',
       desc: '',
@@ -93,6 +98,7 @@ export const commit = [
    /* push-gh-pages */ {
       name: 'push-gh-pages',
       syntax: 'git push-gh-pages <folder>',
+      rest: '<folder>',
       commands: ['git subtree push origin --prefix <folder> gh-pages'],
       tdrSyntax: 'git push-gh-pages <remote> <folder>',
       tdrCommands: ['git subtree push <remote> --prefix <folder> gh-pages'],
@@ -106,6 +112,7 @@ export const file = [
    /* rename */ {
       name: 'rename',
       syntax: 'git rename <old-name> <new-name>',
+      rest: '<old-name> <new-name>',
       commands: ['git mv <old-name> <new-name>'],
       title: 'rename file',
       desc: '',
@@ -113,6 +120,7 @@ export const file = [
    /* unstage */ {
       name: 'unstage',
       syntax: 'git unstage <file>',
+      rest: '<file>',
       commands: ['git restore --staged <file>'],
       title: 'unstage file',
       desc: '',
@@ -120,6 +128,7 @@ export const file = [
    /* unmodify */ {
       name: 'unmodify',
       syntax: 'git unmodify <file>',
+      rest: '<file>',
       commands: ['git restore <file>'],
       title: 'unmodify file',
       desc: '',
@@ -127,6 +136,7 @@ export const file = [
    /* untrack */ {
       name: 'untrack',
       syntax: 'git untrack <file>',
+      rest: '<file>',
       commands: ['git rm --cached -r <file>'],
       title: 'untrack file',
       desc: '',
@@ -159,6 +169,7 @@ export const branch = [
    /* br */ {
       name: 'br',
       syntax: 'git br <branch>',
+      rest: '<branch>',
       commands: ['git checkout -b <branch>'],
       title: 'create a branch & checkout',
       desc: '',
@@ -166,6 +177,7 @@ export const branch = [
    /* co */ {
       name: 'co',
       syntax: 'git co <branch>',
+      rest: '<branch>',
       commands: ['git checkout <branch>'],
       title: 'checking out a branch',
       desc: '',
@@ -173,6 +185,7 @@ export const branch = [
    /* track */ {
       name: 'track',
       syntax: 'git track <remote-branch>',
+      rest: '<remote-branch>',
       commands: ['git push -u origin <remote-branch>'],
       tdrSyntax: 'git track <remote> <remote-branch>',
       tdrCommands: ['git push -u <remote> <remote-branch>'],
@@ -182,6 +195,7 @@ export const branch = [
    /* push-lb */ {
       name: 'push-lb',
       syntax: 'git push-lb <local-branch>',
+      rest: '<local-branch>',
       commands: ['git push -u origin <local-branch>'],
       tdrSyntax: 'git push-lb <remote> <local-branch>',
       tdrCommands: ['git push -u <remote> <local-branch>'],
@@ -191,6 +205,7 @@ export const branch = [
    /* delete-lb */ {
       name: 'delete-lb',
       syntax: 'git delete-lb <local-branch>',
+      rest: '<local-branch>',
       commands: ['git branch -d <local-branch>'],
       title: 'delete local branch',
       desc: '',
@@ -198,6 +213,7 @@ export const branch = [
    /* pull-rb */ {
       name: 'pull-rb',
       syntax: 'git pull-rb <remote-branch>',
+      rest: '<remote-branch>',
       commands: ['git fetch', 'git checkout <remote-branch>'],
       title: 'pull remote branch to local',
       desc: '',
@@ -205,6 +221,7 @@ export const branch = [
    /* delete-rb */ {
       name: 'delete-rb',
       syntax: 'git delete-rb <remote-branch>',
+      rest: '<remote-branch>',
       commands: ['git push --delete origin <remote-branch>'],
       tdrSyntax: 'git delete-rb <remote> <remote-branch>',
       tdrCommands: ['git push --delete <remote> <remote-branch>'],
@@ -214,6 +231,7 @@ export const branch = [
    /* delete-lb-rb */ {
       name: 'delete-lb-rb',
       syntax: 'git delete-lb-rb <branch>',
+      rest: '<branch>',
       commands: ['git branch -d <branch>', 'git push --delete origin <branch>'],
       tdrSyntax: 'git delete-lb-rb <remote> <branch>',
       tdrCommands: ['git branch -d <branch>', 'git push --delete <remote> <branch>'],
@@ -244,12 +262,13 @@ export const remote = [
       name: 'remote-url',
       syntax: 'git remote-url',
       commands: ['git remote -v'],
-      title: '',
+      title: 'show list of remotes with their urls',
       desc: '',
    },
    /* add-remote */ {
       name: 'add-remote',
       syntax: 'git add-remote <url>',
+      rest: '<url>',
       commands: ['git remote add origin <url>'],
       tdrSyntax: 'git add-remote <remote> <url>',
       tdrCommands: ['git remote add <remote> <url>'],
@@ -268,6 +287,7 @@ export const remote = [
    /* rename-remote */ {
       name: 'rename-remote',
       syntax: 'git rename-remote <new-name>',
+      rest: '<new-name>',
       commands: ['git remote rename origin <new-name>'],
       tdrSyntax: 'git rename-remote <remote> <new-name>',
       tdrCommands: ['git remote rename <remote> <new-name>'],
@@ -276,10 +296,11 @@ export const remote = [
    },
    /* edit-remote-url */ {
       name: 'edit-remote-url',
-      syntax: 'git edit-remote-url <url>',
-      commands: ['git remote remove origin', 'git remote add origin <url>'],
-      tdrSyntax: 'git edit-remote-url <remote> <url>',
-      tdrCommands: ['git remote remove <remote>', 'git remote add <remote> <url>'],
+      syntax: 'git edit-remote-url <new-url>',
+      rest: '<new-url>',
+      commands: ['git remote remove origin', 'git remote add origin <new-url>'],
+      tdrSyntax: 'git edit-remote-url <remote> <new-url>',
+      tdrCommands: ['git remote remove <remote>', 'git remote add <remote> <new-url>'],
       title: 'edit the url of a remote',
       desc: '',
    },
@@ -304,6 +325,7 @@ export const tag = [
    /* tag-details */ {
       name: 'tag-details',
       syntax: 'git tag-details <tag>',
+      rest: '<tag>',
       commands: ['git show -s <tag>^{commit}'],
       title: 'show the details of a tag',
       desc: '',
@@ -311,6 +333,7 @@ export const tag = [
    /* release */ {
       name: 'release',
       syntax: "git release <version> '<message>'",
+      rest: "<version> '<message>'",
       commands: ["git tag -a <version> -m '<message>'"],
       title: 'create a release aka annotated tag',
       desc: '',
@@ -318,6 +341,7 @@ export const tag = [
    /* push-lt */ {
       name: 'push-lt',
       syntax: 'git push-lt <local-tag>',
+      rest: '<local-tag>',
       commands: ['git push origin <local-tag>'],
       tdrSyntax: 'git push-lt <remote> <local-tag>',
       tdrCommands: ['git push <remote> <local-tag>'],
@@ -327,6 +351,7 @@ export const tag = [
    /* delete-lt */ {
       name: 'delete-lt',
       syntax: 'git delete-lt <local-tag>',
+      rest: '<local-tag>',
       commands: ['git tag -d <local-tag>'],
       title: 'delete local tag',
       desc: '',
@@ -334,6 +359,7 @@ export const tag = [
    /* delete-rt */ {
       name: 'delete-rt',
       syntax: 'git delete-rt <remote-tag>',
+      rest: '<remote-tag>',
       commands: ['git push origin --delete <remote-tag>'],
       tdrSyntax: 'git delete-rt <remote> <remote-tag>',
       tdrCommands: ['git push <remote> --delete <remote-tag>'],
@@ -343,6 +369,7 @@ export const tag = [
    /* delete-lt-rt */ {
       name: 'delete-lt-rt',
       syntax: 'git delete-lt-rt <tag>',
+      rest: '<tag>',
       commands: ['git tag -d <tag>', 'git push origin --delete <tag>'],
       tdrSyntax: 'git delete-lt-rt <remote> <tag>',
       tdrCommands: ['git tag -d <tag>', 'git push <remote> --delete <tag>'],
