@@ -10,7 +10,7 @@ export const basic = [
    /* ad */ {
       name: 'ad',
       syntax: 'git ad',
-      commands: ['git add <file_name>'],
+      commands: ['git add <file-name>'],
       title: 'add files to be staged',
       desc: '',
    },
