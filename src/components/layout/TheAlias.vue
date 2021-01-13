@@ -5,13 +5,26 @@
          <span class="main__body__alias--syntax--dolor">$&nbsp;</span>
          <span>git&nbsp;</span>
          <span class="main__body__alias--syntax--name">{{ alias.name }}</span>
-         <span v-if="alias.rest">&nbsp;{{ alias.rest }}</span>
-         <copy-svg
-            class="main__body__alias--syntax--copy-svg"
-            :data-clipboard-text="alias.syntax"
-            v-if="hover && !copy"
-            @click="copyCode"
-         />
+
+         <template v-if="tdr && alias.tdrRest">
+            <span>&nbsp;{{ alias.tdrRest }}</span>
+            <copy-svg
+               class="main__body__alias--syntax--copy-svg"
+               :data-clipboard-text="alias.tdrSyntax"
+               v-if="hover && !copy"
+               @click="copyCode"
+            />
+         </template>
+         <template v-else>
+            <span v-if="alias.rest">&nbsp;{{ alias.rest }}</span>
+            <copy-svg
+               class="main__body__alias--syntax--copy-svg"
+               :data-clipboard-text="alias.syntax"
+               v-if="hover && !copy"
+               @click="copyCode"
+            />
+         </template>
+
          <copied-svg v-if="hover && copy" class="main__body__alias--syntax--copied-svg" />
       </div>
    </div>
@@ -32,6 +45,7 @@ export default {
       return {
          hover: false,
          copy: false,
+         tdr: false,
       };
    },
    methods: {

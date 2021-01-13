@@ -1,6 +1,10 @@
 <template>
    <div class="main">
-      <div class="main__header">{{ aliasCat.toUpperCase() }}</div>
+      <div class="main__header">
+         <h1 class="main__header--title">
+            {{ aliasCat.toUpperCase() }}
+         </h1>
+      </div>
       <div class="main__body">
          <div class="main__body__container">
             <the-alias v-for="alias in aliases" :key="alias.name" :alias="alias" />
