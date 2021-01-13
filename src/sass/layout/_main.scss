@@ -42,6 +42,9 @@
             @include pbm($p: 1rem);
             @include pos-relative;
 
+            &--dolor {
+               @include disable-selection;
+            }
             &--name {
                font-weight: 900;
             }

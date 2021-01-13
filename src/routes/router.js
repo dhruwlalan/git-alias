@@ -1,12 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import BasicCard from '../components/cards/BasicCard.vue';
-import BranchCard from '../components/cards/BranchCard.vue';
-import CommitCard from '../components/cards/CommitCard.vue';
-import FileCard from '../components/cards/FileCard.vue';
-import LogCard from '../components/cards/LogCard.vue';
-import RemoteCard from '../components/cards/RemoteCard.vue';
-import TagCard from '../components/cards/TagCard.vue';
+import AliasCat from '../components/layout/AliasCat.vue';
 
 const Router = createRouter({
    history: createWebHistory(),
@@ -22,42 +16,50 @@ const Router = createRouter({
       {
          name: 'home',
          path: '/',
-         component: BasicCard,
+         component: AliasCat,
+         props: { aliasCat: 'basic' },
       },
       {
          name: 'basic',
          path: '/basic',
-         component: BasicCard,
+         component: AliasCat,
+         props: { aliasCat: 'basic' },
       },
       {
          name: 'commit',
          path: '/commit',
-         component: CommitCard,
+         component: AliasCat,
+         props: { aliasCat: 'commit' },
       },
       {
          name: 'file',
          path: '/file',
-         component: FileCard,
+         component: AliasCat,
+         props: { aliasCat: 'file' },
       },
       {
          name: 'branch',
          path: '/branch',
-         component: BranchCard,
+         component: AliasCat,
+         props: { aliasCat: 'branch' },
       },
       {
          name: 'remote',
          path: '/remote',
-         component: RemoteCard,
+         component: AliasCat,
+         props: { aliasCat: 'remote' },
       },
       {
          name: 'tag',
          path: '/tag',
-         component: TagCard,
+         component: AliasCat,
+         props: { aliasCat: 'tag' },
       },
       {
          name: 'log',
          path: '/log',
-         component: LogCard,
+         component: AliasCat,
+         props: { aliasCat: 'log' },
       },
       {
          name: 'notFound',
