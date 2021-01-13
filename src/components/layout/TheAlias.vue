@@ -40,12 +40,11 @@ export default {
       CopySvg,
       CopiedSvg,
    },
-   props: ['alias'],
+   props: ['alias', 'tdr'],
    data() {
       return {
          hover: false,
          copy: false,
-         tdr: false,
       };
    },
    methods: {

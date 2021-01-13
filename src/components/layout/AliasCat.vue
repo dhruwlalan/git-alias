@@ -4,10 +4,14 @@
          <h1 class="main__header--title">
             {{ aliasCat.toUpperCase() }}
          </h1>
+         <div class="main__header--tdr-switch">
+            <span>tdr</span>
+            <on-off v-model="tdr" />
+         </div>
       </div>
       <div class="main__body">
          <div class="main__body__container">
-            <the-alias v-for="alias in aliases" :key="alias.name" :alias="alias" />
+            <the-alias v-for="alias in aliases" :key="alias.name" :alias="alias" :tdr="tdr" />
          </div>
       </div>
    </div>
@@ -16,11 +20,18 @@
 <script>
 import * as allAlias from '../vanilla/alias';
 import TheAlias from './TheAlias.vue';
+import OnOff from '../utils/OnOff.vue';
 
 export default {
-   props: ['aliasCat'],
    components: {
       TheAlias,
+      OnOff,
+   },
+   props: ['aliasCat'],
+   data() {
+      return {
+         tdr: false,
+      };
    },
    computed: {
       aliases() {

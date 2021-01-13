@@ -8,11 +8,22 @@
    overflow: hidden;
 
    &__header {
+      @include bg($c: $cyan1);
+      @include pbm($p: 5px 2rem, $rad: 20px);
+      @include flex($jc: space-between, $ai: center);
+      @include disable-selection;
+
       &--title {
          @include typo($c: $primary, $ff: $rubik, $fw: 500, $fs: 2.5rem);
-         @include bg($c: $cyan1);
-         @include pbm($p: 5px 2rem, $rad: 20px);
-         @include disable-selection;
+      }
+
+      &--tdr-switch {
+         @include flex($jc: center, $ai: center);
+
+         & > span {
+            @include typo($c: $primary, $ff: $rubik, $fs: 2rem, $style: italic);
+            padding-right: 1rem;
+         }
       }
    }
 
