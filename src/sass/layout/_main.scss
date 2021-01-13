@@ -15,21 +15,33 @@
    }
 
    &__body {
+      @include size($h: calc(100% - 4rem));
       @include bg($c: $primary);
-      @include pbm($p: 2.2rem 2rem, $rad: 20px);
-      @include flex-item($grow: 1);
-      overflow-y: scroll;
-      &::-webkit-scrollbar {
-         display: none;
+      @include pbm($p: 2rem, $pr: 6px, $rad: 20px);
+
+      &__container {
+         height: 100%;
+         overflow-y: scroll;
+
+         &::-webkit-scrollbar {
+            width: 6px;
+
+            &-track {
+               background-color: transparent;
+            }
+            &-thumb {
+               background-color: rgb(249 127 119 / 80%);
+               border-radius: 20px;
+            }
+         }
       }
 
       &__alias {
-         @include pbm($pt: 1rem, $mb: 2rem);
-         transition: all 0.3s;
+         @include pbm($pt: 1rem, $mb: 2rem, $mr: 5px, $rad: 1rem);
+         transition: background-color 0.3s;
 
          &:hover {
             @include bg($c: $secondary);
-            @include pbm($rad: 1rem);
          }
 
          &--title {
