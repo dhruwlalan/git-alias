@@ -52,6 +52,7 @@
       &__alias {
          @include pbm($pt: 1rem, $mb: 2rem, $mr: 5px, $rad: 1rem);
          transition: background-color 0.3s;
+         @include pos-relative;
 
          &:hover {
             @include bg($c: $secondary);
@@ -62,6 +63,7 @@
             @include pbm($pl: 1rem);
             @include disable-selection;
          }
+
          &--syntax {
             @include typo($c: $cyan1, $ff: $courierPrime, $fs: 2.5rem, $fw: 400);
             @include pbm($p: 1rem);
@@ -96,6 +98,22 @@
                &:hover {
                   background-color: rgb(34 40 49 / 100%);
                }
+            }
+         }
+
+         &--code-svg {
+            @include size($h: 3.5rem, $w: 3.5rem);
+            @include pos-absolute($r: 8px, $t: 8px);
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 5px;
+
+            &:hover {
+               background-color: rgb(34 40 49 / 50%);
+            }
+
+            &:active {
+               background-color: rgb(34 40 49 / 100%);
             }
          }
       }

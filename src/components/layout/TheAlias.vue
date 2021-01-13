@@ -1,6 +1,7 @@
 <template>
    <div class="main__body__alias" @mouseenter="hover = true" @mouseleave="hover = false">
       <div class="main__body__alias--title">{{ alias.title }}</div>
+      <code-svg v-if="hover" class="main__body__alias--code-svg" />
       <div class="main__body__alias--syntax">
          <span class="main__body__alias--syntax--dolor">$&nbsp;</span>
          <span>git&nbsp;</span>
@@ -34,11 +35,13 @@
 import Clipboard from 'clipboard';
 import CopySvg from '../utils/CopySvg.vue';
 import CopiedSvg from '../utils/CopiedSvg.vue';
+import CodeSvg from '../utils/CodeSvg.vue';
 
 export default {
    components: {
       CopySvg,
       CopiedSvg,
+      CodeSvg,
    },
    props: ['alias', 'tdr'],
    data() {
