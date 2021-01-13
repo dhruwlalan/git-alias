@@ -1,14 +1,14 @@
 <template>
    <nav class="navbar">
       <div class="navbar__nav">
-         <span class="navbar__nav--indicator" ref="indicator" />
-         <a class="navbar__nav--item" ref="BASIC" @click="setActive">BASIC</a>
-         <a class="navbar__nav--item" ref="COMMIT" @click="setActive">COMMIT</a>
-         <a class="navbar__nav--item" ref="FILE" @click="setActive">FILE</a>
-         <a class="navbar__nav--item" ref="BRANCH" @click="setActive">BRANCH</a>
-         <a class="navbar__nav--item" ref="REMOTE" @click="setActive">REMOTE</a>
-         <a class="navbar__nav--item" ref="TAG" @click="setActive">TAG</a>
-         <a class="navbar__nav--item" ref="LOG" @click="setActive">LOG</a>
+         <span :class="indicatorClass" ref="indicator" />
+         <a :class="itemClass" ref="BASIC" @click="setActive">BASIC</a>
+         <a :class="itemClass" ref="COMMIT" @click="setActive">COMMIT</a>
+         <a :class="itemClass" ref="FILE" @click="setActive">FILE</a>
+         <a :class="itemClass" ref="BRANCH" @click="setActive">BRANCH</a>
+         <a :class="itemClass" ref="REMOTE" @click="setActive">REMOTE</a>
+         <a :class="itemClass" ref="TAG" @click="setActive">TAG</a>
+         <a :class="itemClass" ref="LOG" @click="setActive">LOG</a>
       </div>
    </nav>
 </template>
@@ -18,6 +18,8 @@ export default {
    data() {
       return {
          active: '',
+         nitemt: false,
+         nindit: false,
       };
    },
    methods: {
@@ -28,6 +30,20 @@ export default {
          e.target.style.color = '#00ffff';
          this.active = e.target.innerText;
          this.$router.push({ name: `${e.target.innerText.toLowerCase()}` });
+      },
+   },
+   computed: {
+      indicatorClass() {
+         return {
+            'navbar__nav--indicator': true,
+            'n-indi-t': this.nindit,
+         };
+      },
+      itemClass() {
+         return {
+            'navbar__nav--item': true,
+            'n-item-t': this.nitemt,
+         };
       },
    },
    created() {
@@ -43,6 +59,10 @@ export default {
       this.$refs.indicator.style.left = `${this.$refs[this.active].offsetLeft}px`;
       this.$refs.indicator.style.width = `${this.$refs[this.active].offsetWidth}px`;
       this.$refs[this.active].style.color = '#00ffff';
+      setTimeout(() => {
+         this.nitemt = true;
+         this.nindit = true;
+      }, 0);
    },
 };
 </script>
