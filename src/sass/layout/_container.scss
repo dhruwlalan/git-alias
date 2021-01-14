@@ -5,7 +5,6 @@
    @include pbm($pt: 2rem, $m: 0 auto);
 
    @media (max-width: 700px) {
-      margin-bottom: 1rem;
       padding-top: 1rem;
    }
 }
