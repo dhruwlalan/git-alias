@@ -1,6 +1,5 @@
 <template>
    <div class="onoff" @click="$emit('update:modelValue', !modelValue)">
-      <div class="onoff__inset-track"></div>
       <div class="onoff__track" :class="trackClass"></div>
       <div class="onoff__thumb" :class="thumbClass"></div>
    </div>

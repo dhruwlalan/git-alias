@@ -7,14 +7,6 @@
    @include pos-relative;
    cursor: pointer;
 
-   &__inset-track {
-      @include size($h: calc(100% - 4px), $w: calc(100% - 4px));
-      @include bg($c: rgb(0 255 255 / 40%));
-      @include pbm($rad: 50px);
-      @include pos-absolute($z: 10, $l: 2px, $t: 50%);
-      transform: translateY(-50%);
-   }
-
    &__track {
       @include size($h: calc(100% - 4px));
       @include bg($c: $tomato);
@@ -32,10 +24,11 @@
    }
 
    &__thumb {
-      @include size($h: 2.2rem, $w: 2.2rem);
+      @include size($h: 1.6rem, $w: 1.6rem);
       background: linear-gradient(145deg, #00f1ff, #01b6ce);
-      @include pbm($rad: 50px, $b: 2px solid $primary);
-      @include pos-absolute($l: 0, $t: 50%, $z: 30);
+      @include pbm($rad: 50px);
+      @include pos-absolute($l: 2px, $t: 50%, $z: 30);
+      box-shadow: 0 0 2px 1px black;
       transition: transform 0.3s;
 
       &--off {
