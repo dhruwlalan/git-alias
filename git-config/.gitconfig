@@ -1,7 +1,3 @@
-[user]
-	name = dhruw
-	email = dhruwlalan22@gmail.com
-
 [alias]
 	# BASIC
 	st = status
@@ -17,7 +13,8 @@
 	rcm = "!f() { git commit --amend --allow-empty -m \"$1\"; }; f"
 	rcmp = "!f() { git commit --amend --allow-empty -m \"$1\" && git push --force; }; f"
 	push-dist = subtree push --prefix dist origin gh-pages
-	push-gh-pages = "!f() { git subtree push --prefix $1 origin gh-pages; }; f"
+	push-dist = "!f() { if [ $# != 1 ]; then git subtree push --prefix dist origin gh-pages; else git subtree push --prefix dist $1 gh-pages; fi; }; f"
+	push-gh-pages = "!f() { if [ $# != 2 ]; then git subtree push origin --prefix $1 gh-pages; else git subtree push $1 --prefix $2 gh-pages; fi; }; f"
 
 	# FILE OPERATIONS
 	rename = mv
@@ -31,55 +28,36 @@
 	sync = "!f() { git fetch -p --all && git pull; }; f"
 	br = checkout -b
 	co = checkout
-	track = push -u origin
-	push-lb = push -u origin
+	track = "!f() { if [ $# != 2 ]; then git push -u origin $1; else git push -u $1 $2; fi; }; f"
+	push-lb = "!f() { if [ $# != 2 ]; then git push -u origin $1; else git push -u $1 $2; fi; }; f"
 	delete-lb = branch -d
 	pull-rb = "!f() { git fetch && git checkout $1; }; f"
-	delete-rb = push --delete origin
-	delete-lb-rb = "!f() { git branch -d $1 && git push --delete origin $1; }; f"
+	delete-rb = "!f() { if [ $# != 2 ]; then git push --delete origin $1; else git push --delete $1 $2; fi; }; f"
+	delete-lb-rb = "!f() { if [ $# != 2 ]; then git branch -d $1 && git push --delete origin $1; else git branch -d $2 && git push --delete $1 $2; fi; }; f"
 	delete-rb-refs = fetch -p
-	# tdr
-	push-lb-tdr = push -u
-	delete-rb-tdr = push --delete
-	delete-lb-rb-tdr = "!f() { git branch -d $2 && git push --delete $1 $2; }; f"
-	track-tdr = push -u
 
 	# REMOTE
-	remote-details = remote show origin
+	remote-details = "!f() { if [ $# != 1 ]; then git remote show origin; else git remote show $1; fi; }; f"
 	remote-url = remote -v
-	add-remote = remote add origin
-	delete-remote = remote remove origin
-	rename-remote = remote rename origin
-	edit-remote-url = "!f() { git remote remove origin && git remote add origin $1; }; f"
-	# tdr
-	remote-details-tdr = remote show
-	add-remote-tdr = remote add
-	delete-remote-tdr = remote remove
-	rename-remote-tdr = remote rename
-	edit-remote-url-tdr = "!f() { git remote remove $1 && git remote add $1 $2; }; f"
+	add-remote = "!f() { if [ $# != 2 ]; then git remote add origin $1; else git remote add $1 $2; fi; }; f"
+	delete-remote = "!f() { if [ $# != 1 ]; then git remote remove origin; else git remote remove $1; fi; }; f"
+	rename-remote = "!f() { if [ $# != 2 ]; then git remote rename origin $1; else git remote rename $1 $2; fi; }; f"
+	edit-remote-url = "!f() { if [ $# != 2 ]; then git remote remove origin && git remote add origin $1; else git remote remove $1 && git remote add $1 $2; fi; }; f"
 
 	# TAG
 	tags = tag --list --sort=-v:refname --format '%(color:bold green)%(refname:short) %(color:white)-> %(color:bold cyan)%(contents:subject)'
 	last-tag = describe --tags --abbrev=0
 	tag-details = "!f() { git show -s $1^{commit} --pretty=tformat:'%C(bold white)~%d%n%C(bold yellow)commit %C(white)\t-> %C(cyan)%s %n%C(bold yellow)hash %C(white)\t-> %C(dim red)%H %n%C(bold yellow)author %C(white)\t-> %C(green)%an <%ae> %n%C(bold yellow)date %C(white)\t-> %C(magenta)%cD'; }; f"
 	release = "!f() { git tag -a $1 -m \"$2\"; }; f"
-	push-lt = push origin
+	push-lt = "!f() { if [ $# != 2 ]; then git push origin $1; else git push $1 $2; fi; }; f"
 	delete-lt = tag -d
-	delete-rt = push origin --delete
-	delete-lt-rt = "!f() { git tag -d $1 && git push --delete origin $1; }; f"
-	sync-tags = "!f() { git fetch --tags && git push origin --tags; }; f"
-	push-all-lt = push origin --tags
+	delete-rt = "!f() { if [ $# != 2 ]; then git push origin --delete $1; else git push $1 --delete $2; fi; }; f"
+	delete-lt-rt = "!f() { if [ $# != 2 ]; then git tag -d $1 && git push origin --delete $1; else git tag -d $2 && git push $1 --delete $2; fi; }; f"
+	sync-tags = "!f() { if [ $# != 1 ]; then git fetch --tags && git push origin --tags; else git fetch --tags && git push $1 --tags; fi; }; f"
+	push-all-lt = "!f() { if [ $# != 1 ]; then git push origin --tags; else git push $1 --tags; fi; }; f"
 	pull-all-rt = fetch --all --tags
-	# tdr
-	push-lt-tdr = push
-	delete-rt-tdr = push --delete
-	delete-lt-rt-tdr = "!f() { git tag -d $2 && git push --delete $1 $2; }; f"
-	push-all-lt-tdr = push --tags
 
 	# LOGS
 	l = log --decorate --pretty=tformat:'%C(bold white)* %C(yellow)%h %C(cyan)%s%C(red)%d'
 	last = log -1 HEAD --decorate --pretty=tformat:'%C(bold white)* %C(yellow)%h %C(cyan)%s%C(red)%d'
 	graph = log --oneline --graph --all
-
-[core]
-	safecrlf = false

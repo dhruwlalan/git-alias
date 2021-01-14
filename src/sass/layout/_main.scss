@@ -95,7 +95,7 @@
 
          &--syntax {
             @include typo($c: $cyan1, $ff: $courierPrime, $fs: 2.5rem, $fw: 400);
-            @include pbm($p: 1rem, $pr: 2rem);
+            @include pbm($p: 1rem, $pr: 3rem);
             @include pos-relative;
 
             @media (max-width: 600px) {
