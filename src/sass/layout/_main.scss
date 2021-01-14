@@ -1,11 +1,19 @@
 @use '../abstracts' as *;
 
+#app {
+   height: 100%;
+}
+
 .main {
-   @include size($h: calc(100vh - 11rem));
+   @include size($h: calc(100% - 9rem));
    @include bg($c: $cyan1);
    @include pbm($p: 2px, $rad: 20px);
    @include flex($fd: column);
    overflow: hidden;
+
+   @media (max-width: 700px) {
+      height: calc(100% - 6rem);
+   }
 
    &__header {
       @include bg($c: $cyan1);

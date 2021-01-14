@@ -1,6 +1,11 @@
 @use '../abstracts' as *;
 
 .container {
-   @include size($maxw: 100rem);
-   @include pbm($m: 0 auto);
+   @include size($maxw: 100rem, $h: 100%);
+   @include pbm($pt: 2rem, $m: 0 auto);
+
+   @media (max-width: 700px) {
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+   }
 }

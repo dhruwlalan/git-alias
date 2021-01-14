@@ -15,9 +15,14 @@
    --primeblue: #228fec;
 }
 
+html {
+   height: -webkit-fill-available;
+}
+
 body {
    -webkit-tap-highlight-color: transparent;
    tap-highlight-color: transparent;
    background-color: $primary;
    color: $white;
+   height: 100%;
 }

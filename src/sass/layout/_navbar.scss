@@ -3,10 +3,14 @@
 .navbar {
    @include size($h: 5rem, $w: 100%);
    @include bg($c: $cyan1);
-   @include pbm($p: 3px, $rad: 50px, $m: 2rem 0);
+   @include pbm($p: 3px, $rad: 50px, $mb: 2rem);
    @include flex($jc: center, $ai: center);
    @include disable-selection;
    overflow: hidden;
+
+   @media (max-width: 700px) {
+      margin-bottom: 1rem;
+   }
 
    &__nav {
       @include size($h: 100%, $w: 100%);
