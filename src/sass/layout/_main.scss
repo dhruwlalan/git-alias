@@ -45,6 +45,10 @@
       @include bg($c: $primary);
       @include pbm($p: 2rem, $pr: 6px, $rad: 20px);
 
+      @media (max-width: 600px) {
+         padding: 6px;
+      }
+
       &__container {
          height: 100%;
          overflow-y: scroll;
@@ -59,6 +63,10 @@
                background-color: rgb(249 127 119 / 80%);
                border-radius: 20px;
             }
+
+            @media (max-width: 600px) {
+               display: none;
+            }
          }
       }
 
@@ -66,6 +74,10 @@
          @include pbm($pt: 1rem, $mb: 2rem, $mr: 5px, $rad: 1rem);
          transition: background-color 0.3s;
          @include pos-relative;
+
+         @media (max-width: 600px) {
+            margin-right: 0;
+         }
 
          &:hover {
             @include bg($c: $secondary);
@@ -75,12 +87,20 @@
             @include typo($c: $tomato, $ff: $rubik, $fs: 2.5rem, $fw: 300, $ws: 2px);
             @include pbm($pl: 1rem);
             @include disable-selection;
+
+            @media (max-width: 600px) {
+               font-size: 1.6rem;
+            }
          }
 
          &--syntax {
             @include typo($c: $cyan1, $ff: $courierPrime, $fs: 2.5rem, $fw: 400);
-            @include pbm($p: 1rem);
+            @include pbm($p: 1rem, $pr: 2rem);
             @include pos-relative;
+
+            @media (max-width: 600px) {
+               font-size: 1.6rem;
+            }
 
             &--dolor {
                display: inline-block;
@@ -100,6 +120,12 @@
                &:hover {
                   background-color: rgb(34 40 49 / 50%);
                }
+
+               @media (max-width: 600px) {
+                  @include size($h: 2.8rem, $w: 2.8rem);
+                  @include pos-absolute($r: 4px, $b: 4px);
+                  padding: 3px;
+               }
             }
             &--copied-svg {
                @include size($h: 3.5rem, $w: 3.5rem);
@@ -110,6 +136,12 @@
 
                &:hover {
                   background-color: rgb(34 40 49 / 100%);
+               }
+
+               @media (max-width: 600px) {
+                  @include size($h: 2.8rem, $w: 2.8rem);
+                  @include pos-absolute($r: 4px, $b: 4px);
+                  padding: 3px;
                }
             }
          }
@@ -123,6 +155,12 @@
 
             &:hover {
                background-color: rgb(34 40 49 / 50%);
+            }
+
+            @media (max-width: 600px) {
+               @include size($h: 2.8rem, $w: 2.8rem);
+               @include pos-absolute($r: 4px, $t: 4px);
+               padding: 3px;
             }
          }
       }

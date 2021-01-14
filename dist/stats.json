@@ -2,14 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "ff0d69a44254e83892a8",
-  "time": 10632,
-  "builtAt": 1610635216775,
+  "hash": "ba0373ec905c6667f464",
+  "time": 10525,
+  "builtAt": 1610637304683,
   "publicPath": "",
   "outputPath": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\dist",
   "assetsByChunkName": {
     "main": [
-      "style.45648e9f37691c22acc8.css",
+      "style.e956497712b806976ff4.css",
       "main.a3790855480c3ba3c254.bundle.js"
     ],
     "vendor": "vendor.ea1adf0ef8826bbc915f.bundle.js"
@@ -48,8 +48,8 @@
       "emitted": true
     },
     {
-      "name": "style.45648e9f37691c22acc8.css",
-      "size": 9170,
+      "name": "style.e956497712b806976ff4.css",
+      "size": 9921,
       "chunks": [
         0
       ],
@@ -85,7 +85,7 @@
       ],
       "assets": [
         "vendor.ea1adf0ef8826bbc915f.bundle.js",
-        "style.45648e9f37691c22acc8.css",
+        "style.e956497712b806976ff4.css",
         "main.a3790855480c3ba3c254.bundle.js"
       ],
       "children": {},
@@ -100,7 +100,7 @@
       ],
       "assets": [
         "vendor.ea1adf0ef8826bbc915f.bundle.js",
-        "style.45648e9f37691c22acc8.css",
+        "style.e956497712b806976ff4.css",
         "main.a3790855480c3ba3c254.bundle.js"
       ],
       "children": {},
@@ -113,15 +113,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 51481,
+      "size": 52244,
       "names": [
         "main"
       ],
       "files": [
-        "style.45648e9f37691c22acc8.css",
+        "style.e956497712b806976ff4.css",
         "main.a3790855480c3ba3c254.bundle.js"
       ],
-      "hash": "50c4efdc39d42cae01cb",
+      "hash": "2e42250409a0a0a96c1e",
       "siblings": [
         1
       ],
@@ -4376,7 +4376,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
           "index": 4,
           "index2": 1,
-          "size": 9804,
+          "size": 10567,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -12627,9 +12627,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -13475,9 +13475,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -14314,9 +14314,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -14419,9 +14419,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -15096,9 +15096,9 @@
           "chunks": [
             1
           ],
-          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "issuerId": 23,
-          "issuerName": "./node_modules/core-js/modules/es.array.includes.js",
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "issuerId": 21,
+          "issuerName": "./node_modules/core-js/modules/es.regexp.exec.js",
           "issuerPath": [
             {
               "id": null,
@@ -15136,9 +15136,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             }
           ],
           "failed": false,
@@ -15227,9 +15227,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -15323,9 +15323,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -15687,9 +15687,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -15783,9 +15783,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -16187,9 +16187,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -16293,9 +16293,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -16942,9 +16942,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17126,9 +17126,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17218,9 +17218,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17412,9 +17412,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17499,9 +17499,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17591,9 +17591,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17693,9 +17693,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17877,9 +17877,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -17974,9 +17974,9 @@
               "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
             },
             {
-              "id": 23,
-              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-              "name": "./node_modules/core-js/modules/es.array.includes.js"
+              "id": 21,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+              "name": "./node_modules/core-js/modules/es.regexp.exec.js"
             },
             {
               "id": 24,
@@ -27575,9 +27575,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -28423,9 +28423,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -29262,9 +29262,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -29367,9 +29367,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -30044,9 +30044,9 @@
       "chunks": [
         1
       ],
-      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-      "issuerId": 23,
-      "issuerName": "./node_modules/core-js/modules/es.array.includes.js",
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+      "issuerId": 21,
+      "issuerName": "./node_modules/core-js/modules/es.regexp.exec.js",
       "issuerPath": [
         {
           "id": null,
@@ -30084,9 +30084,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         }
       ],
       "failed": false,
@@ -30175,9 +30175,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -30271,9 +30271,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -30635,9 +30635,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -30731,9 +30731,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -31135,9 +31135,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -31241,9 +31241,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -31890,9 +31890,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32074,9 +32074,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32166,9 +32166,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32360,9 +32360,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32447,9 +32447,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32539,9 +32539,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32641,9 +32641,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32825,9 +32825,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -32922,9 +32922,9 @@
           "name": "./node_modules/babel-loader/lib!./node_modules/vue-loader/dist??ref--19-0!./src/components/layout/TheHeader.vue?vue&type=script&lang=js"
         },
         {
-          "id": 23,
-          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.array.includes.js",
-          "name": "./node_modules/core-js/modules/es.array.includes.js"
+          "id": 21,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\WebDev\\MyProjects\\VUE\\git-alias\\node_modules\\core-js\\modules\\es.regexp.exec.js",
+          "name": "./node_modules/core-js/modules/es.regexp.exec.js"
         },
         {
           "id": 24,
@@ -38584,7 +38584,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
       "index": 4,
       "index2": 1,
-      "size": 9804,
+      "size": 10567,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -38853,14 +38853,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 11726,
+          "size": 12489,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "4bc632e1896af9ea0f27",
+          "hash": "64a21d3cf4bc8dbacc5d",
           "siblings": [],
           "parents": [],
           "children": [],
@@ -38930,7 +38930,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
               "index": 0,
               "index2": 1,
-              "size": 10121,
+              "size": 10884,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -38965,7 +38965,7 @@
                 "ModuleConcatenation bailout: Module uses module.id"
               ],
               "depth": 0,
-              "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root{--courierPrime: \\\"Courier Prime\\\", monospace;--rubik: \\\"Rubik\\\", sans-serif;--white: White;--primary: #222831;--secondary: #24373a;--cyan1: #00ffff;--cyan2: #00d8e2;--tomato: #f97f77;--primeblue: #228fec}html{height:-webkit-fill-available}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;background-color:#222831;background-color:var(--primary);color:White;color:var(--white);height:100%}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}.spinner-white{height:2rem;width:2rem;border:2px solid White;border:2px solid var(--white);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner-primary{height:2rem;width:2rem;border:2px solid #222831;border:2px solid var(--primary);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner{position:fixed;top:2rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:99999}.onoff{height:2rem;width:4rem;background:#222831;background:var(--primary);border-radius:50px;position:relative;cursor:pointer}.onoff__track{height:calc(100% - 4px);background:#f97f77;background:var(--tomato);border-radius:50px;position:absolute;top:50%;left:2px;z-index:20;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:width .3s;transition:width .3s}.onoff__track--off{width:calc(50% - 4px)}.onoff__track--on{width:calc(100% - 4px)}.onoff__thumb{height:1.6rem;width:1.6rem;background:linear-gradient(145deg, #00f1ff, #01b6ce);border-radius:50px;position:absolute;top:50%;left:2px;z-index:30;-webkit-box-shadow:0 0 2px 1px #000;box-shadow:0 0 2px 1px #000;-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.onoff__thumb--off{-webkit-transform:translateY(-50%) translateX(0px);transform:translateY(-50%) translateX(0px)}.onoff__thumb--on{-webkit-transform:translateY(-50%) translateX(2rem);transform:translateY(-50%) translateX(2rem)}.container{height:100%;max-width:100rem;padding-top:2rem;margin:0 auto}@media(max-width: 700px){.container{padding-top:0rem}}.navbar{height:5rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:50px;margin-bottom:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.navbar{margin-bottom:1rem}}.navbar__nav{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative}.navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 2rem \\\"Rubik\\\", sans-serif;font:400 2rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.navbar__nav--item:not(:last-child){margin-right:1rem}.navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.navbar__nav--indicator{height:100%;background:#222831;background:var(--primary);border-radius:50px;position:absolute;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.m-navbar{height:8rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:20px;margin-bottom:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);overflow:hidden}.m-navbar__nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}.m-navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 1.6rem \\\"Rubik\\\", sans-serif;font:400 1.6rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.m-navbar__nav--item:not(:last-child){margin-right:1rem}.m-navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.m-navbar__nav--indicator{height:4.7rem;background:#222831;background:var(--primary);border-radius:50px;position:fixed;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.n-indi-t{-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.n-item-t{-webkit-transition:color .5s ease-in,background-color .5s;transition:color .5s ease-in,background-color .5s}#app{height:100%}.main{height:calc(100% - 9rem);background:#00ffff;background:var(--cyan1);padding:2px;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.main{height:calc(100% - 6rem)}}@media(max-width: 600px){.main{height:calc(100% - 9rem)}}.main__header{background:#00ffff;background:var(--cyan1);padding:5px 2rem;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__header--title{color:#222831;color:var(--primary);font:500 2.5rem \\\"Rubik\\\", sans-serif;font:500 2.5rem var(--rubik)}.main__header--tdr-switch{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.main__header--tdr-switch>span{color:#222831;color:var(--primary);font:italic 2rem \\\"Rubik\\\", sans-serif;font:italic 2rem var(--rubik);padding-right:1rem}.main__body{height:calc(100% - 4rem);background:#222831;background:var(--primary);padding:2rem;padding-right:6px;border-radius:20px}.main__body__container{height:100%;overflow-y:scroll}.main__body__container::-webkit-scrollbar{width:6px}.main__body__container::-webkit-scrollbar-track{background-color:transparent}.main__body__container::-webkit-scrollbar-thumb{background-color:rgba(249,127,119,.8);border-radius:20px}.main__body__alias{padding-top:1rem;border-radius:1rem;margin-right:5px;margin-bottom:2rem;-webkit-transition:background-color .3s;transition:background-color .3s;position:relative}.main__body__alias:hover{background:#24373a;background:var(--secondary)}.main__body__alias--title{color:#f97f77;color:var(--tomato);font:300 2.5rem \\\"Rubik\\\", sans-serif;font:300 2.5rem var(--rubik);word-spacing:2px;padding-left:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__body__alias--syntax{color:#00ffff;color:var(--cyan1);font:400 2.5rem \\\"Courier Prime\\\", monospace;font:400 2.5rem var(--courierPrime);padding:1rem;position:relative}.main__body__alias--syntax--dolor{display:inline-block;-webkit-transform:translateY(1px);transform:translateY(1px);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__body__alias--syntax--name{font-weight:900}.main__body__alias--syntax--copy-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copy-svg:hover{background-color:rgba(34,40,49,.5)}.main__body__alias--syntax--copied-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copied-svg:hover{background-color:#222831}.main__body__alias--code-svg{height:3.5rem;width:3.5rem;position:absolute;top:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--code-svg:hover{background-color:rgba(34,40,49,.5)}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
+              "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root{--courierPrime: \\\"Courier Prime\\\", monospace;--rubik: \\\"Rubik\\\", sans-serif;--white: White;--primary: #222831;--secondary: #24373a;--cyan1: #00ffff;--cyan2: #00d8e2;--tomato: #f97f77;--primeblue: #228fec}html{height:-webkit-fill-available}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;background-color:#222831;background-color:var(--primary);color:White;color:var(--white);height:100%}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}.spinner-white{height:2rem;width:2rem;border:2px solid White;border:2px solid var(--white);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner-primary{height:2rem;width:2rem;border:2px solid #222831;border:2px solid var(--primary);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner{position:fixed;top:2rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:99999}.onoff{height:2rem;width:4rem;background:#222831;background:var(--primary);border-radius:50px;position:relative;cursor:pointer}.onoff__track{height:calc(100% - 4px);background:#f97f77;background:var(--tomato);border-radius:50px;position:absolute;top:50%;left:2px;z-index:20;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:width .3s;transition:width .3s}.onoff__track--off{width:calc(50% - 4px)}.onoff__track--on{width:calc(100% - 4px)}.onoff__thumb{height:1.6rem;width:1.6rem;background:linear-gradient(145deg, #00f1ff, #01b6ce);border-radius:50px;position:absolute;top:50%;left:2px;z-index:30;-webkit-box-shadow:0 0 2px 1px #000;box-shadow:0 0 2px 1px #000;-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.onoff__thumb--off{-webkit-transform:translateY(-50%) translateX(0px);transform:translateY(-50%) translateX(0px)}.onoff__thumb--on{-webkit-transform:translateY(-50%) translateX(2rem);transform:translateY(-50%) translateX(2rem)}.container{height:100%;max-width:100rem;padding-top:2rem;margin:0 auto}@media(max-width: 700px){.container{padding-top:0rem}}.navbar{height:5rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:50px;margin-bottom:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.navbar{margin-bottom:1rem}}.navbar__nav{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative}.navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 2rem \\\"Rubik\\\", sans-serif;font:400 2rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.navbar__nav--item:not(:last-child){margin-right:1rem}.navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.navbar__nav--indicator{height:100%;background:#222831;background:var(--primary);border-radius:50px;position:absolute;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.m-navbar{height:8rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:20px;margin-bottom:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);overflow:hidden}.m-navbar__nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}.m-navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 1.6rem \\\"Rubik\\\", sans-serif;font:400 1.6rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.m-navbar__nav--item:not(:last-child){margin-right:1rem}.m-navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.m-navbar__nav--indicator{height:4.7rem;background:#222831;background:var(--primary);border-radius:50px;position:fixed;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.n-indi-t{-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.n-item-t{-webkit-transition:color .5s ease-in,background-color .5s;transition:color .5s ease-in,background-color .5s}#app{height:100%}.main{height:calc(100% - 9rem);background:#00ffff;background:var(--cyan1);padding:2px;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.main{height:calc(100% - 6rem)}}@media(max-width: 600px){.main{height:calc(100% - 9rem)}}.main__header{background:#00ffff;background:var(--cyan1);padding:5px 2rem;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__header--title{color:#222831;color:var(--primary);font:500 2.5rem \\\"Rubik\\\", sans-serif;font:500 2.5rem var(--rubik)}.main__header--tdr-switch{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.main__header--tdr-switch>span{color:#222831;color:var(--primary);font:italic 2rem \\\"Rubik\\\", sans-serif;font:italic 2rem var(--rubik);padding-right:1rem}.main__body{height:calc(100% - 4rem);background:#222831;background:var(--primary);padding:2rem;padding-right:6px;border-radius:20px}@media(max-width: 600px){.main__body{padding:6px}}.main__body__container{height:100%;overflow-y:scroll}.main__body__container::-webkit-scrollbar{width:6px}.main__body__container::-webkit-scrollbar-track{background-color:transparent}.main__body__container::-webkit-scrollbar-thumb{background-color:rgba(249,127,119,.8);border-radius:20px}@media(max-width: 600px){.main__body__container::-webkit-scrollbar{display:none}}.main__body__alias{padding-top:1rem;border-radius:1rem;margin-right:5px;margin-bottom:2rem;-webkit-transition:background-color .3s;transition:background-color .3s;position:relative}@media(max-width: 600px){.main__body__alias{margin-right:0}}.main__body__alias:hover{background:#24373a;background:var(--secondary)}.main__body__alias--title{color:#f97f77;color:var(--tomato);font:300 2.5rem \\\"Rubik\\\", sans-serif;font:300 2.5rem var(--rubik);word-spacing:2px;padding-left:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media(max-width: 600px){.main__body__alias--title{font-size:1.6rem}}.main__body__alias--syntax{color:#00ffff;color:var(--cyan1);font:400 2.5rem \\\"Courier Prime\\\", monospace;font:400 2.5rem var(--courierPrime);padding:1rem;padding-right:2rem;position:relative}@media(max-width: 600px){.main__body__alias--syntax{font-size:1.6rem}}.main__body__alias--syntax--dolor{display:inline-block;-webkit-transform:translateY(1px);transform:translateY(1px);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__body__alias--syntax--name{font-weight:900}.main__body__alias--syntax--copy-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copy-svg:hover{background-color:rgba(34,40,49,.5)}@media(max-width: 600px){.main__body__alias--syntax--copy-svg{height:2.8rem;width:2.8rem;position:absolute;bottom:4px;right:4px;padding:3px}}.main__body__alias--syntax--copied-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copied-svg:hover{background-color:#222831}@media(max-width: 600px){.main__body__alias--syntax--copied-svg{height:2.8rem;width:2.8rem;position:absolute;bottom:4px;right:4px;padding:3px}}.main__body__alias--code-svg{height:3.5rem;width:3.5rem;position:absolute;top:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--code-svg:hover{background-color:rgba(34,40,49,.5)}@media(max-width: 600px){.main__body__alias--code-svg{height:2.8rem;width:2.8rem;position:absolute;top:4px;right:4px;padding:3px}}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
             }
           ],
           "filteredModules": 0,
@@ -39046,7 +39046,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/postcss-loader/dist/cjs.js??ref--2-2!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss",
           "index": 0,
           "index2": 1,
-          "size": 10121,
+          "size": 10884,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -39081,7 +39081,7 @@
             "ModuleConcatenation bailout: Module uses module.id"
           ],
           "depth": 0,
-          "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root{--courierPrime: \\\"Courier Prime\\\", monospace;--rubik: \\\"Rubik\\\", sans-serif;--white: White;--primary: #222831;--secondary: #24373a;--cyan1: #00ffff;--cyan2: #00d8e2;--tomato: #f97f77;--primeblue: #228fec}html{height:-webkit-fill-available}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;background-color:#222831;background-color:var(--primary);color:White;color:var(--white);height:100%}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}.spinner-white{height:2rem;width:2rem;border:2px solid White;border:2px solid var(--white);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner-primary{height:2rem;width:2rem;border:2px solid #222831;border:2px solid var(--primary);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner{position:fixed;top:2rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:99999}.onoff{height:2rem;width:4rem;background:#222831;background:var(--primary);border-radius:50px;position:relative;cursor:pointer}.onoff__track{height:calc(100% - 4px);background:#f97f77;background:var(--tomato);border-radius:50px;position:absolute;top:50%;left:2px;z-index:20;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:width .3s;transition:width .3s}.onoff__track--off{width:calc(50% - 4px)}.onoff__track--on{width:calc(100% - 4px)}.onoff__thumb{height:1.6rem;width:1.6rem;background:linear-gradient(145deg, #00f1ff, #01b6ce);border-radius:50px;position:absolute;top:50%;left:2px;z-index:30;-webkit-box-shadow:0 0 2px 1px #000;box-shadow:0 0 2px 1px #000;-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.onoff__thumb--off{-webkit-transform:translateY(-50%) translateX(0px);transform:translateY(-50%) translateX(0px)}.onoff__thumb--on{-webkit-transform:translateY(-50%) translateX(2rem);transform:translateY(-50%) translateX(2rem)}.container{height:100%;max-width:100rem;padding-top:2rem;margin:0 auto}@media(max-width: 700px){.container{padding-top:0rem}}.navbar{height:5rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:50px;margin-bottom:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.navbar{margin-bottom:1rem}}.navbar__nav{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative}.navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 2rem \\\"Rubik\\\", sans-serif;font:400 2rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.navbar__nav--item:not(:last-child){margin-right:1rem}.navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.navbar__nav--indicator{height:100%;background:#222831;background:var(--primary);border-radius:50px;position:absolute;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.m-navbar{height:8rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:20px;margin-bottom:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);overflow:hidden}.m-navbar__nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}.m-navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 1.6rem \\\"Rubik\\\", sans-serif;font:400 1.6rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.m-navbar__nav--item:not(:last-child){margin-right:1rem}.m-navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.m-navbar__nav--indicator{height:4.7rem;background:#222831;background:var(--primary);border-radius:50px;position:fixed;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.n-indi-t{-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.n-item-t{-webkit-transition:color .5s ease-in,background-color .5s;transition:color .5s ease-in,background-color .5s}#app{height:100%}.main{height:calc(100% - 9rem);background:#00ffff;background:var(--cyan1);padding:2px;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.main{height:calc(100% - 6rem)}}@media(max-width: 600px){.main{height:calc(100% - 9rem)}}.main__header{background:#00ffff;background:var(--cyan1);padding:5px 2rem;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__header--title{color:#222831;color:var(--primary);font:500 2.5rem \\\"Rubik\\\", sans-serif;font:500 2.5rem var(--rubik)}.main__header--tdr-switch{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.main__header--tdr-switch>span{color:#222831;color:var(--primary);font:italic 2rem \\\"Rubik\\\", sans-serif;font:italic 2rem var(--rubik);padding-right:1rem}.main__body{height:calc(100% - 4rem);background:#222831;background:var(--primary);padding:2rem;padding-right:6px;border-radius:20px}.main__body__container{height:100%;overflow-y:scroll}.main__body__container::-webkit-scrollbar{width:6px}.main__body__container::-webkit-scrollbar-track{background-color:transparent}.main__body__container::-webkit-scrollbar-thumb{background-color:rgba(249,127,119,.8);border-radius:20px}.main__body__alias{padding-top:1rem;border-radius:1rem;margin-right:5px;margin-bottom:2rem;-webkit-transition:background-color .3s;transition:background-color .3s;position:relative}.main__body__alias:hover{background:#24373a;background:var(--secondary)}.main__body__alias--title{color:#f97f77;color:var(--tomato);font:300 2.5rem \\\"Rubik\\\", sans-serif;font:300 2.5rem var(--rubik);word-spacing:2px;padding-left:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__body__alias--syntax{color:#00ffff;color:var(--cyan1);font:400 2.5rem \\\"Courier Prime\\\", monospace;font:400 2.5rem var(--courierPrime);padding:1rem;position:relative}.main__body__alias--syntax--dolor{display:inline-block;-webkit-transform:translateY(1px);transform:translateY(1px);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__body__alias--syntax--name{font-weight:900}.main__body__alias--syntax--copy-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copy-svg:hover{background-color:rgba(34,40,49,.5)}.main__body__alias--syntax--copied-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copied-svg:hover{background-color:#222831}.main__body__alias--code-svg{height:3.5rem;width:3.5rem;position:absolute;top:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--code-svg:hover{background-color:rgba(34,40,49,.5)}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
+          "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root{--courierPrime: \\\"Courier Prime\\\", monospace;--rubik: \\\"Rubik\\\", sans-serif;--white: White;--primary: #222831;--secondary: #24373a;--cyan1: #00ffff;--cyan2: #00d8e2;--tomato: #f97f77;--primeblue: #228fec}html{height:-webkit-fill-available}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;background-color:#222831;background-color:var(--primary);color:White;color:var(--white);height:100%}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}.spinner-white{height:2rem;width:2rem;border:2px solid White;border:2px solid var(--white);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner-primary{height:2rem;width:2rem;border:2px solid #222831;border:2px solid var(--primary);border-bottom:2px solid transparent;border-radius:50%;-webkit-animation:spin 1s linear infinite;animation:spin 1s linear infinite}.spinner{position:fixed;top:2rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:99999}.onoff{height:2rem;width:4rem;background:#222831;background:var(--primary);border-radius:50px;position:relative;cursor:pointer}.onoff__track{height:calc(100% - 4px);background:#f97f77;background:var(--tomato);border-radius:50px;position:absolute;top:50%;left:2px;z-index:20;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transition:width .3s;transition:width .3s}.onoff__track--off{width:calc(50% - 4px)}.onoff__track--on{width:calc(100% - 4px)}.onoff__thumb{height:1.6rem;width:1.6rem;background:linear-gradient(145deg, #00f1ff, #01b6ce);border-radius:50px;position:absolute;top:50%;left:2px;z-index:30;-webkit-box-shadow:0 0 2px 1px #000;box-shadow:0 0 2px 1px #000;-webkit-transition:-webkit-transform .3s;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s, -webkit-transform .3s}.onoff__thumb--off{-webkit-transform:translateY(-50%) translateX(0px);transform:translateY(-50%) translateX(0px)}.onoff__thumb--on{-webkit-transform:translateY(-50%) translateX(2rem);transform:translateY(-50%) translateX(2rem)}.container{height:100%;max-width:100rem;padding-top:2rem;margin:0 auto}@media(max-width: 700px){.container{padding-top:0rem}}.navbar{height:5rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:50px;margin-bottom:2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.navbar{margin-bottom:1rem}}.navbar__nav{height:100%;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative}.navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 2rem \\\"Rubik\\\", sans-serif;font:400 2rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.navbar__nav--item:not(:last-child){margin-right:1rem}.navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.navbar__nav--indicator{height:100%;background:#222831;background:var(--primary);border-radius:50px;position:absolute;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.m-navbar{height:8rem;width:100%;background:#00ffff;background:var(--cyan1);padding:3px;border-radius:20px;margin-bottom:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);box-shadow:0 0 10px rgba(0,0,0,.5);overflow:hidden}.m-navbar__nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}.m-navbar__nav--item{height:100%;color:#222831;color:var(--primary);font:400 1.6rem \\\"Rubik\\\", sans-serif;font:400 1.6rem var(--rubik);text-decoration:none;border-radius:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;z-index:10;cursor:pointer}.m-navbar__nav--item:not(:last-child){margin-right:1rem}.m-navbar__nav--item:hover{background-color:rgba(0,0,0,.1)}.m-navbar__nav--indicator{height:4.7rem;background:#222831;background:var(--primary);border-radius:50px;position:fixed;top:0;left:0;-webkit-box-shadow:0 0 5px rgba(0,0,0,.5);box-shadow:0 0 5px rgba(0,0,0,.5)}.n-indi-t{-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.n-item-t{-webkit-transition:color .5s ease-in,background-color .5s;transition:color .5s ease-in,background-color .5s}#app{height:100%}.main{height:calc(100% - 9rem);background:#00ffff;background:var(--cyan1);padding:2px;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-shadow:0 0 20px rgba(0,0,0,.5);box-shadow:0 0 20px rgba(0,0,0,.5);overflow:hidden}@media(max-width: 700px){.main{height:calc(100% - 6rem)}}@media(max-width: 600px){.main{height:calc(100% - 9rem)}}.main__header{background:#00ffff;background:var(--cyan1);padding:5px 2rem;border-radius:20px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__header--title{color:#222831;color:var(--primary);font:500 2.5rem \\\"Rubik\\\", sans-serif;font:500 2.5rem var(--rubik)}.main__header--tdr-switch{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.main__header--tdr-switch>span{color:#222831;color:var(--primary);font:italic 2rem \\\"Rubik\\\", sans-serif;font:italic 2rem var(--rubik);padding-right:1rem}.main__body{height:calc(100% - 4rem);background:#222831;background:var(--primary);padding:2rem;padding-right:6px;border-radius:20px}@media(max-width: 600px){.main__body{padding:6px}}.main__body__container{height:100%;overflow-y:scroll}.main__body__container::-webkit-scrollbar{width:6px}.main__body__container::-webkit-scrollbar-track{background-color:transparent}.main__body__container::-webkit-scrollbar-thumb{background-color:rgba(249,127,119,.8);border-radius:20px}@media(max-width: 600px){.main__body__container::-webkit-scrollbar{display:none}}.main__body__alias{padding-top:1rem;border-radius:1rem;margin-right:5px;margin-bottom:2rem;-webkit-transition:background-color .3s;transition:background-color .3s;position:relative}@media(max-width: 600px){.main__body__alias{margin-right:0}}.main__body__alias:hover{background:#24373a;background:var(--secondary)}.main__body__alias--title{color:#f97f77;color:var(--tomato);font:300 2.5rem \\\"Rubik\\\", sans-serif;font:300 2.5rem var(--rubik);word-spacing:2px;padding-left:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media(max-width: 600px){.main__body__alias--title{font-size:1.6rem}}.main__body__alias--syntax{color:#00ffff;color:var(--cyan1);font:400 2.5rem \\\"Courier Prime\\\", monospace;font:400 2.5rem var(--courierPrime);padding:1rem;padding-right:2rem;position:relative}@media(max-width: 600px){.main__body__alias--syntax{font-size:1.6rem}}.main__body__alias--syntax--dolor{display:inline-block;-webkit-transform:translateY(1px);transform:translateY(1px);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.main__body__alias--syntax--name{font-weight:900}.main__body__alias--syntax--copy-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copy-svg:hover{background-color:rgba(34,40,49,.5)}@media(max-width: 600px){.main__body__alias--syntax--copy-svg{height:2.8rem;width:2.8rem;position:absolute;bottom:4px;right:4px;padding:3px}}.main__body__alias--syntax--copied-svg{height:3.5rem;width:3.5rem;position:absolute;bottom:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--syntax--copied-svg:hover{background-color:#222831}@media(max-width: 600px){.main__body__alias--syntax--copied-svg{height:2.8rem;width:2.8rem;position:absolute;bottom:4px;right:4px;padding:3px}}.main__body__alias--code-svg{height:3.5rem;width:3.5rem;position:absolute;top:8px;right:8px;cursor:pointer;border-radius:5px;padding:5px}.main__body__alias--code-svg:hover{background-color:rgba(34,40,49,.5)}@media(max-width: 600px){.main__body__alias--code-svg{height:2.8rem;width:2.8rem;position:absolute;top:4px;right:4px;padding:3px}}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
         }
       ],
       "filteredModules": 0,
