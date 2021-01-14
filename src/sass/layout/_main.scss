@@ -9,6 +9,7 @@
    @include bg($c: $cyan1);
    @include pbm($p: 2px, $rad: 20px);
    @include flex($fd: column);
+   box-shadow: 0 0 20px rgb(0 0 0 / 50%);
    overflow: hidden;
 
    @media (max-width: 700px) {

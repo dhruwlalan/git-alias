@@ -6,6 +6,7 @@
    @include pbm($p: 3px, $rad: 50px, $mb: 2rem);
    @include flex($jc: center, $ai: center);
    @include disable-selection;
+   box-shadow: 0 0 20px rgb(0 0 0 / 50%);
    overflow: hidden;
 
    @media (max-width: 700px) {
@@ -39,6 +40,7 @@
          @include bg($c: $primary);
          @include pbm($rad: 50px);
          @include pos-absolute($t: 0, $l: 0);
+         box-shadow: 0 0 5px rgb(0 0 0 / 50%);
       }
    }
 }
@@ -49,6 +51,7 @@
    @include pbm($p: 3px, $rad: 20px, $mb: 1rem);
    @include flex($fd: column, $jc: center, $ai: stretch);
    @include disable-selection;
+   box-shadow: 0 0 10px rgb(0 0 0 / 50%);
    overflow: hidden;
 
    &__nav {
@@ -57,7 +60,7 @@
 
       &--item {
          @include size($h: 100%);
-         @include typo($c: $primary, $ff: $rubik, $fw: 400, $fs: 1.8rem, $td: none);
+         @include typo($c: $primary, $ff: $rubik, $fw: 400, $fs: 1.6rem, $td: none);
          @include pbm($rad: 50px);
          @include flex($jc: center, $ai: center);
          @include flex-item($grow: 1, $shrink: 1, $basis: auto);
@@ -77,6 +80,7 @@
          @include bg($c: $primary);
          @include pbm($rad: 50px);
          @include pos-fixed($t: 0, $l: 0);
+         box-shadow: 0 0 5px rgb(0 0 0 / 50%);
       }
    }
 }
