@@ -15,6 +15,10 @@
       height: calc(100% - 6rem);
    }
 
+   @media (max-width: 600px) {
+      height: calc(100% - 9rem);
+   }
+
    &__header {
       @include bg($c: $cyan1);
       @include pbm($p: 5px 2rem, $rad: 20px);
