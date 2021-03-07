@@ -3,6 +3,9 @@
    "[javascript]": {
       "editor.formatOnSave": false
    },
+   "[vue]": {
+      "editor.formatOnSave": false
+   },
    "[typescript]": {
       "editor.formatOnSave": false
    },

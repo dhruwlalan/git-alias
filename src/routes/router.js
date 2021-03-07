@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import AliasCat from '../components/layout/AliasCat.vue';
+import AliasCat from '../components/pages/AliasCat.vue';
+import Home from '../components/pages/Home.vue';
 
 const Router = createRouter({
    history: createWebHistory(),
@@ -16,8 +17,7 @@ const Router = createRouter({
       {
          name: 'home',
          path: '/',
-         component: AliasCat,
-         props: { aliasCat: 'basic' },
+         component: Home,
       },
       {
          name: 'basic',

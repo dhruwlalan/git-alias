@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.home {
+   @include size($maxw: 70rem);
+   @include pbm($m: 0 auto);
+
+   &__header {
+      @include flex($jc: center, $ai: center);
+      @include pbm($m: 5rem 0);
+      &__logo {
+         @include size($h: 6rem, $w: 6rem);
+         @include pbm($mr: 2rem);
+      }
+      &__title {
+         @include typo($c: $cyan1, $ff: $rubik, $fw: 500, $fs: 7rem);
+      }
+   }
+   &__description {
+      @include typo($c: #b5e4ec, $ff: $rubik, $fw: 300, $fs: 4rem, $ta: center);
+   }
+}

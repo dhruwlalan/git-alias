@@ -1,6 +1,6 @@
 <template>
    <div class="container">
-      <the-header />
+      <the-header v-if="this.$route.name !== 'home'" />
       <router-view></router-view>
    </div>
 </template>

@@ -19,7 +19,7 @@
 
 <script>
 import * as allAlias from '../vanilla/alias';
-import TheAlias from './TheAlias.vue';
+import TheAlias from '../layout/TheAlias.vue';
 import OnOff from '../utils/OnOff.vue';
 
 export default {
