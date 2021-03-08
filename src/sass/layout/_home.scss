@@ -17,7 +17,7 @@
    }
 
    &__description {
-      @include typo($c: #b5e4ec, $ff: $rubik, $fw: 300, $fs: 4rem, $ta: center);
+      @include typo($c: #b5e4ec, $ff: $rubik, $fw: 300, $fs: 3rem, $ta: center);
       @include pbm($m: 5rem 0);
    }
 
@@ -27,6 +27,7 @@
 
       &--link {
          @include size($h: 100%);
+         @include bg($c: $cyan1);
          @include typo(
             $ff: $rubik,
             $c: $primary,
@@ -35,16 +36,27 @@
             $td: none
          );
          @include flex($jc: center, $ai: center);
-         @include pbm($p: 0 2rem, $rad: 1rem);
-         background-color: $cyan1;
+         @include pbm($p: 0 2rem, $rad: 1rem, $b: 1px solid $cyan1);
          cursor: pointer;
+         outline: none;
+         fill: $primary;
+         transition: all 0.3s;
+
          &:not(:last-child) {
             @include pbm($mr: 2rem);
          }
 
+         &:hover {
+            background-color: $primary;
+            color: cyan;
+            fill: cyan;
+         }
+         &:focus {
+            box-shadow: 0 0 0 4px rgb(0 255 255 / 40%);
+         }
+
          &--logo {
             margin-right: 5px;
-            fill: $primary;
          }
       }
    }
