@@ -15,7 +15,37 @@
          @include typo($c: $cyan1, $ff: $rubik, $fw: 500, $fs: 7rem);
       }
    }
+
    &__description {
       @include typo($c: #b5e4ec, $ff: $rubik, $fw: 300, $fs: 4rem, $ta: center);
+      @include pbm($m: 5rem 0);
+   }
+
+   &__links {
+      @include size($h: 5rem);
+      @include flex($jc: center, $ai: center);
+
+      &--link {
+         @include size($h: 100%);
+         @include typo(
+            $ff: $rubik,
+            $c: $primary,
+            $fs: 2.2rem,
+            $fw: 400,
+            $td: none
+         );
+         @include flex($jc: center, $ai: center);
+         @include pbm($p: 0 2rem, $rad: 1rem);
+         background-color: $cyan1;
+         cursor: pointer;
+         &:not(:last-child) {
+            @include pbm($mr: 2rem);
+         }
+
+         &--logo {
+            margin-right: 5px;
+            fill: $primary;
+         }
+      }
    }
 }
