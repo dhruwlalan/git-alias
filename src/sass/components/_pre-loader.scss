@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+#pre-loader {
+   min-height: -webkit-fill-available;
+   width: 100vw;
+   background-color: red;
+   position: fixed;
+   z-index: 999;
+}

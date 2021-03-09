@@ -6,14 +6,16 @@
       </div>
       <p class="home__description">Human friendly aliases for commonly used git commands.</p>
       <div class="home__links">
-         <a class="home__links--link" href="https://github.com/dhruwlalan/git-alias">
-            <github-svg class="home__links--link--logo" />
-            <p class="home__links--link--text">Github</p>
-         </a>
-         <a class="home__links--link" :href="href" download="gitconfig.txt">
-            <download-svg class="home__links--link--logo" />
-            <p class="home__links--link--text">gitconfig.txt</p>
-         </a>
+         <div class="home__links--row">
+            <a class="home__links--link" href="https://github.com/dhruwlalan/git-alias">
+               <github-svg class="home__links--link--logo" />
+               <p class="home__links--link--text">Github</p>
+            </a>
+            <a class="home__links--link" :href="href" download="gitconfig.txt">
+               <download-svg class="home__links--link--logo" />
+               <p class="home__links--link--text">gitconfig</p>
+            </a>
+         </div>
          <router-link class="home__links--link" :to="{ name: 'basic' }">View Aliases</router-link>
       </div>
    </div>

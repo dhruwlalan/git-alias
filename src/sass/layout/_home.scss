@@ -4,29 +4,59 @@
    @include size($maxw: 70rem);
    @include pbm($m: 0 auto);
 
+   @media (max-width: 600px) {
+      @include pbm($p: 0 2rem);
+   }
+
    &__header {
       @include flex($jc: center, $ai: center);
       @include pbm($m: 5rem 0);
+      @media (max-width: 600px) {
+         @include pbm($m: 3rem 0);
+      }
+
       &__logo {
          @include size($h: 6rem, $w: 6rem);
          @include pbm($mr: 2rem);
+         @media (max-width: 600px) {
+            @include size($h: 4rem, $w: 4rem);
+         }
       }
       &__title {
          @include typo($c: $cyan1, $ff: $rubik, $fw: 500, $fs: 7rem);
+         @media (max-width: 600px) {
+            @include typo($fw: 500, $fs: 5rem);
+         }
       }
    }
 
    &__description {
       @include typo($c: #b5e4ec, $ff: $rubik, $fw: 300, $fs: 3rem, $ta: center);
       @include pbm($m: 5rem 0);
+      @media (max-width: 600px) {
+         @include typo($fs: 2.6rem);
+         @include pbm($mt: 3rem, $mb: 4rem);
+      }
    }
 
    &__links {
-      @include size($h: 5rem);
       @include flex($jc: center, $ai: center);
 
+      &--row {
+         @include flex($jc: center, $ai: center);
+         margin-right: 2rem;
+         @media (max-width: 600px) {
+            margin-bottom: 2rem;
+            margin-right: 0;
+         }
+
+         & > * {
+            flex-grow: 1;
+         }
+      }
+
       &--link {
-         @include size($h: 100%);
+         @include size($h: 5rem);
          @include bg($c: $cyan1);
          @include typo(
             $ff: $rubik,
@@ -42,10 +72,6 @@
          fill: $primary;
          transition: all 0.3s;
 
-         &:not(:last-child) {
-            @include pbm($mr: 2rem);
-         }
-
          &:hover {
             background-color: $primary;
             color: cyan;
@@ -58,6 +84,18 @@
          &--logo {
             margin-right: 5px;
          }
+
+         &:first-child {
+            @include pbm($mr: 2rem);
+         }
+         @media (max-width: 360px) {
+            padding: 0;
+         }
+      }
+
+      @media (max-width: 600px) {
+         align-items: stretch;
+         flex-direction: column;
       }
    }
 }

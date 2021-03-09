@@ -26,6 +26,8 @@ module.exports = {
    },
    devServer: {
       contentBase: '../dist',
+      host: '192.168.0.105',
+      disableHostCheck: true,
       historyApiFallback: true,
       overlay: true,
       inline: true,
