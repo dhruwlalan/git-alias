@@ -1,9 +1,20 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 #pre-loader {
-   min-height: -webkit-fill-available;
-   width: 100vw;
-   background-color: red;
-   position: fixed;
-   z-index: 999;
+   @include size($h: 100vh, $w: 100vw);
+   @include bg($c: $primary);
+   @include pos-fixed;
+   transition: transform 1s ease-in;
+}
+
+.fade-out {
+   animation: fadeout 1s;
+}
+@keyframes fadeout {
+   from {
+      opacity: 1;
+   }
+   to {
+      opacity: 0;
+   }
 }

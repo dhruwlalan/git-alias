@@ -1,8 +1,10 @@
-export default () => {
-   const loader = document.getElementById('pre-loader');
-   window.addEventListener('load', () => {
+const preloader = document.getElementById('pre-loader');
+
+window.addEventListener('load', () => {
+   setTimeout(() => {
+      preloader.classList.add('fade-out');
       setTimeout(() => {
-         loader.remove();
+         preloader.remove();
       }, 1000);
-   });
-};
+   }, 500);
+});
