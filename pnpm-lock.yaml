@@ -30,6 +30,8 @@ specifiers:
   sass: ^1.30.0
   sass-loader: ^10.1.0
   style-loader: ^2.0.0
+  tippy.js: ^6.3.1
+  v-tooltip: ^4.0.0-alpha.1
   vite: ^1.0.0-rc.13
   vue: ^3.0.4
   vue-loader: ^16.0.0-beta.4
@@ -42,6 +44,8 @@ specifiers:
 
 dependencies:
   clipboard: 2.0.6
+  tippy.js: 6.3.1
+  v-tooltip: 4.0.0-alpha.1_vue@3.0.5
   vue: 3.0.5
   vue-router: 4.0.3_vue@3.0.5
 
@@ -1082,6 +1086,10 @@ packages:
   /@polka/url/1.0.0-next.11:
     resolution: {integrity: sha512-3NsZsJIA/22P3QUyrEDNA2D133H4j224twJrdipXN38dpnIOzAbUDtOwkcJ5pXmn75w7LSQDjA4tO9dm1XlqlA==}
     dev: true
+
+  /@popperjs/core/2.9.2:
+    resolution: {integrity: sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==}
+    dev: false
 
   /@rollup/plugin-commonjs/16.0.0_rollup@2.35.1:
     resolution: {integrity: sha512-LuNyypCP3msCGVQJ7ki8PqYdpjfEkE/xtFa5DqlF+7IBD0JsfMZ87C58heSwIMint58sAUZbt3ITqOmdQv/dXw==}
@@ -7960,6 +7968,12 @@ packages:
     resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
     dev: false
 
+  /tippy.js/6.3.1:
+    resolution: {integrity: sha512-JnFncCq+rF1dTURupoJ4yPie5Cof978inW6/4S6kmWV7LL9YOSEVMifED3KdrVPEG+Z/TFH2CDNJcQEfaeuQww==}
+    dependencies:
+      '@popperjs/core': 2.9.2
+    dev: false
+
   /to-arraybuffer/1.0.1:
     resolution: {integrity: sha1-fSKbH8xjfkZsoIEYCDanqr/4P0M=}
     dev: true
@@ -8217,6 +8231,16 @@ packages:
     hasBin: true
     dev: true
 
+  /v-tooltip/4.0.0-alpha.1_vue@3.0.5:
+    resolution: {integrity: sha512-TTNLJ/IVyoburxW0M3gxHhRb+d18xbozI5c0q2LCqIw4YUZzLKCG0ufx72d+j/1Xkqam9kDNHZChZq4KfsVpvw==}
+    peerDependencies:
+      vue: ^3.0.11
+    dependencies:
+      '@popperjs/core': 2.9.2
+      vue: 3.0.5
+      vue-resize: 2.0.0-alpha.1_vue@3.0.5
+    dev: false
+
   /v8-compile-cache/2.2.0:
     resolution: {integrity: sha512-gTpR5XQNKFwOd4clxfnhaqvfqMpqEwr4tOtCyz4MtYZX2JYhfr1JvBFKdS+7K/9rfpZR3VLX+YWBbKoxCgS43Q==}
     dev: true
@@ -8331,6 +8355,14 @@ packages:
       hash-sum: 2.0.0
       loader-utils: 2.0.0
     dev: true
+
+  /vue-resize/2.0.0-alpha.1_vue@3.0.5:
+    resolution: {integrity: sha512-7+iqOueLU7uc9NrMfrzbG8hwMqchfVfSzpVlCMeJQe4pyibqyoifDNbKTZvwxZKDvGkB+PdFeKvnGZMoEb8esg==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.0.5
+    dev: false
 
   /vue-router/4.0.3_vue@3.0.5:
     resolution: {integrity: sha512-AD1OjtVPyQHTSpoRsEGfPpxRQwhAhxcacOYO3zJ3KNkYP/r09mileSp6kdMQKhZWP2cFsPR3E2M3PZguSN5/ww==}

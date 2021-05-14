@@ -7,7 +7,7 @@
          <h1 class="main__header--title">
             {{ aliasCat.toUpperCase() }}
          </h1>
-         <div class="main__header--tdr-switch">
+         <div v-tooltip:left="'To diffirent Remote'" class="main__header--tdr-switch">
             <span>tdr</span>
             <on-off v-model="tdr" />
          </div>
