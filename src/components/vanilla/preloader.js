@@ -5,6 +5,6 @@ window.addEventListener('load', () => {
       preloader.classList.add('fade-out');
       setTimeout(() => {
          preloader.remove();
-      }, 1000);
+      }, 500);
    }, 500);
 });

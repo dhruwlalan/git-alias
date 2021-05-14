@@ -1,4 +1,7 @@
 <template>
+   <teleport to="body">
+      <div id="pre-loader" ref="preLoader"></div>
+   </teleport>
    <div class="main">
       <div class="main__header">
          <h1 class="main__header--title">
@@ -54,6 +57,18 @@ export default {
                return allAlias.basic;
          }
       },
+   },
+   mounted() {
+      setTimeout(() => {
+         if (this.$refs.preLoader) {
+            this.$refs.preLoader.classList.add('fade-out');
+         }
+         setTimeout(() => {
+            if (this.$refs.preLoader) {
+               this.$refs.preLoader.remove();
+            }
+         }, 500);
+      }, 500);
    },
 };
 </script>

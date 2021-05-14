@@ -3,7 +3,7 @@
    "author": "dhruw",
    "scripts": {
       "start": "webpack-dev-server --config configs/webpack.start.js",
-      "prod": "webpack --config configs/webpack.prod.js",
+      "build": "webpack --config configs/webpack.prod.js",
       "vite": "vite",
       "lint": "eslint .",
       "lint:fix": "eslint --fix",

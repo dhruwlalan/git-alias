@@ -3,7 +3,7 @@
 #pre-loader {
    @include size($h: 100vh, $w: 100vw);
    @include bg($c: $primary);
-   @include pos-fixed;
+   @include pos-fixed($z: 999999, $t: 0, $l: 0);
    transition: transform 1s ease-in;
 }
 
