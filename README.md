@@ -59,3 +59,5 @@ $ git remote-url
 upstream  <your-upstream-url> (fetch)
 upstream  <your-upstream-url> (push)
 ```
+
+<img width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/action2.gif" />
