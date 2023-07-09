@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.onoff {
+   @include size($h: 2rem, $w: 4rem);
+   @include bg($c: $primary);
+   @include pbm($rad: 50px);
+   @include pos-relative;
+   cursor: pointer;
+
+   &__track {
+      @include size($h: calc(100% - 4px));
+      @include bg($c: $tomato);
+      @include pbm($rad: 50px);
+      @include pos-absolute($z: 20, $l: 2px, $t: 50%);
+      transform: translateY(-50%);
+      transition: width 0.3s;
+
+      &--off {
+         width: calc(50% - 4px);
+      }
+      &--on {
+         width: calc(100% - 4px);
+      }
+   }
+
+   &__thumb {
+      @include size($h: 1.6rem, $w: 1.6rem);
+      background: linear-gradient(145deg, #00f1ff, #01b6ce);
+      @include pbm($rad: 50px);
+      @include pos-absolute($l: 2px, $t: 50%, $z: 30);
+      box-shadow: 0 0 2px 1px black;
+      transition: transform 0.3s;
+
+      &--off {
+         transform: translateY(-50%) translateX(0px);
+      }
+      &--on {
+         transform: translateY(-50%) translateX(2rem);
+      }
+   }
+}

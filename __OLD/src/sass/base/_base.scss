@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+:root {
+   //#fonts:#//
+   --courierPrime: "Courier Prime", monospace;
+   --rubik: "Rubik", sans-serif;
+
+   //#colors:#//
+   --white: White;
+   --primary: #222831;
+   --secondary: #24373a;
+   --cyan1: #00ffff;
+   --cyan2: #00d8e2;
+   --tomato: #f97f77;
+   --primeblue: #228fec;
+}
+
+html {
+   height: -webkit-fill-available;
+}
+
+body {
+   -webkit-tap-highlight-color: transparent;
+   tap-highlight-color: transparent;
+   background-color: $primary;
+   color: $white;
+   height: 100%;
+}

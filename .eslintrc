@@ -1,0 +1,22 @@
+{
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "prettier"],
+  "env": {
+    "es2021": true,
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": ["node_modules", "__OLD"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "lf",
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+@use '../abstracts' as *;
+
+#app {
+   height: 100%;
+}
+
+.main {
+   @include size($h: calc(100% - 9rem));
+   @include bg($c: $cyan1);
+   @include pbm($p: 2px, $rad: 20px);
+   @include flex($fd: column);
+   box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+   overflow: hidden;
+
+   @media (max-width: 700px) {
+      height: calc(100% - 6rem);
+   }
+
+   @media (max-width: 600px) {
+      height: calc(100% - 9rem);
+   }
+
+   &__header {
+      @include bg($c: $cyan1);
+      @include pbm($p: 5px 2rem, $rad: 20px);
+      @include flex($jc: space-between, $ai: center);
+      @include disable-selection;
+
+      &--title {
+         @include typo($c: $primary, $ff: $rubik, $fw: 500, $fs: 2.5rem);
+      }
+
+      &--tdr-switch {
+         @include flex($jc: center, $ai: center);
+
+         & > span {
+            @include typo($c: $primary, $ff: $rubik, $fs: 2rem, $style: italic);
+            padding-right: 1rem;
+         }
+      }
+   }
+
+   &__body {
+      @include size($h: calc(100% - 4rem));
+      @include bg($c: $primary);
+      @include pbm($p: 2rem, $pr: 6px, $rad: 20px);
+
+      @media (max-width: 600px) {
+         padding: 6px;
+      }
+
+      &__container {
+         height: 100%;
+         overflow-y: scroll;
+
+         &::-webkit-scrollbar {
+            width: 6px;
+
+            &-track {
+               background-color: transparent;
+            }
+            &-thumb {
+               background-color: rgb(249 127 119 / 80%);
+               border-radius: 20px;
+            }
+
+            @media (max-width: 600px) {
+               display: none;
+            }
+         }
+      }
+
+      &__alias {
+         @include pbm($pt: 1rem, $mb: 2rem, $mr: 5px, $rad: 1rem);
+         transition: background-color 0.3s;
+         @include pos-relative;
+
+         @media (max-width: 600px) {
+            margin-right: 0;
+         }
+
+         &:hover {
+            @include bg($c: $secondary);
+         }
+
+         &--title {
+            @include typo($c: $tomato, $ff: $rubik, $fs: 2.5rem, $fw: 300, $ws: 2px);
+            @include pbm($pl: 1rem);
+            @include disable-selection;
+
+            @media (max-width: 600px) {
+               font-size: 1.6rem;
+            }
+         }
+
+         &--syntax {
+            @include typo($c: $cyan1, $ff: $courierPrime, $fs: 2.5rem, $fw: 400);
+            @include pbm($p: 1rem, $pr: 3rem);
+            @include pos-relative;
+
+            @media (max-width: 600px) {
+               font-size: 1.6rem;
+            }
+
+            &--dolor {
+               display: inline-block;
+               transform: translateY(1px);
+               @include disable-selection;
+            }
+            &--name {
+               font-weight: 900;
+            }
+            &--copy-svg {
+               @include size($h: 3.5rem, $w: 3.5rem);
+               @include pos-absolute($r: 8px, $b: 8px);
+               cursor: pointer;
+               border-radius: 5px;
+               padding: 5px;
+
+               &:hover {
+                  background-color: rgb(34 40 49 / 50%);
+               }
+
+               @media (max-width: 600px) {
+                  @include size($h: 2.8rem, $w: 2.8rem);
+                  @include pos-absolute($r: 4px, $b: 4px);
+                  padding: 3px;
+               }
+            }
+            &--copied-svg {
+               @include size($h: 3.5rem, $w: 3.5rem);
+               @include pos-absolute($r: 8px, $b: 8px);
+               cursor: pointer;
+               border-radius: 5px;
+               padding: 5px;
+
+               &:hover {
+                  background-color: rgb(34 40 49 / 100%);
+               }
+
+               @media (max-width: 600px) {
+                  @include size($h: 2.8rem, $w: 2.8rem);
+                  @include pos-absolute($r: 4px, $b: 4px);
+                  padding: 3px;
+               }
+            }
+         }
+
+         &--code-svg {
+            @include size($h: 3.5rem, $w: 3.5rem);
+            @include pos-absolute($r: 8px, $t: 8px);
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 5px;
+
+            &:hover {
+               background-color: rgb(34 40 49 / 50%);
+            }
+
+            @media (max-width: 600px) {
+               @include size($h: 2.8rem, $w: 2.8rem);
+               @include pos-absolute($r: 4px, $t: 4px);
+               padding: 3px;
+            }
+         }
+      }
+   }
+}

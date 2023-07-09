@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+#pre-loader {
+   @include size($h: 100vh, $w: 100vw);
+   @include bg($c: $primary);
+   @include pos-fixed($z: 999999, $t: 0, $l: 0);
+   transition: transform 1s ease-in;
+}
+
+.fade-out {
+   animation: fadeout 1s;
+}
+@keyframes fadeout {
+   from {
+      opacity: 1;
+   }
+   to {
+      opacity: 0;
+   }
+}
